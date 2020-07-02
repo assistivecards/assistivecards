@@ -173,21 +173,18 @@ async function sourceCards(slug, lang, createNode, cache){
   }
 
 
-/*
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
-  const categoryTemplate = require.resolve(`./src/templates/category.js`)
+  const packTemplate = require.resolve(`./src/templates/pack.js`)
   const result = await graphql(`
     {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
+      allPack(
         limit: 1000
       ) {
         edges {
           node {
-            frontmatter {
-              slug
-            }
+            slug
           }
         }
       }
@@ -198,18 +195,25 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    createPage({
-      path: node.frontmatter.slug,
-      component: blogPostTemplate,
-      context: {
-        // additional data can be passed via context
-        slug: node.frontmatter.slug,
-      },
-    })
+  result.data.allPack.edges.forEach(({ node }) => {
+    let lang = await pullCacheable(cache, `packs/${l.code}/metadata`);
+
+
+    for (var i = 0; i < lang.languages.length; i++) {
+      let l = lang.languages[i];
+
+      createPage({
+        path: `/${l.code}/pack/${node.slug}/`,
+        component: packTemplate,
+        context: {
+          // additional data can be passed via context
+          slug: node.slug
+        },
+      })
+    }
+
   })
 }
-*/
 
 
 exports.onPostBuild = async ({ cache }) => {
