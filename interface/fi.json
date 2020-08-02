@@ -1,0 +1,21 @@
+{
+  "appName": "Apukortit",
+  "allpacks": "Kaikki pakkaukset",
+  "licensing": "Licensing",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "blogi",
+  "made_by": "Valmistettu rakkaudella",
+  "copyright": "tekijänoikeus",
+  "suggest": "Ehdota AAC-korttia",
+  "privacy": "Tietosuojakäytäntö",
+  "feedback": "Lähetä palautetta",
+  "button_next": "Seuraava",
+  "button_start": "alkaa",
+  "button_use": "KÄYTTÄÄ",
+  "button_using": "KÄYTTÖ",
+  "button_add": "LISÄTÄ",
+  "button_remove": "POISTA",
+  "alert_yourDeviceDoesNotSupportTTS": "Laitteesi ei tue tämän kielen ääniohjainta. TTS-ominaisuuksien käyttämiseksi sinun on asennettava ääniohjain. Voit kokeilla 'Google TTS' -sovellusta ohjainten asentamiseen ja hallintaan!",
+  "alert_ok": "kunnossa",
+  "alert_cancel": "Peruuttaa"
+}

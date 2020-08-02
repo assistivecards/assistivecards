@@ -1,0 +1,21 @@
+{
+  "appName": "Carte assistive",
+  "allpacks": "Tutti i pacchetti",
+  "licensing": "Licensing",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "blog",
+  "made_by": "Fatto con amore da",
+  "copyright": "Diritto d'autore",
+  "suggest": "Suggerisci una scheda AAC",
+  "privacy": "politica sulla riservatezza",
+  "feedback": "Invia feedback",
+  "button_next": "Il prossimo",
+  "button_start": "Inizio",
+  "button_use": "USO",
+  "button_using": "UTILIZZO",
+  "button_add": "INSERISCI",
+  "button_remove": "RIMUOVERE",
+  "alert_yourDeviceDoesNotSupportTTS": "Il tuo dispositivo non supporta il driver vocale per questa lingua. Per utilizzare le funzionalità TTS, è necessario installare un driver vocale. Puoi provare l'app \"Google TTS\" per installare e gestire i driver!",
+  "alert_ok": "ok",
+  "alert_cancel": "Annulla"
+}

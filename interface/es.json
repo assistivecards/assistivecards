@@ -1,0 +1,21 @@
+{
+  "appName": "Tarjetas de asistencia",
+  "allpacks": "Todos los paquetes",
+  "licensing": "Licencia",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "Blog",
+  "made_by": "Hecho con amor por",
+  "copyright": "Derechos de autor",
+  "suggest": "Sugerir tarjeta AAC",
+  "privacy": "Política de privacidad",
+  "feedback": "Enviar comentarios",
+  "button_next": "próximo",
+  "button_start": "comienzo",
+  "button_use": "UTILIZAR",
+  "button_using": "UTILIZANDO",
+  "button_add": "AÑADIR",
+  "button_remove": "ELIMINAR",
+  "alert_yourDeviceDoesNotSupportTTS": "Su dispositivo no es compatible con el controlador de voz para este idioma. Para utilizar las capacidades TTS, debe instalar un controlador de voz. ¡Puedes probar la aplicación 'Google TTS' para instalar y administrar controladores!",
+  "alert_ok": "Okay",
+  "alert_cancel": "Cancelar"
+}

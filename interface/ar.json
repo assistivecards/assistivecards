@@ -1,0 +1,21 @@
+{
+  "appName": "بطاقات المساعدة",
+  "allpacks": "جميع الباقات",
+  "licensing": "الترخيص",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "مدونة",
+  "made_by": "مصنوعة من الحب",
+  "copyright": "حقوق النشر",
+  "suggest": "اقتراح بطاقة AAC",
+  "privacy": "سياسة خاصة",
+  "feedback": "ارسل رأيك",
+  "button_next": "التالى",
+  "button_start": "بداية",
+  "button_use": "استعمال",
+  "button_using": "باستخدام",
+  "button_add": "أضف",
+  "button_remove": "إزالة",
+  "alert_yourDeviceDoesNotSupportTTS": "جهازك لا يدعم برنامج تشغيل الصوت لهذه اللغة. لاستخدام قدرات TTS ، تحتاج إلى تثبيت برنامج تشغيل صوتي. يمكنك تجربة تطبيق \"Google TTS\" لتثبيت برامج التشغيل وإدارتها!",
+  "alert_ok": "حسنا",
+  "alert_cancel": "إلغاء"
+}

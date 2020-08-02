@@ -1,0 +1,21 @@
+{
+  "appName": "Kertu Mbantu",
+  "allpacks": "Kabeh Pack",
+  "licensing": "Jinis",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "Blog",
+  "made_by": "Digawe nganggo tresno dening",
+  "copyright": "Copyright",
+  "suggest": "Saran kertu AAC",
+  "privacy": "Kebijakan Privasi",
+  "feedback": "Kirim Komentar",
+  "button_next": "Sabanjure",
+  "button_start": "Miwiti",
+  "button_use": "Gunakake",
+  "button_using": "Nggunakake",
+  "button_add": "ADD",
+  "button_remove": "NGEDANG",
+  "alert_yourDeviceDoesNotSupportTTS": "Piranti sampeyan ora ndhukung driver swara kanggo basa iki. Kanggo nggunakake kapabilitas TTS, sampeyan kudu nginstal driver swara. Sampeyan bisa nyoba 'Google TTS' aplikasi kanggo nginstal lan ngatur driver!",
+  "alert_ok": "OK",
+  "alert_cancel": "Batal"
+}

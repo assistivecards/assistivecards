@@ -1,0 +1,21 @@
+{
+  "appName": "Abikaardid",
+  "allpacks": "Kõik pakid",
+  "licensing": "Litsentseerimine",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "Blogi",
+  "made_by": "Valmistatud armastusega",
+  "copyright": "Autoriõigused",
+  "suggest": "Soovitage AAC-kaarti",
+  "privacy": "Privaatsuspoliitika",
+  "feedback": "Saada tagasisidet",
+  "button_next": "Järgmine",
+  "button_start": "Alusta",
+  "button_use": "KASUTAMINE",
+  "button_using": "KASUTAMINE",
+  "button_add": "LISAMA",
+  "button_remove": "EEMALDA",
+  "alert_yourDeviceDoesNotSupportTTS": "Teie seade ei toeta selle keele hääle draiverit. TTS-i võimaluste kasutamiseks peate installima hääle draiveri. Draiverite installimiseks ja haldamiseks võite proovida rakendust Google TTS.",
+  "alert_ok": "Okei",
+  "alert_cancel": "Tühista"
+}

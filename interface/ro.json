@@ -1,0 +1,21 @@
+{
+  "appName": "Cărți de asistență",
+  "allpacks": "Toate pachetele",
+  "licensing": "Licensing",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "Blog",
+  "made_by": "Realizat cu dragoste de",
+  "copyright": "Drepturi de autor",
+  "suggest": "Propuneți cardul AAC",
+  "privacy": "Politica de Confidențialitate",
+  "feedback": "Trimite feedback",
+  "button_next": "Următor →",
+  "button_start": "start",
+  "button_use": "UTILIZARE",
+  "button_using": "UTILIZAREA",
+  "button_add": "ADĂUGA",
+  "button_remove": "ELIMINA",
+  "alert_yourDeviceDoesNotSupportTTS": "Dispozitivul dvs. nu acceptă driverul vocal pentru această limbă. Pentru a utiliza funcțiile TTS, trebuie să instalați un driver de voce. Puteți încerca aplicația „Google TTS” pentru a instala și gestiona driverele!",
+  "alert_ok": "O.K",
+  "alert_cancel": "Anulare"
+}

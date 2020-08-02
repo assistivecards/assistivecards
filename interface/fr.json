@@ -1,0 +1,21 @@
+{
+  "appName": "Cartes d'assistance",
+  "allpacks": "Tous les packs",
+  "licensing": "Licence",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "Blog",
+  "made_by": "Fabriqué avec amour par",
+  "copyright": "droits d'auteur",
+  "suggest": "Suggérer une carte AAC",
+  "privacy": "Politique de confidentialité",
+  "feedback": "Envoyer des commentaires",
+  "button_next": "Prochain",
+  "button_start": "Début",
+  "button_use": "UTILISATION",
+  "button_using": "EN UTILISANT",
+  "button_add": "AJOUTER",
+  "button_remove": "RETIRER",
+  "alert_yourDeviceDoesNotSupportTTS": "Votre appareil ne prend pas en charge le pilote vocal pour cette langue. Pour utiliser les capacités TTS, vous devez installer un pilote vocal. Vous pouvez essayer l'application «Google TTS» pour installer et gérer les pilotes!",
+  "alert_ok": "D'accord",
+  "alert_cancel": "Annuler"
+}

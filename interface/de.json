@@ -1,0 +1,21 @@
+{
+  "appName": "Hilfskarten",
+  "allpacks": "Alle Packungen",
+  "licensing": "Lizenzierung",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "Blog",
+  "made_by": "Mit Liebe gemacht von",
+  "copyright": "Urheberrechte ©",
+  "suggest": "Schlagen Sie eine AAC-Karte vor",
+  "privacy": "Datenschutz-Bestimmungen",
+  "feedback": "Feedback abschicken",
+  "button_next": "Nächster",
+  "button_start": "Anfang",
+  "button_use": "VERWENDEN",
+  "button_using": "VERWENDUNG",
+  "button_add": "HINZUFÜGEN",
+  "button_remove": "ENTFERNEN",
+  "alert_yourDeviceDoesNotSupportTTS": "Ihr Gerät unterstützt keinen Sprachtreiber für diese Sprache. Um die TTS-Funktionen nutzen zu können, müssen Sie einen Sprachtreiber installieren. Sie können die Google TTS-App ausprobieren, um Treiber zu installieren und zu verwalten!",
+  "alert_ok": "OK",
+  "alert_cancel": "Stornieren"
+}

@@ -1,0 +1,21 @@
+{
+  "appName": "การ์ดอำนวยความสะดวก",
+  "allpacks": "แพ็คทั้งหมด",
+  "licensing": "อนุญาตให้ใช้สิทธิ์",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "บล็อก",
+  "made_by": "ทำด้วยความรักโดย",
+  "copyright": "ลิขสิทธิ์",
+  "suggest": "แนะนำ AAC Card",
+  "privacy": "นโยบายความเป็นส่วนตัว",
+  "feedback": "ส่งความคิดเห็น",
+  "button_next": "ต่อไป",
+  "button_start": "เริ่มต้น",
+  "button_use": "ใช้",
+  "button_using": "ใช้",
+  "button_add": "เพิ่ม",
+  "button_remove": "นำออก",
+  "alert_yourDeviceDoesNotSupportTTS": "อุปกรณ์ของคุณไม่รองรับโปรแกรมควบคุมเสียงสำหรับภาษานี้ ในการใช้ความสามารถของ TTS คุณจะต้องติดตั้งไดรเวอร์เสียง คุณสามารถลองใช้แอป 'Google TTS' เพื่อติดตั้งและจัดการไดรเวอร์!",
+  "alert_ok": "ตกลง",
+  "alert_cancel": "ยกเลิก"
+}

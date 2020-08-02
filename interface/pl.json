@@ -1,0 +1,21 @@
+{
+  "appName": "Karty pomocnicze",
+  "allpacks": "Wszystkie pakiety",
+  "licensing": "Koncesjonowanie",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "Blog",
+  "made_by": "Wykonane z miłością przez",
+  "copyright": "prawa autorskie",
+  "suggest": "Zaproponuj kartę AAC",
+  "privacy": "Polityka prywatności",
+  "feedback": "Prześlij opinię",
+  "button_next": "Kolejny",
+  "button_start": "Początek",
+  "button_use": "POSŁUGIWAĆ SIĘ",
+  "button_using": "ZA POMOCĄ",
+  "button_add": "DODAJ",
+  "button_remove": "USUNĄĆ",
+  "alert_yourDeviceDoesNotSupportTTS": "Twoje urządzenie nie obsługuje sterownika głosowego dla tego języka. Aby korzystać z funkcji TTS, musisz zainstalować sterownik głosu. Możesz wypróbować aplikację „Google TTS”, aby zainstalować sterowniki i zarządzać nimi!",
+  "alert_ok": "dobrze",
+  "alert_cancel": "Anuluj"
+}

@@ -1,0 +1,21 @@
+{
+  "appName": "Thẻ hỗ trợ",
+  "allpacks": "Tất cả các gói",
+  "licensing": "Cấp phép",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "Blog",
+  "made_by": "Được làm bằng tình yêu",
+  "copyright": "Bản quyền",
+  "suggest": "Đề nghị thẻ AAC",
+  "privacy": "Chính sách bảo mật",
+  "feedback": "Gửi thông tin phản hồi",
+  "button_next": "Kế tiếp",
+  "button_start": "Khởi đầu",
+  "button_use": "SỬ DỤNG",
+  "button_using": "SỬ DỤNG",
+  "button_add": "THÊM VÀO",
+  "button_remove": "TẨY",
+  "alert_yourDeviceDoesNotSupportTTS": "Thiết bị của bạn không hỗ trợ trình điều khiển giọng nói cho ngôn ngữ này. Để sử dụng khả năng TTS, bạn cần cài đặt trình điều khiển giọng nói. Bạn có thể thử ứng dụng 'Google TTS' để cài đặt và quản lý trình điều khiển!",
+  "alert_ok": "đồng ý",
+  "alert_cancel": "Hủy bỏ"
+}

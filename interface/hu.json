@@ -1,0 +1,21 @@
+{
+  "appName": "Segédkártyák",
+  "allpacks": "Minden csomag",
+  "licensing": "Engedélyezés",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "blog",
+  "made_by": "Készítette szeretettel",
+  "copyright": "szerzői jog",
+  "suggest": "Javasoljon AAC-kártyát",
+  "privacy": "Adatvédelmi irányelvek",
+  "feedback": "Visszajelzés küldése",
+  "button_next": "Következő",
+  "button_start": "Rajt",
+  "button_use": "HASZNÁLAT",
+  "button_using": "HASZNÁLATA",
+  "button_add": "ADD",
+  "button_remove": "REMOVE",
+  "alert_yourDeviceDoesNotSupportTTS": "A készülék nem támogatja a hangmeghajtót ezen a nyelven. A TTS képességek használatához telepítenie kell egy hangmeghajtót. Kipróbálhatja a „Google TTS” alkalmazást az illesztőprogramok telepítéséhez és kezeléséhez!",
+  "alert_ok": "rendben",
+  "alert_cancel": "Megszünteti"
+}

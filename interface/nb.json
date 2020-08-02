@@ -1,0 +1,21 @@
+{
+  "appName": "Hjelpekort",
+  "allpacks": "Alle pakker",
+  "licensing": "lisensiering",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "bloggen",
+  "made_by": "Laget med kjærlighet av",
+  "copyright": "opphavsrett",
+  "suggest": "Foreslå AAC-kort",
+  "privacy": "Personvern",
+  "feedback": "Send tilbakemelding",
+  "button_next": "neste",
+  "button_start": "Start",
+  "button_use": "BRUK",
+  "button_using": "VED HJELP AV",
+  "button_add": "LEGG TIL",
+  "button_remove": "TA VEKK",
+  "alert_yourDeviceDoesNotSupportTTS": "Enheten din støtter ikke stemmedriver for dette språket. For å kunne bruke TTS-funksjoner, må du installere en stemmedriver. Du kan prøve Google TTS-app for å installere og administrere drivere!",
+  "alert_ok": "OK",
+  "alert_cancel": "Avbryt"
+}

@@ -5,9 +5,11 @@
   "version": "0.1.0",
   "author": "Burak Tokak <tokakburak@gmail.com>",
   "dependencies": {
+    "@google-cloud/translate": "^6.0.2",
     "axios": "^0.19.2",
     "bluebird": "^3.7.2",
     "crypto": "^1.0.1",
+    "emoji-strip": "^1.0.1",
     "gatsby": "^2.13.51",
     "gatsby-image": "^2.2.8",
     "gatsby-plugin-manifest": "^2.2.4",
@@ -35,12 +37,14 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "ui": "cd scripts && set GOOGLE_APPLICATION_CREDENTIALS=note-1555109906591-0fdf76eae8e8.json&& node uidatamaker.js",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "push": "gatsby build && aws s3 rm s3://assistivecards.com --recursive && aws s3 cp public s3://assistivecards.com --recursive",
-    "start": "npm run develop",
+    "start": "set NODE_OPTIONS=--max_old_space_size=8192 && npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"dont Write tests! -> https://gatsby.dev/unit-testing\"",
+    "set": "set GOOGLE_APPLICATION_CREDENTIALS=note-1555109906591-0fdf76eae8e8.json"
   },
   "repository": {
     "type": "git",

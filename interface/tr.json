@@ -1,0 +1,21 @@
+{
+  "appName": "Yardımcı Kartlar",
+  "allpacks": "Tüm Paketler",
+  "licensing": "Lisanslama",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "Blog",
+  "made_by": "Tarafından sevgiyle yapılmıştır",
+  "copyright": "telif hakkı",
+  "suggest": "AAC Kartı Öner",
+  "privacy": "Gizlilik Politikası",
+  "feedback": "Geribildirim yolla",
+  "button_next": "Sonraki",
+  "button_start": "Başlat",
+  "button_use": "KULLANIM",
+  "button_using": "KULLANMA",
+  "button_add": "EKLE",
+  "button_remove": "KALDIRMAK",
+  "alert_yourDeviceDoesNotSupportTTS": "Cihazınız bu dil için ses sürücüsünü desteklemiyor. TTS özelliklerini kullanabilmek için bir ses sürücüsü yüklemeniz gerekir. Sürücüleri yüklemek ve yönetmek için 'Google TTS' uygulamasını deneyebilirsiniz!",
+  "alert_ok": "tamam",
+  "alert_cancel": "İptal etmek"
+}

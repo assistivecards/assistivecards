@@ -1,0 +1,21 @@
+{
+  "appName": "辅助卡",
+  "allpacks": "所有包",
+  "licensing": "发牌",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "博客",
+  "made_by": "用爱制造",
+  "copyright": "版权",
+  "suggest": "建议AAC卡",
+  "privacy": "隐私政策",
+  "feedback": "发送反馈",
+  "button_next": "下一个",
+  "button_start": "开始",
+  "button_use": "用",
+  "button_using": "使用方法",
+  "button_add": "加",
+  "button_remove": "去掉",
+  "alert_yourDeviceDoesNotSupportTTS": "您的设备不支持该语言的语音驱动程序。为了使用TTS功能，您需要安装语音驱动程序。您可以尝试使用“ Google TTS”应用来安装和管理驱动程序！",
+  "alert_ok": "好",
+  "alert_cancel": "取消"
+}

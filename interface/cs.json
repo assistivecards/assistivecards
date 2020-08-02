@@ -1,0 +1,21 @@
+{
+  "appName": "Pomocné karty",
+  "allpacks": "Všechny balíčky",
+  "licensing": "Licencování",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "Blog",
+  "made_by": "Vyrobeno s láskou",
+  "copyright": "autorská práva",
+  "suggest": "Navrhněte kartu AAC",
+  "privacy": "Zásady ochrany osobních údajů",
+  "feedback": "Poslat zpětnou vazbu",
+  "button_next": "další",
+  "button_start": "Start",
+  "button_use": "POUŽITÍ",
+  "button_using": "POUŽITÍM",
+  "button_add": "PŘIDAT",
+  "button_remove": "ODSTRANIT",
+  "alert_yourDeviceDoesNotSupportTTS": "Vaše zařízení nepodporuje hlasový ovladač pro tento jazyk. Abyste mohli využívat funkce TTS, musíte nainstalovat ovladač hlasu. Chcete-li nainstalovat a spravovat ovladače, můžete vyzkoušet aplikaci Google TTS.",
+  "alert_ok": "OK",
+  "alert_cancel": "zrušení"
+}

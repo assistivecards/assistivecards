@@ -1,0 +1,21 @@
+{
+  "appName": "Mga Card na tumutulong",
+  "allpacks": "Lahat ng Pack",
+  "licensing": "Paglilisensya",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "Blog",
+  "made_by": "Ginawa ng pag-ibig ni",
+  "copyright": "Copyright",
+  "suggest": "Magmungkahi ng AAC Card",
+  "privacy": "Patakaran sa Pagkapribado",
+  "feedback": "Magbigay ng feedback",
+  "button_next": "Susunod",
+  "button_start": "Magsimula",
+  "button_use": "GAMIT",
+  "button_using": "PAGGAMIT",
+  "button_add": "ADD",
+  "button_remove": "MABABASA",
+  "alert_yourDeviceDoesNotSupportTTS": "Hindi suportado ng iyong aparato ang driver ng boses para sa wikang ito. Upang magamit ang mga kakayahan ng TTS, kailangan mong mag-install ng driver ng boses. Maaari mong subukan ang 'Google TTS' app upang mai-install at pamahalaan ang mga driver!",
+  "alert_ok": "OK",
+  "alert_cancel": "Pagkansela"
+}

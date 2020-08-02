@@ -1,0 +1,21 @@
+{
+  "appName": "Ondersteunende kaarten",
+  "allpacks": "Alle pakketten",
+  "licensing": "Licenties",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "Blog",
+  "made_by": "Met liefde gemaakt door",
+  "copyright": "auteursrechten",
+  "suggest": "Stel AAC-kaart voor",
+  "privacy": "Privacybeleid",
+  "feedback": "Feedback verzenden",
+  "button_next": "De volgende",
+  "button_start": "Begin",
+  "button_use": "GEBRUIK",
+  "button_using": "GEBRUIK MAKEND VAN",
+  "button_add": "TOEVOEGEN",
+  "button_remove": "VERWIJDEREN",
+  "alert_yourDeviceDoesNotSupportTTS": "Uw apparaat ondersteunt geen spraakstuurprogramma voor deze taal. Om TTS-mogelijkheden te gebruiken, moet u een spraakstuurprogramma installeren. U kunt de 'Google TTS'-app proberen om stuurprogramma's te installeren en te beheren!",
+  "alert_ok": "OK",
+  "alert_cancel": "Annuleer"
+}

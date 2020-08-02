@@ -1,0 +1,21 @@
+{
+  "appName": "補助カード",
+  "allpacks": "すべてのパック",
+  "licensing": "ライセンシング",
+  "leeloo_aac": "リールーAAC",
+  "blog": "ブログ",
+  "made_by": "愛を込めて作られました",
+  "copyright": "著作権",
+  "suggest": "AACカードを提案",
+  "privacy": "個人情報保護方針",
+  "feedback": "フィードバックを送信する",
+  "button_next": "次",
+  "button_start": "開始",
+  "button_use": "使用する",
+  "button_using": "使用",
+  "button_add": "追加",
+  "button_remove": "削除する",
+  "alert_yourDeviceDoesNotSupportTTS": "お使いのデバイスは、この言語の音声ドライバーをサポートしていません。 TTS機能を使用するには、音声ドライバーをインストールする必要があります。 「Google TTS」アプリを試して、ドライバーをインストールおよび管理できます。",
+  "alert_ok": "OK",
+  "alert_cancel": "キャンセル"
+}

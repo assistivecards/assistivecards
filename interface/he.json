@@ -1,0 +1,21 @@
+{
+  "appName": "קלפי עזר",
+  "allpacks": "כל החבילות",
+  "licensing": "רישוי",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "בלוג",
+  "made_by": "מיוצר באהבה על ידי",
+  "copyright": "זכויות יוצרים",
+  "suggest": "הצע כרטיס AAC",
+  "privacy": "מדיניות פרטיות",
+  "feedback": "שלח משוב",
+  "button_next": "הַבָּא",
+  "button_start": "הַתחָלָה",
+  "button_use": "להשתמש",
+  "button_using": "משתמשים",
+  "button_add": "לְהוֹסִיף",
+  "button_remove": "לְהַסִיר",
+  "alert_yourDeviceDoesNotSupportTTS": "המכשיר שלך אינו תומך במנהל התקן קולי בשפה זו. על מנת להשתמש ביכולות TTS עליכם להתקין מנהל התקן קולי. אתה יכול לנסות את אפליקציית 'Google TTS' להתקנה וניהול של מנהלי התקנים!",
+  "alert_ok": "בסדר",
+  "alert_cancel": "לְבַטֵל"
+}

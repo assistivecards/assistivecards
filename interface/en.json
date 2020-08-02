@@ -1,0 +1,22 @@
+{
+	"appName": "Assistive Cards",
+	"allpacks": "All Packs",
+	"licensing": "Licensing",
+	"leeloo_aac": "Leeloo AAC",
+	"blog": "Blog",
+	"made_by": "Made with love by",
+	"copyright": "Copyright",
+	"suggest": "Suggest AAC Card",
+	"privacy": "Privacy Policy",
+	"feedback": "Send Feedback",
+
+	"button_next": "Next",
+	"button_start": "Start",
+	"button_use": "USE",
+	"button_using": "USING",
+	"button_add": "ADD",
+	"button_remove": "REMOVE",
+	"alert_yourDeviceDoesNotSupportTTS": "Your device doesn't support voice driver for this language. In order to use TTS capabilities, you need to install a voice driver. You can try 'Google TTS' app to install and manage drivers!",
+	"alert_ok": "OK",
+	"alert_cancel": "Cancel"
+}

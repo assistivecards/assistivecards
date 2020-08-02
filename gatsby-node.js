@@ -129,8 +129,8 @@ async function sourceCards(slug, lang, createNode, cache){
     }
 
     // map into these results and create nodes
-    cards.en.map((card, i) => {
-      // Create your node object
+    for (var i = 0; i < cards.en.length; i++) {
+      let card = cards.en[i]
 
       let locale = {};
       Object.values(lang.languages).forEach((lan, x) => {
@@ -146,7 +146,7 @@ async function sourceCards(slug, lang, createNode, cache){
 
       const node = {
         // Required fields
-        id: `Card-${i}`,
+        id: `Card-${slug}-${i}`,
         parent: `__SOURCE__`,
         internal: {
           type: `Card`, // This is an important indicator for your data node.
@@ -166,18 +166,32 @@ async function sourceCards(slug, lang, createNode, cache){
         .digest(`hex`);
       // add it to userNode
       node.internal.contentDigest = contentDigest;
-
       // Create node with the gatsby createNode() API
-      createNode(node);
-    });
+      await createNode(node);
+    }
   }
 
 
 
-exports.createPages = async ({ actions, graphql, reporter }) => {
+exports.createPages = async ({ actions, graphql, reporter, cache }) => {
   const { createPage } = actions
+
+
+  const packsTemplate = require.resolve(`./src/templates/packs.js`)
+  const lang = await pullCacheable(cache, `languages`);
+
+  for (var i = 0; i < lang.languages.length; i++) {
+    let l = lang.languages[i];
+
+    createPage({
+      path: `/${l.code}/packs/`,
+      component: packsTemplate
+    })
+  }
+
+
   const packTemplate = require.resolve(`./src/templates/pack.js`)
-  const result = await graphql(`
+  const packResult = await graphql(`
     {
       allPack(
         limit: 1000
@@ -191,13 +205,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `)
   // Handle errors
-  if (result.errors) {
+  if (packResult.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
-  result.data.allPack.edges.forEach(({ node }) => {
-    let lang = await pullCacheable(cache, `packs/${l.code}/metadata`);
 
+  packResult.data.allPack.edges.forEach(({ node }) => {
 
     for (var i = 0; i < lang.languages.length; i++) {
       let l = lang.languages[i];
@@ -207,6 +220,46 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         component: packTemplate,
         context: {
           // additional data can be passed via context
+          slug: node.slug
+        },
+      })
+    }
+
+  })
+
+
+  const cardTemplate = require.resolve(`./src/templates/card.js`)
+  const cardResult = await graphql(`
+    {
+      allCard (
+        limit: 10000
+      ) {
+        edges {
+          node {
+            pack
+            slug
+          }
+        }
+      }
+    }
+  `)
+  // Handle errors
+  if (cardResult.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
+  cardResult.data.allCard.edges.forEach(({ node }) => {
+
+    for (var i = 0; i < lang.languages.length; i++) {
+      let l = lang.languages[i];
+
+      createPage({
+        path: `/${l.code}/card/${node.pack}/${node.slug}/`,
+        component: cardTemplate,
+        context: {
+          // additional data can be passed via context
+          pack: node.pack,
           slug: node.slug
         },
       })

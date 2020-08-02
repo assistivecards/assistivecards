@@ -1,0 +1,21 @@
+{
+  "appName": "보조 카드",
+  "allpacks": "모든 팩",
+  "licensing": "라이센싱",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "블로그",
+  "made_by": "에 의해 사랑으로 만든",
+  "copyright": "저작권",
+  "suggest": "AAC 카드 제안",
+  "privacy": "개인 정보 정책",
+  "feedback": "의견 보내기",
+  "button_next": "다음",
+  "button_start": "스타트",
+  "button_use": "사용하다",
+  "button_using": "사용",
+  "button_add": "더하다",
+  "button_remove": "없애다",
+  "alert_yourDeviceDoesNotSupportTTS": "장치가이 언어의 음성 드라이버를 지원하지 않습니다. TTS 기능을 사용하려면 음성 드라이버를 설치해야합니다. 'Google TTS'앱을 사용해 드라이버를 설치하고 관리 할 수 있습니다!",
+  "alert_ok": "확인",
+  "alert_cancel": "취소"
+}

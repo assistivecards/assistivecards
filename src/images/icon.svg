@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <clipPath id="clip-icon">
+      <rect width="1024" height="1024"/>
+    </clipPath>
+  </defs>
+  <g id="icon" clip-path="url(#clip-icon)">
+    <rect width="1024" height="1024" fill="rgba(255,255,255,0)"/>
+    <g id="logo" transform="translate(-140 34.505)">
+      <g id="Group_43" data-name="Group 43" transform="translate(140 63)">
+        <path id="Path_89" data-name="Path 89" d="M133.494,0H404.34A133.494,133.494,0,0,1,537.834,133.494V478.8A133.494,133.494,0,0,1,404.34,612.3H133.494A133.494,133.494,0,0,1,0,478.8V133.494A133.494,133.494,0,0,1,133.494,0Z" transform="matrix(0.961, -0.276, 0.276, 0.961, 0, 236.271)" fill="#00bbd3"/>
+        <path id="Path_88" data-name="Path 88" d="M133.494,0H520.173A133.494,133.494,0,0,1,653.667,133.494v477.7A133.494,133.494,0,0,1,520.173,744.683H133.494A133.494,133.494,0,0,1,0,611.189v-477.7A133.494,133.494,0,0,1,133.494,0Z" transform="translate(181.031 83.233)" fill="#70e3f2"/>
+        <path id="Path_87" data-name="Path 87" d="M133.494,0H520.173A133.494,133.494,0,0,1,653.667,133.494v477.7A133.494,133.494,0,0,1,520.173,744.683H133.494A133.494,133.494,0,0,1,0,611.189v-477.7A133.494,133.494,0,0,1,133.494,0Z" transform="translate(376.694 0) rotate(8)" fill="#ff81a2"/>
+      </g>
+    </g>
+  </g>
+</svg>

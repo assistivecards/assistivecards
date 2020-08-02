@@ -1,0 +1,21 @@
+{
+  "appName": "Kartu Bantu",
+  "allpacks": "Semua Paket",
+  "licensing": "Perizinan",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "Blog",
+  "made_by": "Dibuat dengan cinta oleh",
+  "copyright": "hak cipta",
+  "suggest": "Sarankan Kartu AAC",
+  "privacy": "Rahasia pribadi",
+  "feedback": "Kirim Umpan Balik",
+  "button_next": "Lanjut",
+  "button_start": "Mulailah",
+  "button_use": "MENGGUNAKAN",
+  "button_using": "MENGGUNAKAN",
+  "button_add": "MENAMBAHKAN",
+  "button_remove": "MENGHAPUS",
+  "alert_yourDeviceDoesNotSupportTTS": "Perangkat Anda tidak mendukung driver suara untuk bahasa ini. Untuk menggunakan kemampuan TTS, Anda harus menginstal driver suara. Anda dapat mencoba aplikasi 'Google TTS' untuk menginstal dan mengelola driver!",
+  "alert_ok": "baik",
+  "alert_cancel": "Membatalkan"
+}

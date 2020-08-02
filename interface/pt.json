@@ -1,0 +1,21 @@
+{
+  "appName": "Cartões Assistivos",
+  "allpacks": "Todos os pacotes",
+  "licensing": "Licenciamento",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "Blog",
+  "made_by": "Feito com amor por",
+  "copyright": "direito autoral",
+  "suggest": "Sugerir cartão AAC",
+  "privacy": "Política de Privacidade",
+  "feedback": "Enviar comentários",
+  "button_next": "Próximo",
+  "button_start": "Começar",
+  "button_use": "USAR",
+  "button_using": "USANDO",
+  "button_add": "ADICIONAR",
+  "button_remove": "REMOVER",
+  "alert_yourDeviceDoesNotSupportTTS": "Seu dispositivo não suporta driver de voz para esse idioma. Para usar os recursos TTS, você precisa instalar um driver de voz. Você pode experimentar o aplicativo 'Google TTS' para instalar e gerenciar drivers!",
+  "alert_ok": "Está bem",
+  "alert_cancel": "Cancelar"
+}

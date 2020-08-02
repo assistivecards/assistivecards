@@ -1,0 +1,21 @@
+{
+  "appName": "Hjälpkort",
+  "allpacks": "Alla paket",
+  "licensing": "licensiering",
+  "leeloo_aac": "Leeloo AAC",
+  "blog": "blogg",
+  "made_by": "Gjort med kärlek av",
+  "copyright": "upphovsrätt",
+  "suggest": "Föreslå AAC-kort",
+  "privacy": "Integritetspolicy",
+  "feedback": "Skicka synpunkter",
+  "button_next": "Nästa",
+  "button_start": "Start",
+  "button_use": "ANVÄNDA SIG AV",
+  "button_using": "ANVÄNDER SIG AV",
+  "button_add": "LÄGG TILL",
+  "button_remove": "AVLÄGSNA",
+  "alert_yourDeviceDoesNotSupportTTS": "Din enhet stöder inte röstdrivrutin för det här språket. För att kunna använda TTS-funktioner måste du installera en röstdrivrutin. Du kan prova appen Google TTS för att installera och hantera drivrutiner!",
+  "alert_ok": "OK",
+  "alert_cancel": "Annullera"
+}
