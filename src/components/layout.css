@@ -70,7 +70,7 @@ a:hover svg {fill: #4799ca;}
 b,
 strong {
   font-weight: inherit;
-  font-weight: bolder;
+  font-weight: bold;
 }
 img {
   max-width: 100%;

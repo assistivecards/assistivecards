@@ -38,7 +38,7 @@ All done! Now your Leeloo AAC app will be able to access to Google's Enhanced TT
 
 ## Changing the Speech Voice in Leeloo AAC
 
-Now what you need to do is update the Leeloo's voice driver and choose a sound for your app.
+Now what you need to do is update the Leeloo's voice driver and choose a voice for your app.
 
 * Launch your "Leeloo AAC" app
 * Go to your App settings
@@ -46,9 +46,11 @@ Now what you need to do is update the Leeloo's voice driver and choose a sound f
 
 ![Leeloo AAC text to speech](leeloo-tts.png)
 
-In this screen you will see over few voice synthesiser made by Google, some of them are also "Enhanced" which gives the best result.
+In this screen you will see few voice synthesiser made by Google, some of them are also "Enhanced" which gives the best result.
 
-Press on few of them depending on your child's accent. There are wide selection of male and female voices.
+Press on few of them to listen a short demo and choose the most suitable depending on your child's accent. There are wide selection of male and female voices.
+
+**Don't forget to save by pressing "OK" button at the top-right corner to save settings.**
 
 Google TTS also supports all of the languages the Leeloo AAC supports. By changing your language from "Language" tab, you will see the speech synthesiser for that language.
 
@@ -60,4 +62,4 @@ See the image above for German speech synthesiser.
 
 We hope you were able to fix your issues with Samsung devices. Let us know if you have any other questions by contacting us.
 
-Don't forget to leave a review on Google Play and iOS, also checkout Leeloo Premium with 3 days free trial!
+Don't forget to leave a review on Google Play and App Store, also checkout Leeloo Premium with 3 days free trial!
