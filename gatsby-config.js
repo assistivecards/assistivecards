@@ -26,12 +26,19 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `project`,
+        path: `${__dirname}/src/blog`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `dreamoriented`,
+        name: `assistivecards`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#ffffff`,
@@ -45,14 +52,3 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
-
-/*
-
-{
-  resolve: `gatsby-source-filesystem`,
-  options: {
-    name: `project`,
-    path: `${__dirname}/src/project`,
-  },
-},
-*/

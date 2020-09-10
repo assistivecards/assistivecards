@@ -42,43 +42,7 @@ export const pageQuery = graphql`
           count
           id
           locale {
-            ar
-            bn
-            cs
-            da
             en
-            de
-            es
-            el
-            et
-            fi
-            fr
-            fil
-            hi
-            he
-            id
-            hu
-            it
-            ja
-            km
-            ko
-            jv
-            nb
-            ne
-            pt
-            ro
-            nl
-            pl
-            ru
-            sk
-            si
-            uk
-            sv
-            th
-            tr
-            ur
-            vi
-            zh
           }
         }
       }

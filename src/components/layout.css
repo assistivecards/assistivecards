@@ -503,6 +503,16 @@ table tr td:nth-child(1) span{
   text-align: center;
 }
 
+.blogPostCarrier {
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+}
+
+.blogPostCarrier .gatsby-resp-image-wrapper {
+  max-height: 500px;
+}
+
 @media only screen and (max-width: 1000px) {
 
   .section {
@@ -556,7 +566,55 @@ table tr td:nth-child(1) span{
   }
 }
 
+.menuToggler {
+  display: none;
+}
+
 @media only screen and (max-width: 700px) {
+
+  .menuToggler {
+    display: flex;
+    width: 55px;
+    height: 42px;
+    background: #eee;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headerLinks {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .headerLinks .menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .headerLinks .menu a {
+    padding: 10px 0px;
+    border-bottom: 1px solid #eee;
+  }
+
+
+  .headerLinks .menu a:first-child {
+    margin-top: 15px;
+  }
+
+  .mobileMenuPassive {
+    max-height: 0px;
+    overflow: hidden;
+  }
+
+  .mobileMenuToggle {
+    max-height: 300px;
+  }
+
   .footer {
     overflow: hidden;
   }

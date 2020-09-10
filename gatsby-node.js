@@ -10,6 +10,8 @@ const crypto = require('crypto');
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
+ const ONLY_RENDER_EN = true;
+
 async function pullCacheable(cache, key){
   const cachedValue = await cache.get(key);
   if(cachedValue){
@@ -28,6 +30,10 @@ exports.sourceNodes = async ({ actions, cache }) => {
   const { createNode } = actions;
 
   const lang = await pullCacheable(cache, `languages`);
+
+  if(ONLY_RENDER_EN){
+    lang.languages = [{code: "en"}];
+  }
 
   await sourceLang(lang, createNode);
   await sourcePacks(lang, createNode, cache);
@@ -265,6 +271,39 @@ exports.createPages = async ({ actions, graphql, reporter, cache }) => {
       })
     }
 
+  })
+
+  const blogPostTemplate = require.resolve(`./src/templates/blog.js`)
+  const result = await graphql(`
+    {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+  // Handle errors
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.frontmatter.slug,
+      component: blogPostTemplate,
+      context: {
+        // additional data can be passed via context
+        slug: node.frontmatter.slug,
+      },
+    })
   })
 }
 

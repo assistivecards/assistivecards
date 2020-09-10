@@ -15,10 +15,13 @@ export default function Template({
     <Layout language={language}>
       <SEO title={`${pack.locale[language]} Pack`} description={`Project description for ${pack.locale[language]}`}/>
       <div className="content">
-        <img src={`https://api.assistivecards.com/cards/icon/${pack.slug}.png`} style={{width: 100, height: 100}}/>
-        <h1>{pack.locale[language]} Pack</h1>
-        <p style={{opacity: 0.6}}>Get assistive cards related to {pack.locale[language]}</p>
-        <p style={{opacity: 0.6}}>Last edited at {pack.color}</p>
+        <div style={{display: "flex", flexDirection: "row"}}>
+          <div>
+            <h1>{pack.locale[language]} Pack</h1>
+            <p style={{opacity: 0.6}}>Download free Grandparents assistive card in SVG or PNG format with JSON file of translation to 37 languages. Free vectoral Grandparents illustration and icon.</p>
+          </div>
+          <img src={`https://api.assistivecards.com/cards/icon/${pack.slug}.png`} style={{width: 100, height: 100}}/>
+        </div>
         <div className="packs">
           {cards.edges.map(card => {
             return (
@@ -43,43 +46,7 @@ export const pageQuery = graphql`
       count
       id
       locale {
-        ar
-        bn
-        cs
-        de
-        da
         en
-        el
-        es
-        et
-        fi
-        fil
-        fr
-        he
-        hi
-        hu
-        id
-        it
-        ja
-        jv
-        km
-        ko
-        nb
-        ne
-        nl
-        pl
-        pt
-        ro
-        ru
-        si
-        sk
-        sv
-        th
-        tr
-        uk
-        ur
-        vi
-        zh
       }
     }
     cards: allCard(filter: {pack: {eq: $slug}}){
@@ -88,115 +55,7 @@ export const pageQuery = graphql`
          slug
          id
          locale {
-          ar {
-            title
-          }
-          bn {
-            title
-          }
-          cs {
-            title
-          }
-          de {
-            title
-          }
-          da {
-            title
-          }
           en {
-            title
-          }
-          el {
-            title
-          }
-          es {
-            title
-          }
-          et {
-            title
-          }
-          fi {
-            title
-          }
-          fil {
-            title
-          }
-          fr {
-            title
-          }
-          he {
-            title
-          }
-          hi {
-            title
-          }
-          hu {
-            title
-          }
-          id {
-            title
-          }
-          it {
-            title
-          }
-          ja {
-            title
-          }
-          jv {
-            title
-          }
-          km {
-            title
-          }
-          ko {
-            title
-          }
-          nb {
-            title
-          }
-          ne {
-            title
-          }
-          nl {
-            title
-          }
-          pl {
-            title
-          }
-          pt {
-            title
-          }
-          ro {
-            title
-          }
-          ru {
-            title
-          }
-          si {
-            title
-          }
-          sk {
-            title
-          }
-          sv {
-            title
-          }
-          th {
-            title
-          }
-          tr {
-            title
-          }
-          uk {
-            title
-          }
-          ur {
-            title
-          }
-          vi {
-            title
-          }
-          zh {
             title
           }
          }
