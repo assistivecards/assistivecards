@@ -500,6 +500,7 @@ table tr td:nth-child(1) span{
 
 .categoryItem p, .packItem p {
   padding: 0px 10px;
+  margin-bottom: 2px;
   text-align: center;
 }
 
@@ -644,6 +645,28 @@ table tr td:nth-child(1) span{
   html {
     font-size: 100%;
   }
+
+
+  .categories {
+    grid-template-columns: repeat(auto-fill,160px);
+    grid-gap: 10px;
+  }
+
+  .categoryItem {
+    width: 160px;
+    height: 160px;
+  }
+
+  .packs {
+    grid-template-columns: repeat(auto-fill,160px);
+    grid-gap: 10px;
+  }
+
+  .packItem {
+    width: 160px;
+    height: 160px;
+  }
+
 }
 
 @keyframes scaleAnim {

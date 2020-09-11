@@ -1,27 +1,35 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import T from "../ui"
 
-class IndexPage extends React.Component {
-  state = {
 
-  }
+export default function Template({
+  data, path // this prop will be injected by the GraphQL query below.
+}) {
 
-  render(){
-    return (
-      <>
-        <SEO title="Assistive Cards - Free-to-use Open Licensed AAC Cards" description="Free-to-use Open Licensed AAC Cards"/>
-        <div style={{display: "flex", justifyContent: "center", flexDirection: "column", padding: 30}}>
-          <img src={require("../images/logo.svg")}/>
-          <h1 style={{textAlign: "center", paddingTop: 30}}>Coming soon!</h1>
+  return (
+    <Layout language={"en"}>
+      <SEO title="Assistive Cards - AAC Cards Illustrations and Phrases" description="Assistive Cards are multilingual AAC card and phrase inventory designed for kids' special education."/>
+      <div className="content">
+        <h2>Assistive Cards are multilingual AAC card and phrase groups designed for kids' special education.</h2>
+        <p>Using Assistive Cards, developers and designers can make assistive software and educational games for children, parents can make their own printed AAC boards etc.</p>
+        <ul>
+          <li>Card and phrase translations support 37 languages.</li>
+          <li>Designed with multi-cultural userbase in mind.</li>
+          <li>Created using autism and ADHD friendly color palette.</li>
+        </ul>
 
-          <a href="/leeloo" style={{textAlign: "center"}}>Checkout Leeloo AAC!</a>
-        </div>
-      </>
-    )
-  }
+        <h2>Apps and Tools using Assistive Cards</h2>
+        <ul>
+          <li>Leeloo AAC</li>
+          <li>Huni AI</li>
+        </ul>
+        <p>Do you want your app to be featured here? Contact us.</p>
+
+      </div>
+    </Layout>
+  )
 }
-
-export default IndexPage

@@ -25,7 +25,7 @@ const Header = ({ siteTitle, language }) => {
             </div>
             <div className={menu ? "menu mobileMenuActive" : "menu mobileMenuPassive"}>
               <Link to={`/${language}/packs/`}>{T(language, "allpacks")}</Link>
-              <Link to={`/${language}/licensing/`}>{T(language, "licensing")}</Link>
+              <Link to={`/licensing/`}>{T(language, "licensing")}</Link>
               <Link to={`/leeloo/`}>{T(language, "leeloo_aac")}</Link>
               <Link to={`/blog/`}>{T(language, "blog")}</Link>
             </div>

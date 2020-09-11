@@ -1,30 +1,50 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Screenshot1 from "../components/screenshot1"
-import Screenshot2 from "../components/screenshot2"
-import Screenshot3 from "../components/screenshot3"
+import T from "../ui"
 
 
-class IndexPage extends React.Component {
-  state = {
+export default function Template({
+  data, path // this prop will be injected by the GraphQL query below.
+}) {
+  const { posts } = data;
 
-  }
-
-  render(){
-    return (
-      <Layout>
-        <SEO title="Blog Posts - Assistive Cards" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
-
-        <div className="section">
-          <p>Test</p>
+  return (
+    <Layout language={"en"}>
+      <SEO title="Blog Posts - Assistive Cards" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
+      <div className="content">
+        <div className="blogPostCarrier">
+          <h1>Blog Posts</h1>
+          {posts.edges.map((post, i) => {
+            return (
+              <li key={i}>
+                <Link to={post.node.frontmatter.slug}>{post.node.frontmatter.title}</Link>
+              </li>
+            );
+          })}
         </div>
-
-      </Layout>
-    )
-  }
+      </div>
+    </Layout>
+  )
 }
 
-export default IndexPage
+export const pageQuery = graphql`
+  query {
+    posts: allMarkdownRemark(sort: {
+          fields: [frontmatter___date]
+          order: DESC
+        }) {
+        edges {
+          node {
+            frontmatter {
+              date(formatString: "MMMM DD, YYYY")
+              slug
+              title
+            }
+          }
+        }
+      }
+  }
+`
