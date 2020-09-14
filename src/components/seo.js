@@ -27,6 +27,10 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
 
+  if(!title.includes("Assistive Cards")){
+    title = `${title} - Assistive Cards`;
+  }
+
   return (
     <Helmet
       htmlAttributes={{

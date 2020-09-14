@@ -16,7 +16,7 @@ class IndexPage extends React.Component {
   render(){
     return (
       <Layout>
-        <SEO title="Leeloo AAC - Assistive Cards" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
+        <SEO title="Leeloo AAC" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
 
 
         <div className="section">

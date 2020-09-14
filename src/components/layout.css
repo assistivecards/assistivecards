@@ -462,11 +462,22 @@ table tr td:nth-child(1) span{
   align-items: center;
   flex-direction: column;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .categoryItem img {
   margin: 5px;
   margin-bottom: 10px;
+}
+
+.categoryCardCount {
+  background: #fff;
+  width: 70px; height: 20px;
+  border-radius: 10px;
+  font-size: 0.8em;
+  color: #333;
+  text-align: center;
+  line-height: 20px;
 }
 
 .packs {

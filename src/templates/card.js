@@ -11,7 +11,9 @@ export default function Template({
 }) {
   const { pack, card, cards } = data;
   let language = path.split("/")[1];
-
+  if(!card.locale[language]){
+    return null;
+  }
   return (
     <Layout language={language}>
       <SEO title={`${card.locale[language].title} Card`} description={`Project description for ${card.locale[language].title}`}/>

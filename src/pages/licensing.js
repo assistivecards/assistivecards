@@ -12,7 +12,7 @@ export default function Template({
 
   return (
     <Layout language={"en"}>
-      <SEO title="Licensing - Assistive Cards" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
+      <SEO title="Licensing" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
       <div className="content">
         <div className="blogPostCarrier">
           <h1>Licensing</h1>
@@ -21,7 +21,7 @@ export default function Template({
 
           <h2>How to Attribute</h2>
           <p>If you are building a website, you can add a hyperlink to your html page like;</p>
-          <code>Illustrations from &lt;a href="https://assistivecards.com"&gt;Assistive Cards&lt;/a&gt;</code>
+          <code>Cards from &lt;a href="https://assistivecards.com"&gt;Assistive Cards&lt;/a&gt;</code>
           <p></p>
           <p>If you are building an app or some sort of medium you are not able to add a link, you can mention Assistive Cards in the "Licenses" or "About" screen of your application.</p>
 
@@ -31,6 +31,7 @@ export default function Template({
 
           <p><strong>One-time Payment: $99</strong></p>
           <p>We will also send you all the Illustrations in SVG and PNG format, and JSON files in a single .zip file via <em>Paddle</em>.</p>
+          <p><em style={{color: "red"}}>We will have a buy button here soon!</em></p>
         </div>
       </div>
     </Layout>

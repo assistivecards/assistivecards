@@ -13,7 +13,7 @@ export default function Template({
 
   return (
     <Layout language={"en"}>
-      <SEO title="Blog Posts - Assistive Cards" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
+      <SEO title="Blog Posts" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
       <div className="content">
         <div className="blogPostCarrier">
           <h1>Blog Posts</h1>

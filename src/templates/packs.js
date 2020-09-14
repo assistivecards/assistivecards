@@ -12,20 +12,22 @@ export default function Packs({
 
   return (
     <Layout language={language}>
-      <SEO title={`Packs`} description={`Project description for `}/>
+      <SEO title={`All Packs`} description={`List of all packs. Choose a assistive card pack to list the cards from that category.`}/>
       <div className="content">
-        <h1>All Pack {language}</h1>
-        <p style={{opacity: 0.6}}>Get assistive cards related to all</p>
+        <h1>All Packs</h1>
+        <p style={{opacity: 0.6}}>List of all packs. Choose a assistive card pack to list the cards from that category.</p>
         <div className="categories">
           {packs.edges.map(pack => {
-            return (
-              <Link to={`/${language}/pack/${pack.node.slug}/`} key={pack.node.slug}>
-                <div className="categoryItem" style={{backgroundColor: pack.node.color}}>
-                  <img src={`https://api.assistivecards.com/cards/icon/${pack.node.slug}.png`} style={{width: 100, height: 100}}/>
-                  <p>{pack.node.locale[language]} ({pack.node.count})</p>
-                </div>
-              </Link>
-            );
+            if(pack.node.locale[language]){
+              return (
+                <Link to={`/${language}/pack/${pack.node.slug}/`} key={pack.node.slug}>
+                  <div className="categoryItem" style={{backgroundColor: pack.node.color}}>
+                    <img src={`https://api.assistivecards.com/cards/icon/${pack.node.slug}.png`} style={{width: 100, height: 100}}/>
+                    <p>{pack.node.locale[language]}</p>
+                  </div>
+                </Link>
+              );
+            }
           })}
         </div>
       </div>

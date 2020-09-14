@@ -24,14 +24,16 @@ export default function Template({
         </div>
         <div className="packs">
           {cards.edges.map(card => {
-            return (
-              <Link to={`/${language}/card/${pack.slug}/${card.node.slug}/`} key={card.node.slug}>
-                <div className="packItem">
-                  <img src={`https://api.assistivecards.com/cards/${pack.slug}/${card.node.slug}.png`} style={{width: 90, height: 90}} alt={card.node.locale[language].title + " illustration"}/>
-                  <p>{card.node.locale[language].title}</p>
-                </div>
-              </Link>
-            );
+            if(card.node.locale[language]){
+              return (
+                <Link to={`/${language}/card/${pack.slug}/${card.node.slug}/`} key={card.node.slug}>
+                  <div className="packItem">
+                    <img src={`https://api.assistivecards.com/cards/${pack.slug}/${card.node.slug}.png`} style={{width: 90, height: 90}} alt={card.node.locale[language].title + " illustration"}/>
+                    <p>{card.node.locale[language].title}</p>
+                  </div>
+                </Link>
+              );
+            }
           })}
         </div>
       </div>
