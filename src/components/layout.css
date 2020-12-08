@@ -525,13 +525,13 @@ table tr td:nth-child(1) span{
   max-height: 500px;
 }
 
-.searchcontent {
+.searchContent {
   width: 60%;
   margin: auto;
   align-content: center;
 }
 
-.searchinp {
+.searcIinput {
   width: 90%;
   height: 34px;
   border: 2px solid #757575;
@@ -542,11 +542,11 @@ table tr td:nth-child(1) span{
   padding: 0 2%;
 }
 
-.searchinp:focus {
+.searchInput:focus {
   outline: none;
 }
 
-.searchbtn {
+.searchButton {
   border: 2px solid #757575;
   border-radius: 10px;
   outline: none;

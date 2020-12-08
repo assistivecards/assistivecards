@@ -39,9 +39,9 @@ class Search extends Component {
         <SEO title="Search" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
         <div className="content">
           <h1>Search</h1>
-          <div className="searchcontent">
-            <input type="text" className="searchinp" placeholder="Search" /> 
-            <button className="searchbtn" onClick="alert();" ><img src={require("../images/search.svg")} className="searchimg" /></button> 
+          <div className="searchContent">
+            <input type="text" className="searchInput" placeholder="Search" /> 
+            <button className="searchButton"><img src={require("../images/search.svg")} className="searchimg" /></button>
           </div>
         </div>
       </Layout>
