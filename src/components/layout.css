@@ -525,6 +525,38 @@ table tr td:nth-child(1) span{
   max-height: 500px;
 }
 
+.searchcontent {
+  width: 60%;
+  margin: auto;
+  align-content: center;
+}
+
+.searchinp {
+  width: 90%;
+  height: 34px;
+  border: 2px solid #757575;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Circular Std Book", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #000;
+  padding: 0 2%;
+}
+
+.searchinp:focus {
+  outline: none;
+}
+
+.searchbtn {
+  border: 2px solid #757575;
+  border-radius: 10px;
+  outline: none;
+  width: 34px;
+  height: 34px;
+  margin: 0 5px;
+  position: absolute;
+}
+
+
 @media only screen and (max-width: 1000px) {
 
   .section {

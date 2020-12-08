@@ -28,6 +28,7 @@ const Header = ({ siteTitle, language }) => {
               <Link to={`/licensing/`}>{T(language, "licensing")}</Link>
               <Link to={`/leeloo/`}>{T(language, "leeloo_aac")}</Link>
               <Link to={`/blog/`}>{T(language, "blog")}</Link>
+              <Link to={`/search/`}><img src={require("../images/search.svg")} width={18} height={18} /></Link>
             </div>
           </div>
         </div>
