@@ -307,7 +307,7 @@ table tr td:nth-child(1) span{
   border: 1px solid #343A40;
   border-radius: 10px;
   width: 250px;
-  padding: 10px;
+  padding: 15px;
   float: left;
   margin: 10px;
   font-size: 18px;
@@ -364,6 +364,26 @@ table tr td:nth-child(1) span{
   border-radius: 20px;
   background: #fafafa;
   padding: 12px 24px;
+  font-family: "Circular Std Book", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.cardInformation {
+  font-size: 15px;
+  color: #878CA4;
+  border-bottom: 1px solid #D1D2DC;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardInformation:last-child {
+  border: none;
+}
+
+.informationTexts {
+  font-size: 15px;
+  color: #8C91A7;
+
 }
 
 .section {
