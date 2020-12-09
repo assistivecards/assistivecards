@@ -32,17 +32,19 @@ class Search extends Component {
       <Layout language={"en"}>
         <SEO title="Search" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
         <div className="content">
-          <h1>Search</h1>
+    <h1>Search / {this.state.icons.map((i) => {return <b>{i.title}</b>})}</h1>
           <div className="searchContent">
             <input type="text" className="searchInput" placeholder="Search" onChange={this.handleChange.bind(this)} />
             <button className="searchButton"><img src={require("../images/search.svg")} className="searchimg" /></button>
+
+            <div className="searchOutput">
+            {this.state.icons.map((icon, i) => {
+              return <a href={icon.url} target="_blank"><img src={icon.url} className="searchImage"/></a>
+            })}
+            </div>
+
           </div>
 
-          <div>
-          {this.state.icons.map((icon, i) => {
-            return <img src={icon.url} style={{width: 50, height: 50}}/>
-          })}
-          </div>
         </div>
       </Layout>
     )

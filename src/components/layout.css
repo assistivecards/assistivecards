@@ -292,15 +292,30 @@ table tr td:nth-child(1) span{
 }
 
 .contentLeft {
-  width: 300px;
+  width: 650px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background: #fafafa;
+  padding: 50px;
+  margin-right: 10px;
+}
+
+.contentPhrases {
+}
+
+.phrasesItem {
+  border: 1px solid #343A40;
+  border-radius: 10px;
+  width: 250px;
+  padding: 10px;
+  float: left;
+  margin: 10px;
+  font-size: 18px;
 }
 
 .contentCard {
-  background: #fcfdfe;
-  border-radius: 25px;
-  padding: 20px;
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  text-align: center;
 }
 
 .downloads {
@@ -309,22 +324,46 @@ table tr td:nth-child(1) span{
 }
 
 .downloads a {
-  padding: 7px;
-  background: #fff;
+  padding: 15px 10px;
+  background: #4DCFE0;
   border: 1px solid #ddd;
-  margin: 5px;
-  margin-right: 20px;
+  margin: 15px 15px 2px 15px;
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
+  color: #fafafa;
+  font-size: 24px;
+  height: 54px;
+  transition: 0.5s;
 }
 
 .downloads a:hover {
-  background: #fafafa;
+  background: #000;
+  color: #fafafa;
+  transition: 0.5s;
 }
 
-.contentRight {
+.downloads p {
+  font-size: 12px;
+  color: #68637C;
+  width: 100%;
+  text-align: center;
+}
 
+.contentRightOne {
+  width: 300px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background: #fafafa;
+  margin: 0 auto;
+}
+
+.contentRightTwo {
+  width: 300px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background: #fafafa;
+  padding: 12px 24px;
 }
 
 .section {
@@ -531,7 +570,7 @@ table tr td:nth-child(1) span{
   align-content: center;
 }
 
-.searcIinput {
+.searchInput {
   width: 90%;
   height: 34px;
   border: 2px solid #757575;
@@ -556,6 +595,26 @@ table tr td:nth-child(1) span{
   position: absolute;
 }
 
+.searchOutput {
+  width: 100%;
+  margin: 10px 0 auto;
+  text-align: center;
+}
+
+.searchImage {
+  margin: 1px 5px;
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+  border: 2px solid #343A40;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.searchImage:hover {
+  background: #969696;
+  transition: 0.5s;
+}
 
 @media only screen and (max-width: 1000px) {
 

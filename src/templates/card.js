@@ -19,42 +19,33 @@ export default function Template({
       <SEO title={`${card.locale[language].title} Card`} description={`Project description for ${card.locale[language].title}`}/>
       <div className="content">
         <div className="contentHolder">
-          <div className="contentRight">
-            <p style={{opacity: 0.6, margin: 0}}>{pack.locale[language]}</p>
+          <div className="contentLeft">
             <h1>{card.locale[language].title} {T(language, "appName")}</h1>
+            <div className="contentCard">
+            <img src={`https://api.assistivecards.com/cards/${card.pack}/${card.slug}@2x.png`} style={{width: 210, height: 210}} alt={`${card.locale[language].title} SVG, PNG Vector`}/>
+            </div>
             <p style={{opacity: 0.6}}>Download free {card.locale[language].title} assistive card in SVG or PNG format with JSON file of translation to 37 languages. Free vectoral {card.locale[language].title} illustration and icon.</p>
             <h3>Related Phrases</h3>
-            <div>
+            <div className="contentPhrases">
               {card.locale[language].phrases.map((phrase, i) => {
-                return (<p key={i}>{phrase.type} {phrase.phrase}</p>);
+                return (<p key={i} className="phrasesItem">{phrase.type} {phrase.phrase}</p>);
               })}
             </div>
           </div>
 
-            <div className="contentLeft">
-              <div className="contentCard">
-                <img src={`https://api.assistivecards.com/cards/${card.pack}/${card.slug}@2x.png`} style={{width: 210, height: 210}} alt={`${card.locale[language].title} SVG, PNG Vector`}/>
-              </div>
-              <div className="downloads">
-                <a href="">Download PNG</a>
-                <a href="">Download SVG</a>
-                <a href="">Translation JSON</a>
-              </div>
-            </div>
-        </div>
-
-        <h2>Cards from {pack.locale[language]} Pack</h2>
-        <div className="packs">
-          {cards.edges.map(relatedCard => {
-            return (
-              <Link to={`/${language}/card/${card.pack}/${relatedCard.node.slug}/`} key={relatedCard.node.slug}>
-                <div className="packItem">
-                  <img src={`https://api.assistivecards.com/cards/${card.pack}/${relatedCard.node.slug}.png`} style={{width: 90, height: 90}} alt={relatedCard.node.locale[language].title + " illustration"}/>
-                  <p>{relatedCard.node.locale[language].title}</p>
+          <div className="contentRight">
+            <div className="contentRightOne">
+                <div className="downloads">
+                  <a href="">Download</a>
+                  <p>You'll get SVG, PNG and PDF formats</p>
                 </div>
-              </Link>
-            );
-          })}
+            </div>
+
+            <div className="contentRightTwo">
+              <h2>Overview</h2>
+            </div>
+          </div>
+          
         </div>
       </div>
     </Layout>
