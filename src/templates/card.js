@@ -20,18 +20,37 @@ export default function Template({
       <div className="content">
         <div className="contentHolder">
           <div className="contentLeft">
-            <h1>{card.locale[language].title} {T(language, "appName")}</h1>
-            <div className="contentCard">
-            <img src={`https://api.assistivecards.com/cards/${card.pack}/${card.slug}@2x.png`} style={{width: 210, height: 210}} alt={`${card.locale[language].title} SVG, PNG Vector`}/>
+            <div className="contentLeftOne">
+              <h1>{card.locale[language].title} {T(language, "appName")}</h1>
+              <div className="contentCard">
+              <img src={`https://api.assistivecards.com/cards/${card.pack}/${card.slug}@2x.png`} style={{width: 210, height: 210}} alt={`${card.locale[language].title} SVG, PNG Vector`}/>
+              </div>
+              <p style={{opacity: 0.6}}>Download free {card.locale[language].title} assistive card in SVG or PNG format with JSON file of translation to 37 languages. Free vectoral {card.locale[language].title} illustration and icon.</p>
+              <h3>Related Phrases</h3>
+              <div className="contentPhrases">
+                {card.locale[language].phrases.map((phrase, i) => {
+                  return (<p key={i} className="phrasesItem">{phrase.type} {phrase.phrase}</p>);
+                })}
+              </div>
             </div>
-            <p style={{opacity: 0.6}}>Download free {card.locale[language].title} assistive card in SVG or PNG format with JSON file of translation to 37 languages. Free vectoral {card.locale[language].title} illustration and icon.</p>
-            <h3>Related Phrases</h3>
-            <div className="contentPhrases">
-              {card.locale[language].phrases.map((phrase, i) => {
-                return (<p key={i} className="phrasesItem">{phrase.type} {phrase.phrase}</p>);
-              })}
+            <div className="contentLeftTwo">
+              <h2>Cards from {pack.locale[language]} Pack</h2>
+              <div className="packs">
+                {cards.edges.map(relatedCard => {
+                  return (
+                    <Link to={`/${language}/card/${card.pack}/${relatedCard.node.slug}/`} key={relatedCard.node.slug}>
+                      <div className="packItem">
+                        <img src={`https://api.assistivecards.com/cards/${card.pack}/${relatedCard.node.slug}.png`} style={{width: 90, height: 90}} alt={relatedCard.node.locale[language].title + " illustration"}/>
+                        <p>{relatedCard.node.locale[language].title}</p>
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
           </div>
+          
+
 
           <div className="contentRight">
             <div className="contentRightOne">
@@ -46,7 +65,7 @@ export default function Template({
               <p className="cardInformation">Category<p className="informationTexts">Playing AAC Packs</p></p>
               <p className="cardInformation">Last Update<p className="informationTexts">March 22, 2020</p></p>
               <p className="cardInformation">Total Size<p className="informationTexts">340 KB</p></p>
-              <p className="cardInformation">License<p className="informationTexts">Assistive Cards License</p></p>
+              <p className="cardInformation">License<p className="informationTexts"><Link to="../../../../licensing">Assistive Cards License</Link></p></p>
             </div>
           </div>
           

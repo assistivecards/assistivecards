@@ -19,12 +19,14 @@ class Search extends Component {
   }
 
   searchIcons(word){
-    fetch('https://api.svgapi.com/v1/Ty5WcDa63E/list/?search='+word)
+    if(word.length >= 3){
+      fetch('https://api.svgapi.com/v1/Ty5WcDa63E/list/?search='+word)
       .then(res => res.json())
       .then(parsedJSON => parsedJSON.icons)
       .then(icons => {
         this.setState({icons: icons})
       }).catch(err => console.log(err))
+    }
   }
 
   render(){
@@ -32,14 +34,14 @@ class Search extends Component {
       <Layout language={"en"}>
         <SEO title="Search" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
         <div className="content">
-    <h1>Search / {this.state.icons.map((i) => {return <b>{i.title}</b>})}</h1>
+    <h1>Search / {this.state.icons.length ? this.state.icons[0].title : ""}</h1>
           <div className="searchContent">
             <input type="text" className="searchInput" placeholder="Search" onChange={this.handleChange.bind(this)} />
             <button className="searchButton"><img src={require("../images/search.svg")} className="searchimg" /></button>
 
             <div className="searchOutput">
             {this.state.icons.map((icon, i) => {
-              return <a href={icon.url} target="_blank"><img src={icon.url} className="searchImage"/></a>
+              return <Link to={icon.url}><img src={icon.url} className="searchImage"/></Link>
             })}
             </div>
 

@@ -228,6 +228,19 @@ table tr td:nth-child(1) span{
   margin-left: 20px;
 }
 
+.searchIcon {
+  position: relative;
+  top: 6px;
+  border-radius: 50%;
+  padding: 5px;
+  width: 27px;
+  transition: 0.5ms;
+}
+
+.searchIcon:hover {
+  transition: 0.5ms;
+  background: #4799ca;
+}
 
 .footer {
   background: rgba(212,225,244, 0.08);
@@ -292,6 +305,11 @@ table tr td:nth-child(1) span{
 }
 
 .contentLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentLeftOne {
   width: 650px;
   border: 1px solid #fff;
   border-radius: 20px;
@@ -300,22 +318,34 @@ table tr td:nth-child(1) span{
   margin-right: 10px;
 }
 
+.contentLeftTwo {
+  width: 650px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background: #fafafa;
+  padding: 50px;
+  margin: 10px 0;
+}
+
 .contentPhrases {
 }
 
 .phrasesItem {
-  border: 1px solid #343A40;
+  border: 1px solid #E1E4E9;
   border-radius: 10px;
-  width: 250px;
+  width: 260px;
   padding: 15px;
   float: left;
-  margin: 10px;
-  font-size: 18px;
+  margin-right: 10px;
+  font-size: 15px;
 }
 
 .contentCard {
   width: 100%;
   text-align: center;
+  background: #F5FCFD;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .downloads {
@@ -350,12 +380,17 @@ table tr td:nth-child(1) span{
   text-align: center;
 }
 
+.contentRight {
+}
+
 .contentRightOne {
   width: 300px;
   border: 1px solid #fff;
   border-radius: 20px;
   background: #fafafa;
   margin: 0 auto;
+  position: sticky;
+  top: 50px;
 }
 
 .contentRightTwo {
@@ -365,6 +400,9 @@ table tr td:nth-child(1) span{
   background: #fafafa;
   padding: 12px 24px;
   font-family: "Circular Std Book", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  position: sticky;
+  top: 170px;
+  margin: 10px 0;
 }
 
 .cardInformation {
@@ -383,7 +421,15 @@ table tr td:nth-child(1) span{
 .informationTexts {
   font-size: 15px;
   color: #8C91A7;
+}
 
+.informationTexts a {
+  color: #8C91A7;
+  text-decoration: none;
+}
+
+.informationTexts a:hover {
+  text-decoration: underline;
 }
 
 .section {
