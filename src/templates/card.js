@@ -65,7 +65,7 @@ export default function Template({
               <p className="cardInformation">Category<p className="informationTexts">Playing AAC Packs</p></p>
               <p className="cardInformation">Last Update<p className="informationTexts">March 22, 2020</p></p>
               <p className="cardInformation">Total Size<p className="informationTexts">340 KB</p></p>
-              <p className="cardInformation">License<p className="informationTexts"><Link to="../../../../licensing">Assistive Cards License</Link></p></p>
+              <p className="cardInformation">License<p className="informationTexts"><Link to="/licensing/">Assistive Cards License</Link></p></p>
             </div>
           </div>
           
