@@ -55,7 +55,7 @@ a span span {
 a svg {
   width: 20px; height: 20px;
   padding-bottom: 2px;
-  fill: #aaa;
+  /*fill: #aaa;*/
 }
 
 a:active,
@@ -228,18 +228,20 @@ table tr td:nth-child(1) span{
   margin-left: 20px;
 }
 
-.searchIcon {
+.headerSearchIcon {
   position: relative;
   top: 6px;
   border-radius: 50%;
   padding: 5px;
   width: 27px;
-  transition: 0.5ms;
+  height: 27px;
+  transition: 200ms all;
+  stroke: #1A1A1A;
 }
 
-.searchIcon:hover {
-  transition: 0.5ms;
+.headerSearchIcon:hover {
   background: #4799ca;
+  stroke: #fff;
 }
 
 .footer {
@@ -301,6 +303,7 @@ table tr td:nth-child(1) span{
 
 .contentHolder {
   display: flex;
+  align-items: flex-start;
   flex-direction: row;
 }
 
@@ -313,8 +316,7 @@ table tr td:nth-child(1) span{
   width: 650px;
   border: 1px solid #fff;
   border-radius: 20px;
-  background: #fafafa;
-  padding: 50px;
+  padding: 20px;
   margin-right: 10px;
 }
 
@@ -322,22 +324,24 @@ table tr td:nth-child(1) span{
   width: 650px;
   border: 1px solid #fff;
   border-radius: 20px;
-  background: #fafafa;
   padding: 50px;
   margin: 10px 0;
 }
 
 .contentPhrases {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .phrasesItem {
   border: 1px solid #E1E4E9;
   border-radius: 10px;
-  width: 260px;
+  width: calc(50% - 10px);
   padding: 15px;
-  float: left;
   margin-right: 10px;
   font-size: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .contentCard {
@@ -381,6 +385,10 @@ table tr td:nth-child(1) span{
 }
 
 .contentRight {
+  position: sticky;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .contentRightOne {
@@ -389,8 +397,6 @@ table tr td:nth-child(1) span{
   border-radius: 20px;
   background: #fafafa;
   margin: 0 auto;
-  position: sticky;
-  top: 50px;
 }
 
 .contentRightTwo {
@@ -400,8 +406,6 @@ table tr td:nth-child(1) span{
   background: #fafafa;
   padding: 12px 24px;
   font-family: "Circular Std Book", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  position: sticky;
-  top: 170px;
   margin: 10px 0;
 }
 

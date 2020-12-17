@@ -25,7 +25,7 @@ export default function Template({
               <div className="contentCard">
               <img src={`https://api.assistivecards.com/cards/${card.pack}/${card.slug}@2x.png`} style={{width: 210, height: 210}} alt={`${card.locale[language].title} SVG, PNG Vector`}/>
               </div>
-              <p style={{opacity: 0.6}}>Download free {card.locale[language].title} assistive card in SVG or PNG format with JSON file of translation to 37 languages. Free vectoral {card.locale[language].title} illustration and icon.</p>
+              <p style={{opacity: 0.6, marginTop: 10}}>Download free {card.locale[language].title} assistive card in SVG or PNG format with JSON file of translation to 37 languages. Free vectoral {card.locale[language].title} illustration and icon.</p>
               <h3>Related Phrases</h3>
               <div className="contentPhrases">
                 {card.locale[language].phrases.map((phrase, i) => {
