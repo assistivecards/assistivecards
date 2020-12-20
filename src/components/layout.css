@@ -377,6 +377,22 @@ table tr td:nth-child(1) span{
   transition: 0.5s;
 }
 
+.downloadItems {
+  display: none;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+}
+
+.downloadItemsActive {
+  display: flex;
+  flex-direction: column;
+}
+
+.downloadItems a {
+  margin: 0 15px;
+}
+
 .downloads p {
   font-size: 12px;
   color: #68637C;
@@ -788,6 +804,12 @@ table tr td:nth-child(1) span{
     max-height: 300px;
   }
 
+  .contentHolder {
+    display: flex;
+    flex-direction: row;
+  }
+  
+
   .footer {
     overflow: hidden;
   }
@@ -832,6 +854,7 @@ table tr td:nth-child(1) span{
   .packs {
     grid-template-columns: repeat(auto-fill,160px);
     grid-gap: 10px;
+    justify-content: center;
   }
 
   .packItem {
@@ -839,6 +862,14 @@ table tr td:nth-child(1) span{
     height: 160px;
   }
 
+  .contentHolder {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contentLeft, .contentLeftOne, .contentLeftTwo, .phrasesItem, .contentRight, .contentRightOne, .contentRightTwo {
+    width: 100%;
+  }
 }
 
 @keyframes scaleAnim {

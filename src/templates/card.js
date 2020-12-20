@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import T from "../ui"
 
+const downloadDrops = "downloadItems"
 
 export default function Template({
   data, path // this prop will be injected by the GraphQL query below.
@@ -14,6 +15,7 @@ export default function Template({
   if(!card.locale[language]){
     return null;
   }
+
   return (
     <Layout language={language}>
       <SEO title={`${card.locale[language].title} Card`} description={`Project description for ${card.locale[language].title}`}/>
@@ -55,7 +57,12 @@ export default function Template({
           <div className="contentRight">
             <div className="contentRightOne">
                 <div className="downloads">
-                  <a href="">Download</a>
+                  <Link>Download</Link>
+                  <div className={downloadDrops}>
+                    <Link to="">Download as PNG</Link>
+                    <Link to="">Download as SVG</Link>
+                    <Link to="">Download as JSON</Link>
+                  </div>
                   <p>You'll get SVG, PNG and PDF formats</p>
                 </div>
             </div>
