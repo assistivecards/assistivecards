@@ -27,6 +27,7 @@ const Header = ({ siteTitle, language }) => {
               <Link to={`/${language}/packs/`}>{T(language, "allpacks")}</Link>
               <Link to={`/licensing/`}>{T(language, "licensing")}</Link>
               <Link to={`/leeloo/`}>{T(language, "leeloo_aac")}</Link>
+              <Link to={`/huni/`}>{T(language, "huni")}</Link>
               <Link to={`/blog/`}>{T(language, "blog")}</Link>
               <Link to={`/search/`}>
                 <svg xmlns="http://www.w3.org/2000/svg" className="headerSearchIcon" viewBox="0 0 24 24" strokeWidth="3" stroke="#1A1A1A" fill="none" strokeLinecap="round" strokeLinejoin="round">

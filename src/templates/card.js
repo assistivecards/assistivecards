@@ -1,25 +1,45 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import T from "../ui"
 
-const downloadDrops = "downloadItems"
+import BreadCrumbs from "../components/breadcrumb"
 
 export default function Template({
   data, path // this prop will be injected by the GraphQL query below.
 }) {
   const { pack, card, cards } = data;
+  
+  let [modal, setModal] = useState(false);
+  
+  let toggleModal = () => {
+    if(modal){
+      setModal(false)
+    } else {
+      setModal(true)
+    }
+  }
+  
   let language = path.split("/")[1];
   if(!card.locale[language]){
     return null;
   }
+  
+  
+
 
   return (
     <Layout language={language}>
       <SEO title={`${card.locale[language].title} Card`} description={`Project description for ${card.locale[language].title}`}/>
       <div className="content">
+      <BreadCrumbs links={[
+            {title: "Home", link: "/"},
+            {title: "Packs", link: `/${language}/packs`},
+            {title: `${pack.locale[language]}`, link: `/${language}/pack/${pack.locale[language].toLowerCase()}`},
+            {title: `${card.locale[language].title}`, link: `/${language}/card/${pack.locale[language].toLowerCase()}/${card.locale[language].title.toLowerCase()}`}
+          ]} />
         <div className="contentHolder">
           <div className="contentLeft">
             <div className="contentLeftOne">
@@ -56,12 +76,12 @@ export default function Template({
 
           <div className="contentRight">
             <div className="contentRightOne">
-                <div className="downloads">
+                <div className="downloads" onClick={() => toggleModal()}>
                   <Link>Download</Link>
-                  <div className={downloadDrops}>
-                    <Link to="">Download as PNG</Link>
-                    <Link to="">Download as SVG</Link>
-                    <Link to="">Download as JSON</Link>
+                  <div className={modal ? "downloadItemsActive" : "downloadItems"}>
+                    <Link to="">PNG</Link>
+                    <Link to="">SVG</Link>
+                    <Link to="">JSON</Link>
                   </div>
                   <p>You'll get SVG, PNG and PDF formats</p>
                 </div>

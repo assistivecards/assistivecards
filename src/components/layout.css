@@ -301,6 +301,27 @@ table tr td:nth-child(1) span{
   padding-top: 0px;
 }
 
+.breadcrumbList {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.breadcrumbList a{
+  text-decoration: none;
+  color: #514d68;
+}
+
+.breadcrumbListItem {
+  display: flex;
+}
+
+.breadcrumbLink {
+  border: 1px solid #837F93;
+  background-color: #fafafa;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
 .contentHolder {
   display: flex;
   align-items: flex-start;
@@ -369,12 +390,13 @@ table tr td:nth-child(1) span{
   font-size: 24px;
   height: 54px;
   transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .downloads a:hover {
   background: #000;
   color: #fafafa;
-  transition: 0.5s;
 }
 
 .downloadItems {
@@ -386,11 +408,11 @@ table tr td:nth-child(1) span{
 
 .downloadItemsActive {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
-.downloadItems a {
-  margin: 0 15px;
+.downloadItemsActive a {
+  margin: 10px 2%;
 }
 
 .downloads p {
@@ -840,6 +862,9 @@ table tr td:nth-child(1) span{
     font-size: 100%;
   }
 
+  .content {
+    padding: 0;
+  }
 
   .categories {
     grid-template-columns: repeat(auto-fill,160px);
@@ -870,6 +895,16 @@ table tr td:nth-child(1) span{
   .contentLeft, .contentLeftOne, .contentLeftTwo, .phrasesItem, .contentRight, .contentRightOne, .contentRightTwo {
     width: 100%;
   }
+
+  .contentLeftTwo {
+    padding: 10px;
+  }
+
+  .contentLeftTwo h2 {
+    padding: 10px;
+    text-align: center;
+  }
+
 }
 
 @keyframes scaleAnim {

@@ -7,6 +7,7 @@ import Screenshot1 from "../components/screenshot1"
 import Screenshot2 from "../components/screenshot2"
 import Screenshot3 from "../components/screenshot3"
 
+import BreadCrumbs from "../components/breadcrumb"
 
 class IndexPage extends React.Component {
   state = {
@@ -17,7 +18,12 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO title="Huni AI" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
-
+        <div className="content">
+          <BreadCrumbs links={[
+            {title: "Home", link: "/"},
+            {title: "Huni", link: "huni"}
+          ]} />
+        </div>
 
         <div className="section">
           <div className="sectionDescription right">

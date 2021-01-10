@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import T from "../ui"
-import { element } from "prop-types"
+import BreadCrumbs from "../components/breadcrumb"
 
 class Search extends Component {
   constructor(props){
@@ -34,7 +34,11 @@ class Search extends Component {
       <Layout language={"en"}>
         <SEO title="Search" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
         <div className="content">
-    <h1>Search / {this.state.icons.length ? this.state.icons[0].title : ""}</h1>
+          <BreadCrumbs links={[
+            {title: "Home", link: "/"},
+            {title: "Search", link: "/search"}
+          ]} />
+          <h1>Search / {this.state.icons.length ? this.state.icons[0].title : ""}</h1>
           <div className="searchContent">
             <input type="text" className="searchInput" placeholder="Search" onChange={this.handleChange.bind(this)} />
             <button className="searchButton"><img src={require("../images/search.svg")} className="searchimg" /></button>
