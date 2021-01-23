@@ -18,9 +18,8 @@ export default function Template({
       <div className="content">
       <BreadCrumbs links={[
             {title: "Home", link: "/"},
-            {title: "Packs", link: `/${language}/packs`},
-            {title: `${pack.locale[language]}`, link: `/${language}/pack/${pack.locale[language].toLowerCase()}`}
-          ]} />
+            {title: "Packs", link: `/${language}/packs`}
+      ]} />
         <div style={{display: "flex", flexDirection: "row"}}>
           <div>
             <h1>{pack.locale[language]} Pack</h1>

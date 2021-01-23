@@ -724,6 +724,33 @@ table tr td:nth-child(1) span{
   transition: 0.5s;
 }
 
+.team {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 20%);
+  justify-content: space-between;
+}
+
+.teamMember {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.teamMember img {
+  border-radius: 50%;
+}
+
+.teamMember h4:first-of-type {
+  margin-bottom: -12px;
+}
+
+.socials img {
+  width: 50px;
+  margin-left: 5px;
+}
+
+
 @media only screen and (max-width: 1000px) {
 
   .section {

@@ -17,8 +17,7 @@ export default function Template({
       <SEO title="Licensing" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
       <div className="content">
         <BreadCrumbs links={[
-          {title: "Home", link: "/"},
-          {title: "Licensing", link: "/licensing"}
+          {title: "Home", link: "/"}
         ]} />
         <div className="blogPostCarrier">
           <h1>Licensing</h1>

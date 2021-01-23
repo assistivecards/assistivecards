@@ -18,8 +18,7 @@ export default function Template({
       <div className="content">
         <BreadCrumbs links={[
           {title: "Home", link: "/"},
-          {title: "Blog", link: "/blog/"},
-          {title: `${frontmatter.title}`, link: `${frontmatter.slug}`}
+          {title: "Blog", link: "/blog/"}
         ]} />
         <div className="blogPostCarrier">
           <h1>{frontmatter.title}</h1>

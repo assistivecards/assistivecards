@@ -20,8 +20,7 @@ class IndexPage extends React.Component {
         <SEO title="Leeloo AAC" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
         <div className="content">
         <BreadCrumbs links={[
-          {title: "Home", link: "/"},
-          {title: "Leeloo AAC", link: "/leeloo"}
+          {title: "Home", link: "/"}
         ]} />
         </div>
 

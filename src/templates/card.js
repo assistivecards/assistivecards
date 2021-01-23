@@ -37,8 +37,7 @@ export default function Template({
       <BreadCrumbs links={[
             {title: "Home", link: "/"},
             {title: "Packs", link: `/${language}/packs`},
-            {title: `${pack.locale[language]}`, link: `/${language}/pack/${pack.locale[language].toLowerCase()}`},
-            {title: `${card.locale[language].title}`, link: `/${language}/card/${pack.locale[language].toLowerCase()}/${card.locale[language].title.toLowerCase()}`}
+            {title: `${pack.locale[language]}`, link: `/${language}/pack/${pack.locale[language].toLowerCase()}`}
           ]} />
         <div className="contentHolder">
           <div className="contentLeft">

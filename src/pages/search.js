@@ -35,8 +35,7 @@ class Search extends Component {
         <SEO title="Search" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
         <div className="content">
           <BreadCrumbs links={[
-            {title: "Home", link: "/"},
-            {title: "Search", link: "/search"}
+            {title: "Home", link: "/"}
           ]} />
           <h1>Search / {this.state.icons.length ? this.state.icons[0].title : ""}</h1>
           <div className="searchContent">
