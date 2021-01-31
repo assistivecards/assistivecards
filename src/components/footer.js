@@ -17,9 +17,9 @@ const Footer = ({ siteTitle, language }) => (
           <Link to="/team/">{T(language, "awesome_people")}</Link>
         </div>
         <div>
-        <Link to={`/leeloo/`}><img src={require("../images/leeloo/app.png")} style={{width: 100, height: 100}} alt={"leeloo aac"}/></Link>
-        <Link to={`/huni/`}><img src={require("../images/huni/huni.png")} style={{width: 100, height: 100}} alt={"huni"}/></Link>
-        <Link to={`/wingo/`}><img src={require("../images/wingo/wingo.png")} style={{width: 100, height: 100}} alt={"wingo"}/></Link>
+          <Link to={`/leeloo/`}><img src={require("../images/leeloo/app.png")} style={{width: 80, height: 80}} alt={"leeloo aac"}/></Link>
+          <Link to={`/huni/`}><img src={require("../images/huni/huni.png")} style={{width: 80, height: 80}} alt={"huni"}/></Link>
+          <Link to={`/wingo/`}><img src={require("../images/wingo/wingo.png")} style={{width: 80, height: 80}} alt={"wingo"}/></Link>
         </div>
       </div>
       <div className="footerLinks">

@@ -11,9 +11,9 @@ export default function Template({
   data, path // this prop will be injected by the GraphQL query below.
 }) {
   const { pack, card, cards } = data;
-  
+
   let [modal, setModal] = useState(false);
-  
+
   let toggleModal = () => {
     if(modal){
       setModal(false)
@@ -21,13 +21,13 @@ export default function Template({
       setModal(true)
     }
   }
-  
+
   let language = path.split("/")[1];
   if(!card.locale[language]){
     return null;
   }
-  
-  
+
+
 
 
   return (
@@ -70,19 +70,19 @@ export default function Template({
               </div>
             </div>
           </div>
-          
+
 
 
           <div className="contentRight">
             <div className="contentRightOne">
                 <div className="downloads" onClick={() => toggleModal()}>
-                  <Link>Download</Link>
+                  <div className="btn">Download</div>
                   <div className={modal ? "downloadItemsActive" : "downloadItems"}>
-                    <Link to="">PNG</Link>
-                    <Link to="">SVG</Link>
-                    <Link to="">JSON</Link>
+                    <a href={`https://api.assistivecards.com/cards/${pack.slug}/${card.slug}@2x.png`} download={`${card.slug}.png`}>PNG</a>
+                    <a href={`https://api.assistivecards.com/cards/${pack.slug}/${card.slug}.svg`} download={`${card.slug}.svg`}>SVG</a>
+                    <a href={`https://api.assistivecards.com/packs/${language}/${pack.slug}.json`} download={`${card.slug}.png`}>JSON</a>
                   </div>
-                  <p>You'll get SVG, PNG and PDF formats</p>
+                  <p>You'll get SVG, PNG and JSON formats</p>
                 </div>
             </div>
 
@@ -94,7 +94,7 @@ export default function Template({
               <p className="cardInformation">License<p className="informationTexts"><Link to="/licensing/">Assistive Cards License</Link></p></p>
             </div>
           </div>
-          
+
         </div>
       </div>
     </Layout>
