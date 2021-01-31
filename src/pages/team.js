@@ -11,9 +11,7 @@ export default class Team extends React.Component {
             <Layout language={"en"}>
             <SEO title="Our Team" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
             <div className="content">
-                <BreadCrumbs links={[
-                    {title: "Home", link: "/"}
-                ]} />
+                
                 <h2>Our Team</h2>
                 <div className="team">
                     <div className="teamMember">

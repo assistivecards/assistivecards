@@ -1,9 +1,9 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BreadCrumbs from "../components/breadcrumb"
-import Screenshot1 from "../components/screenshot1"
 
 export default class Apps extends React.Component{
     render(){
@@ -11,74 +11,41 @@ export default class Apps extends React.Component{
             <Layout language={"en"}>
             <SEO title="Apps" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
             <div className="content">
-                <BreadCrumbs links={[
-                    {title: "Home", link: "/"}
-                ]} />
+                <h2>Our Apps</h2>
+                <p>Apps made with assistivecards.</p>
+                <div className="apps" style={{width: "100%", margin: "auto"}}>
 
-                <div className="apps">
-                    <div className="section" style={{width: "100%"}}>
-                    <div className="sectionDescription right">
-                        <img src={require("../images/leeloo/app.png")} style={{width: 100, height: 100, marginBottom: 25}}/>
+                    <div className="app">
+                        <Link to={"/leeloo/"}>
+                        <img src={require("../images/leeloo/app.png")}/>
+                        <div className="appContent">
+                            <h1>Leeloo AAC - Autism Speech App</h1>
+                            <p>Helps non-verbal kids to communicate with their parents, teachers and friends. <br/>
+                            <Link to="/leeloo/" style={{color: "#6989FF"}}>Learn more..</Link></p>
+                        </div>
+                        </Link>
+                    </div>
+                    
+                    <div className="app">
+                        <Link to={"/huni/"}>
+                        <img src={require("../images/huni/huni.png")}/>
+                        <div className="appContent">
+                            <h1>Huni - Delayed Speech Therapy</h1>
+                            <p>Speech Recognition powered Speech Training SLP App designed for children. <br/>
+                            <Link to="/huni/" style={{color: "#63B2B5"}}>Learn more..</Link></p>
+                        </div>
+                        </Link>
+                    </div>
 
-                        <h1>Leeloo AAC App</h1>
-
-                        <p style={{fontSize: 23}}>Helps non-verbal kids to communicate with their parents, teachers and friends.</p>
-
-                        <div className="download">
-                        <a href="https://apps.apple.com/us/app/leeloo-aac-autism-speech-app/id1508952198" target="_blank">
-                            <img src={require("../images/as.svg")} />
-                        </a>
-                        <a href="https://play.google.com/store/apps/details?id=org.dreamoriented.leeloo" target="_blank">
-                            <img src={require("../images/gp.svg")} />
-                        </a>
+                    <div className="app">
+                        <img src={require("../images/wingo/wingo.png")}/>
+                        <div className="appContent">
+                            <h1>Wingo - Daily Planner for Kids</h1>
+                            <p>Coming Soon..</p>
                         </div>
                     </div>
-
-
-                    <div className="sectionDescription right" style={{textAlign: "right"}}>
-                        <img src={require("../images/huni/huni.png")} style={{width: 100, height: 100, marginBottom: 25}}/>
-
-                        <h1>Huni App</h1>
-
-                        <p style={{fontSize: 23}}>Helps non-verbal kids to communicate with their parents, teachers and friends.</p>
-
-                        <div className="download" style={{float: "right"}}>
-                        <a href="https://apps.apple.com/us/app/leeloo-aac-autism-speech-app/id1508952198" target="_blank">
-                            <img src={require("../images/as.svg")} />
-                        </a>
-                        <a href="https://play.google.com/store/apps/details?id=org.dreamoriented.leeloo" target="_blank">
-                            <img src={require("../images/gp.svg")} />
-                        </a>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div className="sectionDescription right">
-                        <img src={require("../images/wingo/wingo.png")} style={{width: 100, height: 100, marginBottom: 25}}/>
-
-                        <h1>Leeloo AAC App</h1>
-
-                        <p style={{fontSize: 23}}>Helps non-verbal kids to communicate with their parents, teachers and friends.</p>
-
-                        <div className="download">
-                        <a href="https://apps.apple.com/us/app/leeloo-aac-autism-speech-app/id1508952198" target="_blank">
-                            <img src={require("../images/as.svg")} />
-                        </a>
-                        <a href="https://play.google.com/store/apps/details?id=org.dreamoriented.leeloo" target="_blank">
-                            <img src={require("../images/gp.svg")} />
-                        </a>
-                        </div>
-                    </div>
-
-
 
                 </div>
-
-
-
-                
-
-
             </div>
             </Layout>
         )
