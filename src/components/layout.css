@@ -743,10 +743,15 @@ table tr td:nth-child(1) span{
 
 .teamMember h4:first-of-type {
   margin-bottom: -12px;
+  font-size: 1.3em;
+}
+
+.teamMember h4:nth-of-type(2) {
+  font-weight: normal;
 }
 
 .socials img {
-  width: 50px;
+  width: 30px;
   margin-left: 5px;
 }
 

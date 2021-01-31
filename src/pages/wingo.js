@@ -7,29 +7,26 @@ import Screenshot1 from "../components/screenshot1"
 import Screenshot2 from "../components/screenshot2"
 import Screenshot3 from "../components/screenshot3"
 
-class IndexPage extends React.Component {
-  state = {
+export default class Wingo extends React.Component{
+    render(){
+        return(
+            <Layout>
+                <SEO title="Wingo - Daily planner for kids." description="Helps non-verbal kids to communicate with their parents, teachers and friends." />
 
-  }
-
-  render(){
-    return (
-      <Layout>
-        <SEO title="Huni AI" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
-        <div className="section">
+                <div className="section">
           <div className="sectionDescription right">
-            <img src={require("../images/huni/huni.png")} style={{width: 100, height: 100, marginBottom: 25}}/>
+            <img src={require("../images/wingo/wingo.png")} style={{width: 100, height: 100, marginBottom: 25}}/>
 
-            <h1 style={{fontSize: 38}}>Learn to speak with<br/>
-            Huni App</h1>
+            <h1 style={{fontSize: 38}}>Do your childs day with<br/>
+            Wingo App</h1>
 
-            <p style={{fontSize: 23}}>Speech Recognition powered Speech Training SLP App designed for children.</p>
+            <p style={{fontSize: 23}}>Helps non-verbal kids to communicate with their parents, teachers and friends.</p>
 
             <div className="download">
               <a href="https://apps.apple.com/us/app/leeloo-aac-autism-speech-app/id1508952198" target="_blank">
                 <img src={require("../images/as.svg")} />
               </a>
-              <a href="https://play.google.com/store/apps/details?id=org.dreamoriented.huni" target="_blank">
+              <a href="https://play.google.com/store/apps/details?id=org.dreamoriented.leeloo" target="_blank">
                 <img src={require("../images/gp.svg")} />
               </a>
             </div>
@@ -97,9 +94,8 @@ class IndexPage extends React.Component {
           </div>
 
         </div>
-      </Layout>
-    )
-  }
-}
 
-export default IndexPage
+            </Layout>
+        )
+    }
+}

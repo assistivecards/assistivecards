@@ -7,8 +7,6 @@ import Screenshot1 from "../components/screenshot1"
 import Screenshot2 from "../components/screenshot2"
 import Screenshot3 from "../components/screenshot3"
 
-import BreadCrumbs from "../components/breadcrumb"
-
 class IndexPage extends React.Component {
   state = {
 
@@ -18,15 +16,9 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO title="Leeloo AAC" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
-        <div className="content">
-        <BreadCrumbs links={[
-          {title: "Home", link: "/"}
-        ]} />
-        </div>
-
         <div className="section">
           <div className="sectionDescription right">
-            <img src={require("../images/app.png")} style={{width: 100, height: 100, marginBottom: 25}}/>
+            <img src={require("../images/leeloo/app.png")} style={{width: 100, height: 100, marginBottom: 25}}/>
 
             <h1 style={{fontSize: 38}}>Say hello to<br/>
             Leeloo AAC App</h1>

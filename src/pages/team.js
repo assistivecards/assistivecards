@@ -2,7 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BreadCrumb from "../components/breadcrumb"
 import BreadCrumbs from "../components/breadcrumb"
 
 export default class Team extends React.Component {
@@ -22,8 +21,7 @@ export default class Team extends React.Component {
                         <h4>Burak Tokak</h4>
                         <h4>Developer</h4>
                         <div className="socials">    
-                            <a href="https://twitter.com/btkmakes" ><img src={require("../images/twitter.svg")} /></a>
-                            <a href="https://github.com/btk" ><img src={require("../images/github.svg")} /></a>
+                            <a href="https://github.com/btk" ><img src={require("../images/social/github.svg")} /></a>
                         </div>
                     </div>
 
@@ -32,7 +30,7 @@ export default class Team extends React.Component {
                         <h4>Hannah Milan</h4>
                         <h4>Designer</h4>
                         <div className="socials">
-                        <a href="https://twitter.com/humbleuidesigns"><img src={require("../images/twitter.svg")} /></a>
+                        <a href="https://twitter.com/humbleuidesigns"><img src={require("../images/social/twitter.svg")} /></a>
                         </div>
                     </div>
                     
@@ -41,8 +39,8 @@ export default class Team extends React.Component {
                         <h4>Enes Coşan UZ</h4>
                         <h4>Developer</h4>
                         <div className="socials">
-                            <a href="https://twitter.com/enescosanuz" ><img src={require("../images/twitter.svg")} /></a>
-                            <a href="https://github.com/enescosanuz" ><img src={require("../images/github.svg")} /></a>
+                            <a href="https://twitter.com/enescosanuz" ><img src={require("../images/social/twitter.svg")} /></a>
+                            <a href="https://github.com/enescosanuz" ><img src={require("../images/social/github.svg")} /></a>
                         </div>
                     </div>
 
@@ -51,7 +49,8 @@ export default class Team extends React.Component {
                         <h4>Yaren Kurt</h4>
                         <h4>Illustrator</h4>
                         <div className="socials">
-                            <a href="https://www.behance.net/scytoms"><img src={require("../images/behance.svg")} /></a>
+                            <a href="https://twitter.com/scytoms" ><img src={require("../images/social/twitter.svg")} /></a>
+                            <a href="https://www.behance.net/scytoms"><img src={require("../images/social/behance.svg")} /></a>
                         </div>
                     </div>
 
@@ -60,7 +59,7 @@ export default class Team extends React.Component {
                         <h4>Ebru Kaya</h4>
                         <h4>Developer</h4>
                         <div className="socials">
-                            <a href="https://github.com/ebru"><img src={require("../images/github.svg")} /></a>
+                            <a href="https://github.com/ebru"><img src={require("../images/social/github.svg")} /></a>
                         </div>
                     </div>
                 </div>

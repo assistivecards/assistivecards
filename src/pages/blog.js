@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import T from "../ui"
 
-import Breadcrumb from "../components/breadcrumb"
 import BreadCrumbs from "../components/breadcrumb"
 
 export default function Template({

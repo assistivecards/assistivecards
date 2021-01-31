@@ -5,8 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import T from "../ui"
 
-import BreadCrumb from "../components/breadcrumb"
-import BreadCrumbs from "../components/breadcrumb"
 
 export default function Template({
   data, path // this prop will be injected by the GraphQL query below.
@@ -16,9 +14,6 @@ export default function Template({
     <Layout language={"en"}>
       <SEO title="Licensing" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
       <div className="content">
-        <BreadCrumbs links={[
-          {title: "Home", link: "/"}
-        ]} />
         <div className="blogPostCarrier">
           <h1>Licensing</h1>
           <p>Assistive Cards are free for personal and non-commercial projects, and you are required to give proper attribution.</p>
