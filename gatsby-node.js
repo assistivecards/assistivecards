@@ -29,10 +29,12 @@ async function pullCacheable(cache, key){
 exports.sourceNodes = async ({ actions, cache }) => {
   const { createNode } = actions;
 
-  const lang = await pullCacheable(cache, `languages`);
+  let lang = {};
 
   if(ONLY_RENDER_EN){
-    lang.languages = [{code: "en"}];
+    lang = {languages: [{code: "en"}]};
+  }else{
+    lang = await pullCacheable(cache, `languages`)
   }
 
   await sourceLang(lang, createNode);
@@ -184,7 +186,13 @@ exports.createPages = async ({ actions, graphql, reporter, cache }) => {
 
 
   const packsTemplate = require.resolve(`./src/templates/packs.js`)
-  const lang = await pullCacheable(cache, `languages`);
+
+  if(ONLY_RENDER_EN){
+    lang = {languages: [{code: "en"}]};
+  }else{
+    lang = await pullCacheable(cache, `languages`)
+  }
+
 
   for (var i = 0; i < lang.languages.length; i++) {
     let l = lang.languages[i];
