@@ -4,6 +4,7 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import BreadCrumbs from "../components/breadcrumb"
 
 export default function Template({
   data, path // this prop will be injected by the GraphQL query below.
@@ -15,6 +16,10 @@ export default function Template({
     <Layout language={language}>
       <SEO title={`${pack.locale[language]} Pack`} description={`Project description for ${pack.locale[language]}`}/>
       <div className="content">
+      <BreadCrumbs links={[
+            {title: "Home", link: "/"},
+            {title: "Packs", link: `/${language}/packs`}
+      ]} />
         <div style={{display: "flex", flexDirection: "row"}}>
           <div>
             <h1>{pack.locale[language]} Pack</h1>

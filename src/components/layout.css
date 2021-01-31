@@ -55,7 +55,7 @@ a span span {
 a svg {
   width: 20px; height: 20px;
   padding-bottom: 2px;
-  fill: #aaa;
+  /*fill: #aaa;*/
 }
 
 a:active,
@@ -228,6 +228,21 @@ table tr td:nth-child(1) span{
   margin-left: 20px;
 }
 
+.headerSearchIcon {
+  position: relative;
+  top: 6px;
+  border-radius: 50%;
+  padding: 5px;
+  width: 27px;
+  height: 27px;
+  transition: 200ms all;
+  stroke: #1A1A1A;
+}
+
+.headerSearchIcon:hover {
+  background: #4799ca;
+  stroke: #fff;
+}
 
 .footer {
   background: rgba(212,225,244, 0.08);
@@ -286,21 +301,76 @@ table tr td:nth-child(1) span{
   padding-top: 0px;
 }
 
+.breadcrumbList {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.breadcrumbList a{
+  text-decoration: none;
+  color: #514d68;
+}
+
+.breadcrumbListItem {
+  display: flex;
+}
+
+.breadcrumbLink {
+  border: 1px solid #837F93;
+  background-color: #fafafa;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
 .contentHolder {
   display: flex;
+  align-items: flex-start;
   flex-direction: row;
 }
 
 .contentLeft {
-  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentLeftOne {
+  width: 650px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 20px;
+  margin-right: 10px;
+}
+
+.contentLeftTwo {
+  width: 650px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 50px;
+  margin: 10px 0;
+}
+
+.contentPhrases {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.phrasesItem {
+  border: 1px solid #E1E4E9;
+  border-radius: 10px;
+  width: calc(50% - 10px);
+  padding: 15px;
+  margin-right: 10px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .contentCard {
-  background: #fcfdfe;
-  border-radius: 25px;
+  width: 100%;
+  text-align: center;
+  background: #F5FCFD;
   padding: 20px;
-  width: 250px;
-  height: 250px;
+  border-radius: 10px;
 }
 
 .downloads {
@@ -309,22 +379,99 @@ table tr td:nth-child(1) span{
 }
 
 .downloads a {
-  padding: 7px;
-  background: #fff;
+  padding: 15px 10px;
+  background: #4DCFE0;
   border: 1px solid #ddd;
-  margin: 5px;
-  margin-right: 20px;
+  margin: 15px 15px 2px 15px;
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
+  color: #fafafa;
+  font-size: 24px;
+  height: 54px;
+  transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .downloads a:hover {
-  background: #fafafa;
+  background: #000;
+  color: #fafafa;
+}
+
+.downloadItems {
+  display: none;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+}
+
+.downloadItemsActive {
+  display: flex;
+  justify-content: center;
+}
+
+.downloadItemsActive a {
+  margin: 10px 2%;
+}
+
+.downloads p {
+  font-size: 12px;
+  color: #68637C;
+  width: 100%;
+  text-align: center;
 }
 
 .contentRight {
+  position: sticky;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+}
 
+.contentRightOne {
+  width: 300px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background: #fafafa;
+  margin: 0 auto;
+}
+
+.contentRightTwo {
+  width: 300px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background: #fafafa;
+  padding: 12px 24px;
+  font-family: "Circular Std Book", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin: 10px 0;
+}
+
+.cardInformation {
+  font-size: 15px;
+  color: #878CA4;
+  border-bottom: 1px solid #D1D2DC;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardInformation:last-child {
+  border: none;
+}
+
+.informationTexts {
+  font-size: 15px;
+  color: #8C91A7;
+}
+
+.informationTexts a {
+  color: #8C91A7;
+  text-decoration: none;
+}
+
+.informationTexts a:hover {
+  text-decoration: underline;
 }
 
 .section {
@@ -525,6 +672,90 @@ table tr td:nth-child(1) span{
   max-height: 500px;
 }
 
+.searchContent {
+  width: 60%;
+  margin: auto;
+  align-content: center;
+}
+
+.searchInput {
+  width: 90%;
+  height: 34px;
+  border: 2px solid #757575;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Circular Std Book", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #000;
+  padding: 0 2%;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchButton {
+  border: 2px solid #757575;
+  border-radius: 10px;
+  outline: none;
+  width: 34px;
+  height: 34px;
+  margin: 0 5px;
+  position: absolute;
+}
+
+.searchOutput {
+  width: 100%;
+  margin: 10px 0 auto;
+  text-align: center;
+}
+
+.searchImage {
+  margin: 1px 5px;
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+  border: 2px solid #343A40;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.searchImage:hover {
+  background: #969696;
+  transition: 0.5s;
+}
+
+.team {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 20%);
+  justify-content: space-between;
+}
+
+.teamMember {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.teamMember img {
+  border-radius: 50%;
+}
+
+.teamMember h4:first-of-type {
+  margin-bottom: -12px;
+  font-size: 1.3em;
+}
+
+.teamMember h4:nth-of-type(2) {
+  font-weight: normal;
+}
+
+.socials img {
+  width: 30px;
+  margin-left: 5px;
+}
+
+
 @media only screen and (max-width: 1000px) {
 
   .section {
@@ -627,6 +858,12 @@ table tr td:nth-child(1) span{
     max-height: 300px;
   }
 
+  .contentHolder {
+    display: flex;
+    flex-direction: row;
+  }
+  
+
   .footer {
     overflow: hidden;
   }
@@ -657,6 +894,9 @@ table tr td:nth-child(1) span{
     font-size: 100%;
   }
 
+  .content {
+    padding: 0;
+  }
 
   .categories {
     grid-template-columns: repeat(auto-fill,160px);
@@ -671,11 +911,30 @@ table tr td:nth-child(1) span{
   .packs {
     grid-template-columns: repeat(auto-fill,160px);
     grid-gap: 10px;
+    justify-content: center;
   }
 
   .packItem {
     width: 160px;
     height: 160px;
+  }
+
+  .contentHolder {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contentLeft, .contentLeftOne, .contentLeftTwo, .phrasesItem, .contentRight, .contentRightOne, .contentRightTwo {
+    width: 100%;
+  }
+
+  .contentLeftTwo {
+    padding: 10px;
+  }
+
+  .contentLeftTwo h2 {
+    padding: 10px;
+    text-align: center;
   }
 
 }

@@ -5,9 +5,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import T from "../ui"
 
+import BreadCrumbs from "../components/breadcrumb"
 
 export default function Template({
-  data, path // this prop will be injected by the GraphQL query below.
+  data, path, title // this prop will be injected by the GraphQL query below.
 }) {
   const { posts } = data;
 
@@ -15,6 +16,9 @@ export default function Template({
     <Layout language={"en"}>
       <SEO title="Blog Posts" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
       <div className="content">
+        <BreadCrumbs links={[
+          {title: "Home", link: "/"}
+        ]} />
         <div className="blogPostCarrier">
           <h1>Blog Posts</h1>
           {posts.edges.map((post, i) => {

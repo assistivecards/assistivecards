@@ -14,9 +14,13 @@ const Footer = ({ siteTitle, language }) => (
       <div className="footerInner">
         <div style={{fontSize: 21, textAlign: "center", lineHeight: 1.5, marginTop: 70}}>
           {T(language, "made_by")}<br/>
-          <a href="https://buraktokak.com/" target="_blank">Burak</a> & <a href="https://twitter.com/humbleuidesigns" target="_blank">Hannah</a>
+          <Link to="/team/">{T(language, "awesome_people")}</Link>
         </div>
-        <Link to={`/leeloo/`}><img src={require("../images/app.png")} style={{width: 100, height: 100}} alt={"leeloo aac"}/></Link>
+        <div>
+        <Link to={`/leeloo/`}><img src={require("../images/leeloo/app.png")} style={{width: 100, height: 100}} alt={"leeloo aac"}/></Link>
+        <Link to={`/huni/`}><img src={require("../images/huni/huni.png")} style={{width: 100, height: 100}} alt={"huni"}/></Link>
+        <Link to={`/wingo/`}><img src={require("../images/wingo/wingo.png")} style={{width: 100, height: 100}} alt={"wingo"}/></Link>
+        </div>
       </div>
       <div className="footerLinks">
         <div>

@@ -7,21 +7,18 @@ import Screenshot1 from "../components/screenshot1"
 import Screenshot2 from "../components/screenshot2"
 import Screenshot3 from "../components/screenshot3"
 
-class IndexPage extends React.Component {
-  state = {
+export default class Wingo extends React.Component{
+    render(){
+        return(
+            <Layout>
+                <SEO title="Wingo - Daily planner for kids." description="Helps non-verbal kids to communicate with their parents, teachers and friends." />
 
-  }
-
-  render(){
-    return (
-      <Layout>
-        <SEO title="Leeloo AAC" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
-        <div className="section">
+                <div className="section">
           <div className="sectionDescription right">
-            <img src={require("../images/leeloo/app.png")} style={{width: 100, height: 100, marginBottom: 25}}/>
+            <img src={require("../images/wingo/wingo.png")} style={{width: 100, height: 100, marginBottom: 25}}/>
 
-            <h1 style={{fontSize: 38}}>Say hello to<br/>
-            Leeloo AAC App</h1>
+            <h1 style={{fontSize: 38}}>Do your childs day with<br/>
+            Wingo App</h1>
 
             <p style={{fontSize: 23}}>Helps non-verbal kids to communicate with their parents, teachers and friends.</p>
 
@@ -97,9 +94,8 @@ class IndexPage extends React.Component {
           </div>
 
         </div>
-      </Layout>
-    )
-  }
-}
 
-export default IndexPage
+            </Layout>
+        )
+    }
+}

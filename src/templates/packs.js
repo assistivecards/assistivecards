@@ -4,6 +4,8 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import BreadCrumbs from "../components/breadcrumb"
+
 export default function Packs({
   data, path // this prop will be injected by the GraphQL query below.
 }) {
@@ -14,6 +16,9 @@ export default function Packs({
     <Layout language={language}>
       <SEO title={`All Packs`} description={`List of all packs. Choose a assistive card pack to list the cards from that category.`}/>
       <div className="content">
+      <BreadCrumbs links={[
+            {title: "Home", link: "/"}
+          ]} />
         <h1>All Packs</h1>
         <p style={{opacity: 0.6}}>List of all packs. Choose a assistive card pack to list the cards from that category.</p>
         <div className="categories">

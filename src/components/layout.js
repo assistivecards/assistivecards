@@ -16,6 +16,7 @@ import "../font/style.css"
 
 const Layout = ({ children, language }) => {
   language = language ? language : "en";
+
   
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -31,7 +32,9 @@ const Layout = ({ children, language }) => {
     <>
       <div className="holder">
         <Header language={language}/>
-        <div className="main">{children}</div>
+        <div className="main">
+          {children}
+        </div>
         <Footer language={language}/>
       </div>
     </>

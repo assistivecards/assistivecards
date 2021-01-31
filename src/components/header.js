@@ -26,8 +26,15 @@ const Header = ({ siteTitle, language }) => {
             <div className={menu ? "menu mobileMenuActive" : "menu mobileMenuPassive"}>
               <Link to={`/${language}/packs/`}>{T(language, "allpacks")}</Link>
               <Link to={`/licensing/`}>{T(language, "licensing")}</Link>
-              <Link to={`/leeloo/`}>{T(language, "leeloo_aac")}</Link>
+              <Link to={`/apps/`}>{T(language, "apps")}</Link>
               <Link to={`/blog/`}>{T(language, "blog")}</Link>
+              <Link to={`/search/`}>
+                <svg xmlns="http://www.w3.org/2000/svg" className="headerSearchIcon" viewBox="0 0 24 24" strokeWidth="3" stroke="#1A1A1A" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z"/>
+                  <circle cx="10" cy="10" r="7" />
+                  <line x1="21" y1="21" x2="15" y2="15" />
+                </svg>
+              </Link>
             </div>
           </div>
         </div>
