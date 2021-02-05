@@ -28,6 +28,27 @@ export default function Template({
   }
 
 
+  let downloadFile = (link, name) => {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', link, true);
+    xhr.responseType = 'blob';
+    xhr.onload = function() {
+      var urlCreator = window.URL || window.webkitURL;
+      var imageUrl = urlCreator.createObjectURL(this.response);
+      var tag = document.createElement('a');
+      tag.href = imageUrl;
+      tag.target = '_blank';
+      tag.download = name;
+      document.body.appendChild(tag);
+      tag.click();
+      document.body.removeChild(tag);
+    };
+    xhr.onerror = err => {
+      alert('Failed to download picture');
+    };
+    xhr.send();
+  }
+
 
 
   return (
@@ -78,9 +99,9 @@ export default function Template({
                 <div className="downloads" onClick={() => toggleModal()}>
                   <div className="btn">Download</div>
                   <div className={modal ? "downloadItemsActive" : "downloadItems"}>
-                    <a href={`https://api.assistivecards.com/cards/${pack.slug}/${card.slug}@2x.png`} download={`${card.slug}.png`}>PNG</a>
-                    <a href={`https://api.assistivecards.com/cards/${pack.slug}/${card.slug}.svg`} download={`${card.slug}.svg`}>SVG</a>
-                    <a href={`https://api.assistivecards.com/packs/${language}/${pack.slug}.json`} download={`${card.slug}.png`}>JSON</a>
+                    <div className="btn" onClick={() => downloadFile(`https://api.assistivecards.com/cards/${pack.slug}/${card.slug}@2x.png`, card.slug + ".png")}>PNG</div>
+                    <div className="btn" onClick={() => downloadFile(`https://api.assistivecards.com/cards/${pack.slug}/${card.slug}.svg`, card.slug + ".svg")}>SVG</div>
+                    <div className="btn" onClick={() => downloadFile(`https://api.assistivecards.com/packs/${language}/${pack.slug}.json`, pack.slug + ".json")}>JSON</div>
                   </div>
                   <p>You'll get SVG, PNG and JSON formats</p>
                 </div>
