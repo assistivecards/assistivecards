@@ -11,9 +11,9 @@ export default function Template({
   data, path // this prop will be injected by the GraphQL query below.
 }) {
   const { pack, card, cards } = data;
-  
+
   let [modal, setModal] = useState(false);
-  
+
   let toggleModal = () => {
     if(modal){
       setModal(false)
@@ -21,13 +21,34 @@ export default function Template({
       setModal(true)
     }
   }
-  
+
   let language = path.split("/")[1];
   if(!card.locale[language]){
     return null;
   }
-  
-  
+
+
+  let downloadFile = (link, name) => {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', link, true);
+    xhr.responseType = 'blob';
+    xhr.onload = function() {
+      var urlCreator = window.URL || window.webkitURL;
+      var imageUrl = urlCreator.createObjectURL(this.response);
+      var tag = document.createElement('a');
+      tag.href = imageUrl;
+      tag.target = '_blank';
+      tag.download = name;
+      document.body.appendChild(tag);
+      tag.click();
+      document.body.removeChild(tag);
+    };
+    xhr.onerror = err => {
+      alert('Failed to download picture');
+    };
+    xhr.send();
+  }
+
 
 
   return (
@@ -70,19 +91,19 @@ export default function Template({
               </div>
             </div>
           </div>
-          
+
 
 
           <div className="contentRight">
             <div className="contentRightOne">
                 <div className="downloads" onClick={() => toggleModal()}>
-                  <Link>Download</Link>
+                  <div className="btn">Download</div>
                   <div className={modal ? "downloadItemsActive" : "downloadItems"}>
-                    <Link to="">PNG</Link>
-                    <Link to="">SVG</Link>
-                    <Link to="">JSON</Link>
+                    <div className="btn" onClick={() => downloadFile(`https://api.assistivecards.com/cards/${pack.slug}/${card.slug}@2x.png`, card.slug + ".png")}>PNG</div>
+                    <div className="btn" onClick={() => downloadFile(`https://api.assistivecards.com/cards/${pack.slug}/${card.slug}.svg`, card.slug + ".svg")}>SVG</div>
+                    <div className="btn" onClick={() => downloadFile(`https://api.assistivecards.com/packs/${language}/${pack.slug}.json`, pack.slug + ".json")}>JSON</div>
                   </div>
-                  <p>You'll get SVG, PNG and PDF formats</p>
+                  <p>You'll get SVG, PNG and JSON formats</p>
                 </div>
             </div>
 
@@ -94,7 +115,7 @@ export default function Template({
               <p className="cardInformation">License<p className="informationTexts"><Link to="/licensing/">Assistive Cards License</Link></p></p>
             </div>
           </div>
-          
+
         </div>
       </div>
     </Layout>
