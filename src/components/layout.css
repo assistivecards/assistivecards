@@ -264,7 +264,7 @@ table tr td:nth-child(1) span{
 }
 
 .footerInner img {
-  margin: 25px;
+  margin: 25px 15px;
 }
 
 .footerDecor {
@@ -316,10 +316,14 @@ table tr td:nth-child(1) span{
 }
 
 .breadcrumbLink {
-  border: 1px solid #837F93;
+  border: 1px solid #ddd;
   background-color: #fafafa;
   border-radius: 20px;
   padding: 10px 20px;
+}
+
+.breadcrumbLink:hover {
+  background: #fff;
 }
 
 .contentHolder {
@@ -337,7 +341,8 @@ table tr td:nth-child(1) span{
   width: 650px;
   border: 1px solid #fff;
   border-radius: 20px;
-  padding: 20px;
+  padding-top: 15px;
+  padding-right: 10px;
   margin-right: 10px;
 }
 
@@ -345,7 +350,7 @@ table tr td:nth-child(1) span{
   width: 650px;
   border: 1px solid #fff;
   border-radius: 20px;
-  padding: 50px;
+  padding: 10px;
   margin: 10px 0;
 }
 
@@ -378,10 +383,9 @@ table tr td:nth-child(1) span{
   flex-direction: column;
 }
 
-.downloads a {
+.downloads a, .downloads .btn {
   padding: 15px 10px;
   background: #4DCFE0;
-  border: 1px solid #ddd;
   margin: 15px 15px 2px 15px;
   border-radius: 10px;
   text-align: center;
@@ -394,7 +398,7 @@ table tr td:nth-child(1) span{
   cursor: pointer;
 }
 
-.downloads a:hover {
+.downloads a:hover, .downloads .btn:hover {
   background: #000;
   color: #fafafa;
 }
@@ -890,7 +894,7 @@ table tr td:nth-child(1) span{
     display: flex;
     flex-direction: row;
   }
-  
+
 
   .footer {
     overflow: hidden;
@@ -923,7 +927,7 @@ table tr td:nth-child(1) span{
   }
 
   .content {
-    padding: 0;
+    padding: 0px 20px;
   }
 
   .categories {
@@ -951,18 +955,49 @@ table tr td:nth-child(1) span{
     display: flex;
     flex-direction: column;
   }
-  
+
   .contentLeft, .contentLeftOne, .contentLeftTwo, .phrasesItem, .contentRight, .contentRightOne, .contentRightTwo {
     width: 100%;
   }
 
   .contentLeftTwo {
-    padding: 10px;
+    padding: 10px 0px;
+  }
+
+  .contentLeftOne {
+    padding-right: 0px;
   }
 
   .contentLeftTwo h2 {
     padding: 10px;
     text-align: center;
+  }
+
+  .team {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 60%);
+    justify-content: center;
+  }
+
+  .apps {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100%);
+    justify-content: center;
+  }
+
+  .app {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app img {
+    float: none;
+    display: flex;
+    align-self: center;
+  }
+
+  .appContent {
+    padding: 12px 0;
   }
 
 }
