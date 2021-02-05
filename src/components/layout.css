@@ -415,8 +415,8 @@ table tr td:nth-child(1) span{
   justify-content: center;
 }
 
-.downloadItemsActive .btn {
-  margin: 10px 7px;
+.downloadItemsActive a {
+  margin: 10px 2%;
 }
 
 .downloads p {
