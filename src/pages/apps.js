@@ -17,7 +17,7 @@ export default class Apps extends React.Component{
 
                     <div className="app">
                         <Link to={"/leeloo/"}>
-                        <img src={require("../images/leeloo/app.png")}/>
+                        <img src={require("../images/leeloo/app.png")} style={{border: "1px solid #6989FF", borderRadius: "50%"}} />
                         <div className="appContent">
                             <h1>Leeloo AAC - Autism Speech App</h1>
                             <p>Helps non-verbal kids to communicate with their parents, teachers and friends. <br/>
@@ -28,7 +28,7 @@ export default class Apps extends React.Component{
                     
                     <div className="app">
                         <Link to={"/huni/"}>
-                        <img src={require("../images/huni/huni.png")}/>
+                        <img src={require("../images/huni/huni.png")} style={{border: "1px solid #63B2B5", borderRadius: "50%"}} />
                         <div className="appContent">
                             <h1>Huni - Delayed Speech Therapy</h1>
                             <p>Speech Recognition powered Speech Training SLP App designed for children. <br/>
@@ -38,7 +38,7 @@ export default class Apps extends React.Component{
                     </div>
 
                     <div className="app">
-                        <img src={require("../images/wingo/wingo.png")}/>
+                        <img src={require("../images/wingo/wingo.png")} style={{border: "1px solid #636EB5", borderRadius: "50%"}} />
                         <div className="appContent">
                             <h1>Wingo - Daily Planner for Kids</h1>
                             <p>Coming Soon..</p>
