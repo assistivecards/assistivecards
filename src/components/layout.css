@@ -973,6 +973,12 @@ table tr td:nth-child(1) span{
     text-align: center;
   }
 
+  .team {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 60%);
+    justify-content: center;
+  }
+
 }
 
 @keyframes scaleAnim {
