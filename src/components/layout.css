@@ -498,7 +498,7 @@ table tr td:nth-child(1) span{
 }
 
 .sectionDescription p {
-  color: #81869F;
+  color: #5d6382;
 }
 
 .sectionImage {
@@ -781,11 +781,13 @@ table tr td:nth-child(1) span{
 }
 
 .appContent h1 {
-  font-size: 32px;
   margin-bottom: 5px;
 }
 
-.appContent p {font-size: 20px;}
+.appContent p {
+  margin-top: 7px;
+  color: #5d6382;
+}
 
 .appContent a {text-decoration: underline;}
 
