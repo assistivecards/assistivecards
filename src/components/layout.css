@@ -424,6 +424,7 @@ table tr td:nth-child(1) span{
   color: #68637C;
   width: 100%;
   text-align: center;
+  margin-top: 4px;
 }
 
 .contentRight {
@@ -454,7 +455,7 @@ table tr td:nth-child(1) span{
 .cardInformation {
   font-size: 15px;
   color: #878CA4;
-  border-bottom: 1px solid #D1D2DC;
+  border-bottom: 1px solid #e6e7ef;
   height: 30px;
   display: flex;
   justify-content: space-between;
