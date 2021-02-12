@@ -974,6 +974,39 @@ table tr td:nth-child(1) span{
     text-align: center;
   }
 
+  .contentRight {
+    position: sticky;
+    top: 0;
+    bottom: -320px;
+  }
+
+  .team {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 60%);
+    justify-content: center;
+  }
+
+  .apps {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100%);
+    justify-content: center;
+  }
+
+  .app {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app img {
+    float: none;
+    display: flex;
+    align-self: center;
+  }
+
+  .appContent {
+    padding: 12px 0;
+  }
+
 }
 
 @keyframes scaleAnim {
