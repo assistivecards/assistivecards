@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import Hero from "../components/hero"
 import SEO from "../components/seo"
 import T from "../ui"
 
@@ -11,10 +12,12 @@ export default function Template({
 }) {
 
   return (
-    <Layout language={"en"}>
+    <Layout language={"en"} noHeader={true}>
       <SEO title="Assistive Cards - AAC Cards Illustrations and Phrases" description="Assistive Cards are multilingual AAC card and phrase inventory designed for kids' special education."/>
+      <Hero language={"en"}/>
       <div className="content">
-        <h2>Assistive Cards are multilingual AAC card and phrase groups designed for kids' special education.</h2>
+        <div style={{height: 20}}></div>
+        <h2>Features</h2>
         <p>Using Assistive Cards, developers and designers can make assistive software and educational games for children, parents can make their own printed AAC boards etc.</p>
         <ul>
           <li>Card and phrase translations support 37 languages.</li>

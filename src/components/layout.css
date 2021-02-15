@@ -187,13 +187,15 @@ table tr td:nth-child(1) span{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: #fff;
   width: 200px;
 }
 
 .main {
 }
 
+.hero {
+  background: #E3F3FF;
+}
 
 .header {
   background: rgba(212,225,244, 0.08);
