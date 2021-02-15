@@ -292,7 +292,7 @@ table tr td:nth-child(1) span{
   margin-left: 20px;
 }
 
-.btn {
+.btnBig {
   cursor: pointer;
   width: 260px;
   height: 44px;

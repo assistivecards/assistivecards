@@ -40,7 +40,7 @@ export default function Template({
 
           <p><strong>One-time Payment: $99</strong></p>
           <p>We will also send you all the Illustrations in SVG and PNG format, and JSON files in a single .zip file via <em>Paddle</em>.</p>
-          <div className="btn" onClick={() => openCheckout()}>Buy a License ($99)</div>
+          <div className="btnBig" onClick={() => openCheckout()}>Buy a License ($99)</div>
           <p style={{fontSize: 12}}>Prices may differ depending on your location, currency rates and VAT.<br/>
           We collect payments using Paddle.com's services with the company name Dream Oriented Ltd<br/>
           <a href="https://paddle.com/legal-buyers/" target="_blank">Paddle Buyer Terms and Conditions</a></p>

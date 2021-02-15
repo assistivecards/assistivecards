@@ -12,7 +12,7 @@ export default class Apps extends React.Component{
             <SEO title="Apps" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
             <div className="content">
                 <h2>Our Apps</h2>
-                <p>Apps made with assistivecards.</p>
+                <p>See the apps made with assistivecards, the apps we made and keeping updates, we will also list apps you are or will make at this page.</p>
                 <div className="apps" style={{width: "100%", margin: "auto"}}>
 
                     <div className="app">
@@ -45,6 +45,8 @@ export default class Apps extends React.Component{
                           <Link to="/wingo/" style={{color: "#636eb5"}}>Coming Soon</Link></p>
                         </div>
                     </div>
+                    <p></p>
+                    <p>Have you made an app with assistivecards assets and translations? And if you want to be featured here, send us an email at <a href="mailto:info@assistivecards.com">info@assistivecards.com</a></p>
 
                 </div>
             </div>
