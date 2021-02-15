@@ -292,6 +292,19 @@ table tr td:nth-child(1) span{
   margin-left: 20px;
 }
 
+.btn {
+  cursor: pointer;
+  width: 260px;
+  height: 44px;
+  border-radius: 22px;
+  background: blue;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  line-height: 44px;
+  margin-bottom: 10px;
+}
+
 
 .content {
   max-width: 1000px;
