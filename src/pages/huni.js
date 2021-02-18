@@ -18,7 +18,7 @@ class IndexPage extends React.Component {
         <SEO title="Huni AI" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
         <div className="section">
           <div className="sectionDescription right">
-            <img src={require("../images/huni/huni.png")} style={{width: 100, height: 100, marginBottom: 25}}/>
+            <img src={require("../images/huni/huni.png")} style={{width: 100, height: 100, marginBottom: 25, boxShadow: "0px 0px 5px 1px rgba(99, 178, 181, 0.4)", borderRadius: "50%"}}/>
 
             <h1 style={{fontSize: 38}}>Learn to speak with<br/>
             Huni App</h1>

@@ -16,9 +16,6 @@ export default function Template({
     <Layout language={"en"}>
       <SEO title="Blog Posts" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
       <div className="content">
-        <BreadCrumbs links={[
-          {title: "Home", link: "/"}
-        ]} />
         <div className="blogPostCarrier">
           <h1>Blog Posts</h1>
           {posts.edges.map((post, i) => {

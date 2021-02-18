@@ -12,38 +12,41 @@ export default class Apps extends React.Component{
             <SEO title="Apps" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
             <div className="content">
                 <h2>Our Apps</h2>
-                <p>Apps made with assistivecards.</p>
+                <p>See the apps made with assistivecards, the apps we made and keeping updates, we will also list apps you are or will make at this page.</p>
                 <div className="apps" style={{width: "100%", margin: "auto"}}>
 
                     <div className="app">
                         <Link to={"/leeloo/"}>
-                        <img src={require("../images/leeloo/app.png")} style={{border: "1px solid #6989FF", borderRadius: "50%"}} />
+                        <img src={require("../images/leeloo/app.png")} style={{boxShadow: "0px 0px 5px 1px rgba(105, 137, 255, 0.4)", borderRadius: "50%"}}/>
                         <div className="appContent">
                             <h1>Leeloo AAC - Autism Speech App</h1>
                             <p>Helps non-verbal kids to communicate with their parents, teachers and friends. <br/>
-                            <Link to="/leeloo/" style={{color: "#6989FF"}}>Learn more..</Link></p>
-                        </div>
-                        </Link>
-                    </div>
-                    
-                    <div className="app">
-                        <Link to={"/huni/"}>
-                        <img src={require("../images/huni/huni.png")} style={{border: "1px solid #63B2B5", borderRadius: "50%"}} />
-                        <div className="appContent">
-                            <h1>Huni - Delayed Speech Therapy</h1>
-                            <p>Speech Recognition powered Speech Training SLP App designed for children. <br/>
-                            <Link to="/huni/" style={{color: "#63B2B5"}}>Learn more..</Link></p>
+                            <Link to="/leeloo/" style={{color: "#6989FF"}}>Learn more...</Link></p>
                         </div>
                         </Link>
                     </div>
 
                     <div className="app">
-                        <img src={require("../images/wingo/wingo.png")} style={{border: "1px solid #636EB5", borderRadius: "50%"}} />
+                        <Link to={"/huni/"}>
+                        <img src={require("../images/huni/huni.png")} style={{boxShadow: "0px 0px 5px 1px rgba(99, 178, 181, 0.4)", borderRadius: "50%"}}/>
                         <div className="appContent">
-                            <h1>Wingo - Daily Planner for Kids</h1>
-                            <p>Coming Soon..</p>
+                            <h1>Huni - Delayed Speech Therapy</h1>
+                            <p>Speech Recognition powered Speech Training SLP App designed for children.<br/>
+                            <Link to="/huni/" style={{color: "#63B2B5"}}>Learn more...</Link></p>
+                        </div>
+                        </Link>
+                    </div>
+
+                    <div className="app">
+                        <img src={require("../images/wingo/wingo.png")} style={{boxShadow: "0px 0px 5px 1px rgba(99, 110, 181, 0.4)", borderRadius: "50%"}}/>
+                        <div className="appContent">
+                          <h1>Wingo - Daily Planner for Kids</h1>
+                          <p>Plan your children's day and communicate their tasks better and easier.<br/>
+                          <Link to="/wingo/" style={{color: "#636eb5"}}>Coming Soon</Link></p>
                         </div>
                     </div>
+                    <p></p>
+                    <p>Have you made an app with assistivecards assets and translations? And if you want to be featured here, send us an email at <a href="mailto:info@assistivecards.com">info@assistivecards.com</a></p>
 
                 </div>
             </div>

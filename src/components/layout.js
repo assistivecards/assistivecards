@@ -14,10 +14,10 @@ import Footer from "./footer"
 import "./layout.css"
 import "../font/style.css"
 
-const Layout = ({ children, language }) => {
+const Layout = ({ children, language, noHeader }) => {
   language = language ? language : "en";
 
-  
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -31,7 +31,7 @@ const Layout = ({ children, language }) => {
   return (
     <>
       <div className="holder">
-        <Header language={language}/>
+        {!noHeader && <Header language={language}/> }
         <div className="main">
           {children}
         </div>

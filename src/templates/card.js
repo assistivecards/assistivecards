@@ -28,29 +28,6 @@ export default function Template({
   }
 
 
-  let downloadFile = (link, name) => {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', link, true);
-    xhr.responseType = 'blob';
-    xhr.onload = function() {
-      var urlCreator = window.URL || window.webkitURL;
-      var imageUrl = urlCreator.createObjectURL(this.response);
-      var tag = document.createElement('a');
-      tag.href = imageUrl;
-      tag.target = '_blank';
-      tag.download = name;
-      document.body.appendChild(tag);
-      tag.click();
-      document.body.removeChild(tag);
-    };
-    xhr.onerror = err => {
-      alert('Failed to download picture');
-    };
-    xhr.send();
-  }
-
-
-
   return (
     <Layout language={language}>
       <SEO title={`${card.locale[language].title} Card`} description={`Project description for ${card.locale[language].title}`}/>
@@ -99,9 +76,9 @@ export default function Template({
                 <div className="downloads" onClick={() => toggleModal()}>
                   <div className="btn">Download</div>
                   <div className={modal ? "downloadItemsActive" : "downloadItems"}>
-                    <div className="btn" onClick={() => downloadFile(`https://api.assistivecards.com/cards/${pack.slug}/${card.slug}@2x.png`, card.slug + ".png")}>PNG</div>
-                    <div className="btn" onClick={() => downloadFile(`https://api.assistivecards.com/cards/${pack.slug}/${card.slug}.svg`, card.slug + ".svg")}>SVG</div>
-                    <div className="btn" onClick={() => downloadFile(`https://api.assistivecards.com/packs/${language}/${pack.slug}.json`, pack.slug + ".json")}>JSON</div>
+                    <a className="btn" href={`https://download.assistivecards.com/cards/${pack.slug}/${card.slug}@2x.png`}>PNG</a>
+                    <a className="btn" href={`https://download.assistivecards.com/cards/${pack.slug}/${card.slug}.svg`}>SVG</a>
+                    <a className="btn" href={`https://download.assistivecards.com/packs/${language}/${pack.slug}.json`}>JSON</a>
                   </div>
                   <p>You'll get SVG, PNG and JSON formats</p>
                 </div>

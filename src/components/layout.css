@@ -187,13 +187,15 @@ table tr td:nth-child(1) span{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: #fff;
   width: 200px;
 }
 
 .main {
 }
 
+.hero {
+  background: #E3F3FF;
+}
 
 .header {
   background: rgba(212,225,244, 0.08);
@@ -290,6 +292,19 @@ table tr td:nth-child(1) span{
 
 .footerLinks div:nth-child(2) a {
   margin-left: 20px;
+}
+
+.btnBig {
+  cursor: pointer;
+  width: 260px;
+  height: 44px;
+  border-radius: 22px;
+  background: blue;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  line-height: 44px;
+  margin-bottom: 10px;
 }
 
 
@@ -424,6 +439,7 @@ table tr td:nth-child(1) span{
   color: #68637C;
   width: 100%;
   text-align: center;
+  margin-top: 4px;
 }
 
 .contentRight {
@@ -454,7 +470,7 @@ table tr td:nth-child(1) span{
 .cardInformation {
   font-size: 15px;
   color: #878CA4;
-  border-bottom: 1px solid #D1D2DC;
+  border-bottom: 1px solid #e6e7ef;
   height: 30px;
   display: flex;
   justify-content: space-between;
@@ -497,7 +513,7 @@ table tr td:nth-child(1) span{
 }
 
 .sectionDescription p {
-  color: #81869F;
+  color: #5d6382;
 }
 
 .sectionImage {
@@ -780,13 +796,36 @@ table tr td:nth-child(1) span{
 }
 
 .appContent h1 {
-  font-size: 32px;
   margin-bottom: 5px;
 }
 
-.appContent p {font-size: 20px;}
+.appContent p {
+  margin-top: 7px;
+  color: #5d6382;
+}
 
 .appContent a {text-decoration: underline;}
+
+.notFound {
+  margin: auto;
+  padding-top: 2rem;
+  width: 40%
+}
+
+.notText {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.thanksContent {
+  text-align: center;
+}
+
+.thanksContent p {
+  width: 100%;
+  max-width: none;
+}
 
 @media only screen and (max-width: 1000px) {
 
@@ -973,6 +1012,12 @@ table tr td:nth-child(1) span{
     text-align: center;
   }
 
+  .contentRight {
+    position: sticky;
+    top: 0;
+    bottom: -320px;
+  }
+
   .team {
     display: grid;
     grid-template-columns: repeat(auto-fill, 60%);
@@ -1000,6 +1045,9 @@ table tr td:nth-child(1) span{
     padding: 12px 0;
   }
 
+  .notFound {
+    width: 90%;
+  }
 }
 
 @keyframes scaleAnim {
