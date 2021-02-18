@@ -788,6 +788,27 @@ table tr td:nth-child(1) span{
 
 .appContent a {text-decoration: underline;}
 
+.notFound {
+  margin: auto;
+  padding-top: 2rem;
+  width: 40%
+}
+
+.notText {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.thanksContent {
+  text-align: center;
+}
+
+.thanksContent p {
+  width: 100%;
+  max-width: none;
+}
+
 @media only screen and (max-width: 1000px) {
 
   .section {
@@ -1006,6 +1027,9 @@ table tr td:nth-child(1) span{
     padding: 12px 0;
   }
 
+  .notFound {
+    width: 90%;
+  }
 }
 
 @keyframes scaleAnim {

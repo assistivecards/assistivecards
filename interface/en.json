@@ -10,7 +10,6 @@
 	"suggest": "Suggest AAC Card",
 	"privacy": "Privacy Policy",
 	"feedback": "Send Feedback",
-
 	"button_next": "Next",
 	"button_start": "Start",
 	"button_use": "USE",
@@ -19,5 +18,8 @@
 	"button_remove": "REMOVE",
 	"alert_yourDeviceDoesNotSupportTTS": "Your device doesn't support voice driver for this language. In order to use TTS capabilities, you need to install a voice driver. You can try 'Google TTS' app to install and manage drivers!",
 	"alert_ok": "OK",
-	"alert_cancel": "Cancel"
+	"alert_cancel": "Cancel",
+	"not_found": "The page you are looking for not found.",
+	"return_home": "Return Home",
+	"opps": "Opps! Something Wrong!"
 }
