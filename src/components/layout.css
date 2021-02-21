@@ -197,6 +197,10 @@ table tr td:nth-child(1) span{
   background: #E3F3FF;
 }
 
+.hero .content {
+  padding-bottom: 30px;
+}
+
 .header {
   background: rgba(212,225,244, 0.08);
 }
@@ -862,6 +866,35 @@ table tr td:nth-child(1) span{
 .menuToggler {
   display: none;
 }
+
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: calc(25% - 10px);
+}
+
+.feature h3 {
+  text-align: center;
+}
+
+.feature p {
+  color: #5d6382;
+  text-align: center;
+}
+
+.feature img {
+  width: 60%;
+  display: block;
+}
+
 
 @media only screen and (max-width: 700px) {
 

@@ -17,20 +17,39 @@ export default function Template({
       <Hero language={"en"}/>
       <div className="content">
         <div style={{height: 20}}></div>
-        <h2>Features</h2>
-        <p>Using Assistive Cards, developers and designers can make assistive software and educational games for children, parents can make their own printed AAC boards etc.</p>
-        <ul>
-          <li>Card and phrase translations support 37 languages.</li>
-          <li>Designed with multi-cultural userbase in mind.</li>
-          <li>Created using autism and ADHD friendly color palette.</li>
-        </ul>
+        <h2 style={{textAlign: "center"}}>Features</h2>
+        <p style={{margin: "auto", marginBottom: 30, textAlign: "center"}}>Using Assistive Cards, developers and designers can make assistive software and educational games for children, parents can make their own printed AAC boards etc.</p>
 
-        <h2>Apps and Tools using Assistive Cards</h2>
-        <ul>
-          <li>Leeloo AAC</li>
-          <li>Huni AI</li>
-        </ul>
-        <p>Do you want your app to be featured here? Contact us.</p>
+        <div className="features">
+          <div className="feature">
+            <img src="https://api.assistivecards.com/cards/conversation/speak.png"/>
+            <div>
+              <h3>Multilingual</h3>
+              <p>Card and phrase translations support 37 languages.</p>
+            </div>
+          </div>
+          <div className="feature">
+            <img src="https://api.assistivecards.com/cards/conversation/outside.png"/>
+            <div>
+              <h3>Multicultural</h3>
+              <p>Designed with multicultural and regional userbase in mind.</p>
+            </div>
+          </div>
+          <div className="feature">
+            <img src="https://api.assistivecards.com/cards/conversation/help.png"/>
+            <div>
+              <h3>Neurodiverse</h3>
+              <p>Created using autism and ADHD friendly color palette and object contrasts.</p>
+            </div>
+          </div>
+          <div className="feature">
+            <img src="https://api.assistivecards.com/cards/conversation/bath.png"/>
+            <div>
+              <h3>Kid-friendly</h3>
+              <p>We invisioned cute, fun and child appealing grahpics and phrases.</p>
+            </div>
+          </div>
+        </div>
 
       </div>
     </Layout>
