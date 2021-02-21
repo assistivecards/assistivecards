@@ -3,9 +3,10 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Screenshot1 from "../components/screenshot1"
-import Screenshot2 from "../components/screenshot2"
-import Screenshot3 from "../components/screenshot3"
+
+import Screenshot1 from "../components/huni/screenshot1"
+import Screenshot2 from "../components/huni/screenshot2"
+import Screenshot3 from "../components/huni/screenshot3"
 
 class IndexPage extends React.Component {
   state = {
@@ -15,7 +16,7 @@ class IndexPage extends React.Component {
   render(){
     return (
       <Layout>
-        <SEO title="Huni AI" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
+        <SEO title="Huni AI" description="Helps non-verbal kids learn to speak and do speech practices with artificial intelligence."/>
         <div className="section">
           <div className="sectionDescription right">
             <img src={require("../images/huni/huni.png")} style={{width: 100, height: 100, marginBottom: 25, boxShadow: "0px 0px 5px 1px rgba(99, 178, 181, 0.4)", borderRadius: "50%"}}/>
@@ -37,7 +38,7 @@ class IndexPage extends React.Component {
 
           <div className="sectionImage right">
             <div className="sectionBackground right">
-              <img src={require("../images/blob.svg")} className="blob right"/>
+              <img src={require("../images/blob_green.svg")} className="blob right"/>
               <img src={require("../images/particals.svg")} className="particals right"/>
             </div>
             <Screenshot1 />
@@ -54,7 +55,7 @@ class IndexPage extends React.Component {
             <div className="sectionList">
               <div>
                 <h3>Works in both Phones and Tablets</h3>
-                <p>Enjoy Leeloo App in both iOS and Android, helping your kid communicate with the use of a phone or a tablet.</p>
+                <p>Enjoy Huni App in both iOS and Android, helping your kid communicate with the use of a phone or a tablet.</p>
               </div>
 
               <div>
@@ -63,8 +64,8 @@ class IndexPage extends React.Component {
               </div>
 
               <div>
-                <h3>Supports Text-to-Speech and Haptic Touch</h3>
-                <p>Leeloo app also has text-to-speech voice capability. Every card pressed will reveal options of phrases, and the chosen phrase will be read by a text-to-speech robot.</p>
+                <h3>Supports Voice Recognition and TTS</h3>
+                <p>Huni app uses voice recognation for training, also has text-to-speech voice that users can use to learn the pronounciations.</p>
               </div>
             </div>
           </div>
@@ -75,25 +76,24 @@ class IndexPage extends React.Component {
         <div className="section">
           <div className="sectionImage">
             <div className="sectionBackground">
-              <img src={require("../images/blob.svg")} className="blob"/>
+              <img src={require("../images/blob_green.svg")} className="blob"/>
               <img src={require("../images/particals.svg")} className="particals"/>
             </div>
             <Screenshot2 />
           </div>
 
           <div className="sectionDescription">
-            <h1>Control Leeloo AAC<br/>
-            the way you<br/>
-            want it</h1>
+            <h1>Control Huni AI<br/>
+            the way you want</h1>
 
             <h3>Control app access</h3>
-            <p>Option to set control app access within the settings of Leeloo app</p>
+            <p>Option to set control app access within the settings of Huni app</p>
 
-            <h3>Set-up different profiles in one App</h3>
-            <p>Add as many profiles, edit, manage profiles easily</p>
+            <h3>Related Category Groups</h3>
+            <p>All the speech cards are grouped in categories for training</p>
 
-            <h3>Customize your AAC board</h3>
-            <p>Choose packs you want and re-order them</p>
+            <h3>Different Language Accents</h3>
+            <p>Choose the language accent that your child is comfortable with</p>
           </div>
 
         </div>
