@@ -25,7 +25,7 @@ export default function Template({
             <h1>{pack.locale[language]} Pack</h1>
             <p style={{opacity: 0.6}}>Download free Grandparents assistive card in SVG or PNG format with JSON file of translation to 37 languages. Free vectoral Grandparents illustration and icon.</p>
           </div>
-          <img src={`https://api.assistivecards.com/cards/icon/${pack.slug}.png`} style={{width: 100, height: 100}}/>
+          <img src={`https://api.assistivecards.com/cards/icon/${pack.slug}.png`} style={{width: 100, height: 100}} alt={`${pack.locale[language]} pack category`}/>
         </div>
         <div className="packs">
           {cards.edges.map(card => {

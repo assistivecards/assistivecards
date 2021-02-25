@@ -781,21 +781,22 @@ table tr td:nth-child(1) span{
 
 .app {
   padding: 20px 0;
-  display: flow-root;
+  display: flex;
 }
 
 .app a, .app a:hover {
   text-decoration: none;
   color: #1A1A1A;
+  display: flex;
 }
 
 .app img {
   width: 130px;
-  float: left;
 }
 
 .appContent {
-  padding-left: 150px;
+  width: calc(100% - 100px);
+  padding-left: 15px;
   padding-top: 12px;
 }
 
@@ -1063,24 +1064,38 @@ table tr td:nth-child(1) span{
     justify-content: center;
   }
 
-  .app {
+  .app, .app a {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
-  .app img {
-    float: none;
-    display: flex;
-    align-self: center;
+  .app a:nth-child(2) {
+    align-items: unset;
   }
 
   .appContent {
     padding: 12px 0;
+    width: 100%;
+  }
+
+  .appContent h1 {
+    text-align: center;
   }
 
   .notFound {
     width: 90%;
   }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feature {
+    width: 90%;
+  }
+
 }
 
 @keyframes scaleAnim {

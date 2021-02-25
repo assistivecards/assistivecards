@@ -1,8 +1,5 @@
 import React from "react"
-import { Link, navigate } from "gatsby"
-
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { navigate } from "gatsby"
 
 class IndexPage extends React.Component {
   constructor(){
