@@ -1,7 +1,7 @@
 {
   "name": "assistivecards",
   "private": true,
-  "description": "Burak is an indie maker, trying to make things that makes people's lives better than before.",
+  "description": "Assistive Cards are multilingual AAC card and phrase inventory designed for kids' special education.",
   "version": "0.1.0",
   "author": "Burak Tokak <tokakburak@gmail.com>",
   "dependencies": {

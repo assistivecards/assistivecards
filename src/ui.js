@@ -1,3 +1,8 @@
+/*
+	Burak's awesomeee 30 lines fail-safe localisation library
+	MIT, v1.0.7
+*/
+
 import uitext from '../uitext';
 
 export default function t(lang, UITextIdentifier, variableArray){

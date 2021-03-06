@@ -31,6 +31,10 @@ function SEO({ description, lang, meta, title, image }) {
     title = `${title} - Assistive Cards`;
   }
 
+  if(!image){
+    image = `https://assistivecards.com/social.png`;
+  }
+
   return (
     <Helmet
       htmlAttributes={{
@@ -56,15 +60,19 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `og:image`,
-          concent: image,
+          content: image,
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: image.includes("social.png") ? `summary_large_image`: `summary`,
+        },
+        {
+          name: `twitter:image`,
+          content: image,
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: "@assistivecards",
         },
         {
           name: `twitter:title`,
