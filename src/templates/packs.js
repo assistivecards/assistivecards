@@ -4,8 +4,6 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import BreadCrumbs from "../components/breadcrumb"
-
 export default function Packs({
   data, path // this prop will be injected by the GraphQL query below.
 }) {
@@ -24,7 +22,7 @@ export default function Packs({
               return (
                 <Link to={`/${language}/pack/${pack.node.slug}/`} key={pack.node.slug}>
                   <div className="categoryItem" style={{backgroundColor: pack.node.color}}>
-                    <img src={`https://api.assistivecards.com/cards/icon/${pack.node.slug}.png`} style={{width: 100, height: 100}}/>
+                    <img src={`https://api.assistivecards.com/cards/icon/${pack.node.slug}.png`} style={{width: 100, height: 100}} alt={`${pack.node.locale[language]} pack category`}/>
                     <p>{pack.node.locale[language]}</p>
                   </div>
                 </Link>

@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import Helmet from "react-helmet"
 import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -30,7 +31,7 @@ export default function Template({
 
   return (
     <Layout language={language}>
-      <SEO title={`${card.locale[language].title} Card`} description={`Project description for ${card.locale[language].title}`}/>
+      <SEO title={`${card.locale[language].title} Card`} description={`Project description for ${card.locale[language].title}`} image={`https://api.assistivecards.com/cards/${card.pack}/${card.slug}@2x.png`} />
       <div className="content">
       <BreadCrumbs links={[
             {title: "Home", link: "/"},

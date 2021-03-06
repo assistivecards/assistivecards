@@ -3,7 +3,6 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import T from "../ui"
 import BreadCrumbs from "../components/breadcrumb"
 
 class Search extends Component {
