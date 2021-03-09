@@ -792,6 +792,7 @@ table tr td:nth-child(1) span{
 
 .app img {
   width: 130px;
+  height: 130px;
 }
 
 .appContent {
