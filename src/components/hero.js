@@ -30,7 +30,7 @@ const Hero = ({ siteTitle, language, packs }) => {
         </div>
       </div>
     </div>
-      <div className="content" style={{height: "350px"}}>
+      <div className="content">
         <div className="heroLeft">
           <h1 style={{color: "#3E455B", marginTop: 35, marginBottom: 15}}>Make Assistive Apps</h1>
           <p style={{opacity: 0.8}}>Assistive Cards are multilingual AAC card and phrase groups designed for kids' special education.</p>
@@ -40,7 +40,7 @@ const Hero = ({ siteTitle, language, packs }) => {
           </Link>
         </div>
         <div className="heroRight">
-          {packs.edges.slice(0, 20).map((pack, i) => {
+          {packs.edges.slice(0, 16).map((pack, i) => {
             return(
               <div className="rightSvg">
                 <img src={`https://api.assistivecards.com/cards/icon/${pack.node.slug}.png`} alt={`${pack.node.locale[language]} SVG`} key={i} />

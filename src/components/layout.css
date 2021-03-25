@@ -1034,6 +1034,16 @@ table tr td:nth-child(1) span{
   }
   
   .teamMember .memberImg {width:244px}
+
+  .hero .content {height: 350px;}
+
+  .heroRight {
+    transform: none;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding-top: 20px;
+  }
 }
 
 
@@ -1139,9 +1149,13 @@ table tr td:nth-child(1) span{
     width: 90%;
   }
 
-  .hero .content {flex-direction: column;}
+  .hero .content {flex-direction: column; height: auto;}
 
-  .heroRight {padding-top: 10px;}
+  .heroLeft {width:100%}
+
+  .heroRight {
+    position: relative;
+  }
 }
 
 @keyframes scaleAnim {
