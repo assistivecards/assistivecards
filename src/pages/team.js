@@ -14,7 +14,7 @@ export default class Team extends React.Component {
                 <h2>Our Team</h2>
                 <div className="team">
                     <div className="teamMember">
-                        <img src="https://avatars.githubusercontent.com/u/5216601" alt="Burak Tokak profile photo"/>
+                        <img src="https://avatars.githubusercontent.com/u/5216601" alt="Burak Tokak profile photo" className="memberImg" />
                         <h4>Burak Tokak</h4>
                         <h4>Developer</h4>
                         <div className="socials">    
@@ -23,7 +23,7 @@ export default class Team extends React.Component {
                     </div>
 
                     <div className="teamMember">
-                        <img src="https://pbs.twimg.com/profile_images/1296803827987947528/s8ocbPEo_400x400.jpg" alt="Hannah Milan profile photo"/>
+                        <img src="https://pbs.twimg.com/profile_images/1296803827987947528/s8ocbPEo_400x400.jpg" alt="Hannah Milan profile photo" className="memberImg" />
                         <h4>Hannah Milan</h4>
                         <h4>Designer</h4>
                         <div className="socials">
@@ -32,7 +32,7 @@ export default class Team extends React.Component {
                     </div>
                     
                     <div className="teamMember">
-                        <img src="https://avatars.githubusercontent.com/u/42184193" alt="Enes Cosan UZ profile photo"/>
+                        <img src="https://avatars.githubusercontent.com/u/42184193" alt="Enes Cosan UZ profile photo" className="memberImg" />
                         <h4>Enes Coşan UZ</h4>
                         <h4>Developer</h4>
                         <div className="socials">
@@ -42,7 +42,7 @@ export default class Team extends React.Component {
                     </div>
 
                     <div className="teamMember">
-                        <img src="https://mir-s3-cdn-cf.behance.net/user/138/e43dae20198487.5ee775302f0a4.png" width={"172px"} alt="Yaren Kurt profile photo"/>
+                        <img src="https://mir-s3-cdn-cf.behance.net/user/138/e43dae20198487.5ee775302f0a4.png" width={"172px"} alt="Yaren Kurt profile photo" className="memberImg" />
                         <h4>Yaren Kurt</h4>
                         <h4>Illustrator</h4>
                         <div className="socials">
@@ -52,7 +52,7 @@ export default class Team extends React.Component {
                     </div>
 
                     <div className="teamMember">
-                        <img src="https://avatars.githubusercontent.com/u/45464584" alt="Ebru Kaya profile photo"/>
+                        <img src="https://avatars.githubusercontent.com/u/45464584" alt="Ebru Kaya profile photo" className="memberImg" />
                         <h4>Ebru Kaya</h4>
                         <h4>Developer</h4>
                         <div className="socials">

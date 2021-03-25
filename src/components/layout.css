@@ -199,6 +199,8 @@ table tr td:nth-child(1) span{
 
 .hero .content {
   padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
 }
 
 .header {
@@ -751,6 +753,7 @@ table tr td:nth-child(1) span{
 .team {
   width: 100%;
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: repeat(auto-fill, 20%);
   justify-content: space-between;
 }
@@ -891,9 +894,11 @@ table tr td:nth-child(1) span{
 }
 
 .features {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill,230px);
+  grid-gap: 10px;
 }
 
 .feature {
@@ -901,7 +906,7 @@ table tr td:nth-child(1) span{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: calc(25% - 10px);
+  width: 100%;
 }
 
 .feature h3 {
@@ -916,6 +921,31 @@ table tr td:nth-child(1) span{
 .feature img {
   width: 50%;
   display: block;
+}
+
+.heroLeft {
+  width: 50%;
+}
+
+.heroRight {
+  width: 440px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  grid-gap: 10px;
+  transform: rotate(12deg);
+  position: absolute;
+  top: 40px;
+  right: 280px;
+  z-index: 1;
+}
+
+.rightSvg {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: none;
+  border-radius: 10%;
+  padding: 5px;
 }
 
 
@@ -992,6 +1022,18 @@ table tr td:nth-child(1) span{
     text-align: center;
     padding-top: 10px;
   }
+
+  .features {
+    grid-template-columns: repeat(auto-fill, 240px);
+    grid-gap: 20px;
+  }
+
+  .team {
+    grid-template-columns: repeat(auto-fill, 40%);
+    justify-content: center;
+  }
+  
+  .teamMember .memberImg {width:244px}
 }
 
 
@@ -1097,6 +1139,9 @@ table tr td:nth-child(1) span{
     width: 90%;
   }
 
+  .hero .content {flex-direction: column;}
+
+  .heroRight {padding-top: 10px;}
 }
 
 @keyframes scaleAnim {
