@@ -14,7 +14,7 @@ export default function Template({
 
   return (
     <Layout language={language}>
-      <SEO title={`${pack.locale[language]} Pack`} description={`Project description for ${pack.locale[language]}`} image={`https://api.assistivecards.com/cards/icon/${pack.slug}.png`} />
+      <SEO title={`${pack.locale[language]} Pack`} description={`Download free ${pack.locale[language]} assistive card in SVG or PNG format with JSON file of translation to 37 languages. Free vector ${pack.locale[language]} illustration and icon.`} image={`https://api.assistivecards.com/cards/icon/${pack.slug}.png`} />
       <div className="content">
       <BreadCrumbs links={[
             {title: "Home", link: "/"},
@@ -23,7 +23,7 @@ export default function Template({
         <div style={{display: "flex", flexDirection: "row"}}>
           <div>
             <h1>{pack.locale[language]} Pack</h1>
-            <p style={{opacity: 0.6}}>Download free Grandparents assistive card in SVG or PNG format with JSON file of translation to 37 languages. Free vectoral Grandparents illustration and icon.</p>
+            <p style={{opacity: 0.6}}>Download free {pack.locale[language]} assistive card in SVG or PNG format with JSON file of translation to 37 languages. Free vector {pack.locale[language]} illustration and icon.</p>
           </div>
           <img src={`https://api.assistivecards.com/cards/icon/${pack.slug}.png`} style={{width: 100, height: 100}} alt={`${pack.locale[language]} pack category`}/>
         </div>

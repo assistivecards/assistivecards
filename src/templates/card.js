@@ -31,11 +31,11 @@ export default function Template({
 
   return (
     <Layout language={language}>
-      <SEO title={`${card.locale[language].title} Card`} description={`Project description for ${card.locale[language].title}`} image={`https://api.assistivecards.com/cards/${card.pack}/${card.slug}@2x.png`} />
+      <SEO title={`${card.locale[language].title} Card`} description={`Download free ${card.locale[language].title} assistive card in SVG or PNG format with JSON file of translation to 37 languages. Free vector ${card.locale[language].title} illustration and icon.`} image={`https://api.assistivecards.com/cards/${card.pack}/${card.slug}@2x.png`} />
       <div className="content">
-      <BreadCrumbs links={[
+        <BreadCrumbs links={[
             {title: "Home", link: "/"},
-            {title: "Packs", link: `/${language}/packs`},
+              {title: "Packs", link: `/${language}/packs`},
             {title: `${pack.locale[language]}`, link: `/${language}/pack/${pack.locale[language].toLowerCase()}`}
           ]} />
         <div className="contentHolder">
@@ -45,7 +45,7 @@ export default function Template({
               <div className="contentCard">
               <img src={`https://api.assistivecards.com/cards/${card.pack}/${card.slug}@2x.png`} style={{width: 210, height: 210}} alt={`${card.locale[language].title} SVG, PNG Vector`}/>
               </div>
-              <p style={{opacity: 0.6, marginTop: 10}}>Download free {card.locale[language].title} assistive card in SVG or PNG format with JSON file of translation to 37 languages. Free vectoral {card.locale[language].title} illustration and icon.</p>
+              <p style={{opacity: 0.6, marginTop: 10}}>Download free {card.locale[language].title} assistive card in SVG or PNG format with JSON file of translation to 37 languages. Free vector {card.locale[language].title} illustration and icon.</p>
               <h3>Related Phrases</h3>
               <div className="contentPhrases">
                 {card.locale[language].phrases.map((phrase, i) => {
@@ -69,8 +69,6 @@ export default function Template({
               </div>
             </div>
           </div>
-
-
 
           <div className="contentRight">
             <div className="contentRightOne">

@@ -17,9 +17,9 @@ export default function Template({
       <SEO title="Assistive Cards - AAC Cards Illustrations and Phrases" description="Assistive Cards are multilingual AAC card and phrase inventory designed for kids' special education."/>
       <Hero language={"en"} packs={packs} />
       <div className="content" style={{zIndex: 1, backgroundColor: "#fff", position: "relative"}}>
-        <div style={{height: 20}}></div>
-        <h2 style={{textAlign: "center"}}>Features</h2>
-        <p style={{margin: "auto", marginBottom: 30, textAlign: "center"}}>Using Assistive Cards, developers and designers can make assistive software and educational games for children, parents can make their own printed AAC boards etc.</p>
+        <div style={{height: 50}}></div>
+        <p style={{opacity: 0.8}}>Using Assistive Cards, developers and designers can make assistive software and educational games for children, parents can make their own printed AAC boards etc.</p>
+        <div style={{height: 50}}></div>
 
         <div className="features">
           <div className="feature">

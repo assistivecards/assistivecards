@@ -39,6 +39,7 @@ const Hero = ({ siteTitle, language, packs }) => {
             <div className="btnBig" style={{backgroundColor: "#fff", color: "unset", width: 200}}>See More</div>
           </Link>
         </div>
+        <div style={{display: "flex", flex: 1}}></div>
         <div className="heroRight">
           {packs.edges.slice(0, 16).map((pack, i) => {
             return(
