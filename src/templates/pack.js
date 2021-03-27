@@ -14,7 +14,7 @@ export default function Template({
 
   return (
     <Layout language={language}>
-      <SEO title={`${pack.locale[language]} Pack`} description={`Project description for ${pack.locale[language]}`}/>
+      <SEO title={`${pack.locale[language]} Pack`} description={`Project description for ${pack.locale[language]}`} image={`https://api.assistivecards.com/cards/icon/${pack.slug}.png`} />
       <div className="content">
       <BreadCrumbs links={[
             {title: "Home", link: "/"},

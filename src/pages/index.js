@@ -10,12 +10,13 @@ import T from "../ui"
 export default function Template({
   data, path // this prop will be injected by the GraphQL query below.
 }) {
+  const { packs } = data;
 
   return (
     <Layout language={"en"} noHeader={true}>
       <SEO title="Assistive Cards - AAC Cards Illustrations and Phrases" description="Assistive Cards are multilingual AAC card and phrase inventory designed for kids' special education."/>
-      <Hero language={"en"}/>
-      <div className="content">
+      <Hero language={"en"} packs={packs} />
+      <div className="content" style={{zIndex: 1, backgroundColor: "#fff", position: "relative"}}>
         <div style={{height: 20}}></div>
         <h2 style={{textAlign: "center"}}>Features</h2>
         <p style={{margin: "auto", marginBottom: 30, textAlign: "center"}}>Using Assistive Cards, developers and designers can make assistive software and educational games for children, parents can make their own printed AAC boards etc.</p>
@@ -55,3 +56,21 @@ export default function Template({
     </Layout>
   )
 }
+
+export const pageQuery = graphql`
+  query{
+    packs: allPack{
+      edges {
+        node {
+          slug
+          color
+          count
+          id
+          locale {
+            en
+          }
+        }
+      }
+    }
+  }
+`

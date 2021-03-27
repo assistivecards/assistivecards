@@ -16,7 +16,7 @@ class IndexPage extends React.Component {
   render(){
     return (
       <Layout>
-        <SEO title="Huni AI" description="Helps non-verbal kids learn to speak and do speech practices with artificial intelligence."/>
+        <SEO title="Huni AI" description="Helps non-verbal kids learn to speak and do speech practices with artificial intelligence." image={require("../images/huni/huni.png")} />
         <div className="section">
           <div className="sectionDescription right">
             <img src={require("../images/huni/huni.png")} style={{width: 100, height: 100, marginBottom: 25, boxShadow: "0px 0px 5px 1px rgba(99, 178, 181, 0.4)", borderRadius: "50%"}}/>
@@ -26,14 +26,16 @@ class IndexPage extends React.Component {
 
             <p style={{fontSize: 23}}>Speech Recognition powered Speech Training SLP App designed for children.</p>
 
-            <div className="download">
+            <div className="download" style={{marginBottom: 0}}>
               <a href="https://apps.apple.com/us/app/leeloo-aac-autism-speech-app/id1508952198" target="_blank">
                 <img src={require("../images/as.svg")} />
               </a>
               <a href="https://play.google.com/store/apps/details?id=org.dreamoriented.huni" target="_blank">
                 <img src={require("../images/gp.svg")} />
               </a>
+              
             </div>
+            <a href="https://apkpure.com/tr/huni-ai-speech-training-kids-with-delayed-speech/org.dreamoriented.huni" style={{textDecoration: "none", color: "gray"}} target="_blank">or download APK</a>
           </div>
 
           <div className="sectionImage right">
