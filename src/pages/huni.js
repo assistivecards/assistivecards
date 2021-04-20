@@ -27,7 +27,7 @@ class IndexPage extends React.Component {
             <p style={{fontSize: 23}}>Speech Recognition powered Speech Training SLP App designed for children.</p>
 
             <div className="download" style={{marginBottom: 0}}>
-              <a href="https://apps.apple.com/us/app/leeloo-aac-autism-speech-app/id1508952198" target="_blank">
+              <a href="https://apps.apple.com/us/app/huni-delayed-speech-therapy/id1516921796" target="_blank">
                 <img src={require("../images/as.svg")} />
               </a>
               <a href="https://play.google.com/store/apps/details?id=org.dreamoriented.huni" target="_blank">
