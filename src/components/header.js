@@ -28,6 +28,7 @@ const Header = ({ siteTitle, language }) => {
               <Link to={`/licensing/`}>{T(language, "licensing")}</Link>
               <Link to={`/apps/`}>{T(language, "apps")}</Link>
               <Link to={`/blog/`}>{T(language, "blog")}</Link>
+              <Link to={`/search/`}>{T(language, "search")}</Link>
               {false &&
                 <Link to={`/search/`}>
                   <svg xmlns="http://www.w3.org/2000/svg" className="headerSearchIcon" viewBox="0 0 24 24" strokeWidth="3" stroke="#1A1A1A" fill="none" strokeLinecap="round" strokeLinejoin="round">

@@ -3,29 +3,49 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BreadCrumbs from "../components/breadcrumb"
 
 class Search extends Component {
   constructor(props){
     super(props);
     this.state = {
-      icons: []
-    }
+      results: []
+    };
+    this.allCards = [];
   }
 
-  handleChange(event) {
-    this.searchIcons(event.target.value);
+  getPacks(){
+    fetch("https://api.assistivecards.com/packs/en/metadata.json")
+    .then(res => res.json())
+    .then(parsedJSON => {
+      parsedJSON.forEach(pack => {
+        this.getCards(pack.slug)
+      })
+    })
   }
 
-  searchIcons(word){
-    if(word.length >= 3){
-      fetch('https://api.svgapi.com/v1/Ty5WcDa63E/list/?search='+word)
-      .then(res => res.json())
-      .then(parsedJSON => parsedJSON.icons)
-      .then(icons => {
-        this.setState({icons: icons})
-      }).catch(err => console.log(err))
-    }
+  getCards(slug){
+    fetch("https://api.assistivecards.com/packs/en/"+slug+".json")
+    .then(res => res.json())
+    .then(cards => {
+      cards.forEach(card => {
+        card.packSlug = slug;
+        this.allCards.push(card);
+      })
+    });
+  }
+
+  searchTerm(word){
+    var term = word.target.value;
+    var results = this.allCards.filter((card) => {
+      return card.title.toLowerCase().includes(term.toLowerCase());
+    })
+    if(!term){
+      this.setState({results: []})
+    } else this.setState({results:results})
+  }
+
+  componentDidMount(){
+    this.getPacks();
   }
 
   render(){
@@ -33,18 +53,19 @@ class Search extends Component {
       <Layout language={"en"}>
         <SEO title="Search" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
         <div className="content">
-          <BreadCrumbs links={[
-            {title: "Home", link: "/"}
-          ]} />
-          <h1>Search / {this.state.icons.length ? this.state.icons[0].title : ""}</h1>
+          <h1>Search / {this.state.results.length ? this.state.results[0].title : ""}</h1>
           <div className="searchContent">
-            <input type="text" className="searchInput" placeholder="Search" onChange={this.handleChange.bind(this)} />
+            <input type="text" className="searchInput" placeholder="Search" onChange={(word) => this.searchTerm(word)} />
             <button className="searchButton"><img src={require("../images/search.svg")} className="searchimg" /></button>
-
             <div className="searchOutput">
-            {this.state.icons.map((icon, i) => {
-              return <Link to={icon.url}><img src={icon.url} className="searchImage"/></Link>
-            })}
+              {this.state.results.lenght != 0 && this.state.results.map((card, i) => {
+                return <Link to={"https://assistivecards.com/en/card/"+card.packSlug+"/"+card.slug+"/"}><img src={"https://api.assistivecards.com/cards/"+card.packSlug+"/"+card.slug+".png"} key={i} className="searchImage" /></Link>
+              })}
+
+              {/* {this.state.results.map((card, i) => {
+                return <Link to={"https://assistivecards.com/en/card/"+card.packSlug+"/"+card.slug+"/"}><img src={"https://api.assistivecards.com/cards/"+card.packSlug+"/"+card.slug+".png"} key={i} className="searchImage" /></Link>
+              })} */}
+            
             </div>
 
           </div>
@@ -58,20 +79,42 @@ class Search extends Component {
 export default Search
 
 export const pageQuery = graphql`
-  query {
-    posts: allMarkdownRemark(sort: {
-          fields: [frontmatter___date]
-          order: DESC
-        }) {
-        edges {
-          node {
-            frontmatter {
-              date(formatString: "MMMM DD, YYYY")
-              slug
-              title
-            }
-          }
-        }
+  query($pack: String!, $slug: String!) {
+    pack(slug: { eq: $pack }){
+      slug
+      color
+      count
+      id
+      locale {
+        en
       }
+    }
+    card(slug: { eq: $slug }, pack: { eq: $pack }) {
+      slug
+      pack
+      id
+      locale {
+       en {
+         title
+         phrases {
+           phrase
+           type
+         }
+       }
+      }
+    }
+    cards: allCard(filter: {pack: {eq: $pack}}){
+     edges {
+       node {
+         slug
+         id
+         locale {
+          en {
+            title
+          }
+         }
+       }
+     }
+   }
   }
 `

@@ -27,6 +27,7 @@ const Hero = ({ siteTitle, language, packs }) => {
           <Link to={`/licensing/`}>{T(language, "licensing")}</Link>
           <Link to={`/apps/`}>{T(language, "apps")}</Link>
           <Link to={`/blog/`}>{T(language, "blog")}</Link>
+          <Link to={`/search/`}>{T(language, "search")}</Link>
         </div>
       </div>
     </div>
