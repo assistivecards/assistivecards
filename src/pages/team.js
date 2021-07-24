@@ -10,27 +10,27 @@ export default class Team extends React.Component {
             <Layout language={"en"}>
             <SEO title="Our Team" description="Helps non-verbal kids to communicate with their parents, teachers and friends."/>
             <div className="content">
-                
+
                 <h2>Our Team</h2>
                 <div className="team">
                     <div className="teamMember">
                         <img src="https://avatars.githubusercontent.com/u/5216601" alt="Burak Tokak profile photo" className="memberImg" />
                         <h4>Burak Tokak</h4>
                         <h4>Developer</h4>
-                        <div className="socials">    
+                        <div className="socials">
                             <a href="https://github.com/btk" ><img src={require("../images/social/github.svg")} alt="Github SVG"/></a>
                         </div>
                     </div>
 
                     <div className="teamMember">
-                        <img src="https://pbs.twimg.com/profile_images/1296803827987947528/s8ocbPEo_400x400.jpg" alt="Hannah Milan profile photo" className="memberImg" />
+                        <img src="https://pbs.twimg.com/profile_images/1383690311268851716/Ykp3xzoK_400x400.jpg" alt="Hannah Milan profile photo" className="memberImg" />
                         <h4>Hannah Milan</h4>
                         <h4>Designer</h4>
                         <div className="socials">
                         <a href="https://twitter.com/humbleuidesigns"><img src={require("../images/social/twitter.svg")} alt="Twitter SVG"/></a>
                         </div>
                     </div>
-                    
+
                     <div className="teamMember">
                         <img src="https://avatars.githubusercontent.com/u/42184193" alt="Enes Cosan UZ profile photo" className="memberImg" />
                         <h4>Enes Coşan UZ</h4>

@@ -65,7 +65,7 @@ class Search extends Component {
               {/* {this.state.results.map((card, i) => {
                 return <Link to={"https://assistivecards.com/en/card/"+card.packSlug+"/"+card.slug+"/"}><img src={"https://api.assistivecards.com/cards/"+card.packSlug+"/"+card.slug+".png"} key={i} className="searchImage" /></Link>
               })} */}
-            
+
             </div>
 
           </div>
@@ -77,7 +77,7 @@ class Search extends Component {
 }
 
 export default Search
-
+/*
 export const pageQuery = graphql`
   query($pack: String!, $slug: String!) {
     pack(slug: { eq: $pack }){
@@ -117,4 +117,4 @@ export const pageQuery = graphql`
      }
    }
   }
-`
+`*/

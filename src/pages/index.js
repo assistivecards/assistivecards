@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Hero from "../components/hero"
+import Unicef from '../components/unicef'
 import SEO from "../components/seo"
 import T from "../ui"
 
@@ -19,6 +20,8 @@ export default function Template({
       <div className="content" style={{zIndex: 1, backgroundColor: "#fff", position: "relative"}}>
         <div style={{height: 50}}></div>
         <p style={{opacity: 0.8}}>Using Assistive Cards, developers and designers can make assistive software and educational games for children, parents can make their own printed AAC boards etc.</p>
+
+        <Unicef/>
         <div style={{height: 50}}></div>
 
         <div className="features">

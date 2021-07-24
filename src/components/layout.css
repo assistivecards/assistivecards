@@ -838,6 +838,19 @@ table tr td:nth-child(1) span{
   max-width: none;
 }
 
+.unicef {
+  background-color: #0094f7;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.unicef img {
+  margin: 25px;
+}
+
 @media only screen and (max-width: 1000px) {
 
   .section {
@@ -942,12 +955,12 @@ table tr td:nth-child(1) span{
 }
 
 .rightSvg {
-  width: 100px;
-  height: 100px;
+  width: 95px;
+  height: 95px;
   background-color: #fff;
   border: none;
   border-radius: 10%;
-  padding: 5px;
+  padding: 10px;
 }
 
 
@@ -1045,6 +1058,13 @@ table tr td:nth-child(1) span{
     top: 0;
     right: 0;
     padding-top: 20px;
+  }
+
+  .unicef {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 
