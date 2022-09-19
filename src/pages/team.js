@@ -42,7 +42,7 @@ export default class Team extends React.Component {
                     </div>
 
                     <div className="teamMember">
-                        <img src="https://mir-s3-cdn-cf.behance.net/user/138/e43dae20198487.5ee775302f0a4.png" width={"172px"} alt="Yaren Kurt profile photo" className="memberImg" />
+                        <img src="https://mir-s3-cdn-cf.behance.net/user/230/6c9c9920198487.617439f119c09.png" width={"172px"} alt="Yaren Kurt profile photo" className="memberImg" />
                         <h4>Yaren Kurt</h4>
                         <h4>Illustrator</h4>
                         <div className="socials">
