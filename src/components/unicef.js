@@ -2,7 +2,7 @@ import React, { useState } from "react"
 
 const Unicef = () => {
   return (
-    <a href="https://www.unicef.org/appcatalogue/leeloo-aac" target="_blank"> 
+    <a href="https://www.unicef.org/appcatalogue/leeloo-aac" target="_blank" style={{ textDecoration: "none"}}> 
       <div className="unicef">
         <img src={require("../images/unicef_white.svg")} style={{width: 150}}/>
         <div>
