@@ -15,11 +15,11 @@ export default function Template({
 
   return (
     <Layout language={"en"} noHeader={true}>
-      <SEO title="Assistive Cards - AAC Cards Illustrations and Phrases" description="Assistive Cards are multilingual AAC card and phrase inventory designed for kids' special education."/>
+      <SEO title="Assistive Cards - PECS Cards Illustrations and Phrases" description="Assistive Cards are open source multilingual PECS card and phrase groups designed for kids' special education."/>
       <Hero language={"en"} packs={packs} />
       <div className="content" style={{zIndex: 1, backgroundColor: "#fff", position: "relative"}}>
         <div style={{height: 50}}></div>
-        <p style={{opacity: 0.8}}>Using Assistive Cards, developers and designers can make assistive software and educational games for children, parents can make their own printed AAC boards etc.</p>
+        <p style={{opacity: 0.8}}>Using open source Assistive Cards, developers and designers can make assistive software and educational games for children, parents can make their own printed AAC boards and more.</p>
 
 
         <div className="features">
