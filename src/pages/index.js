@@ -21,8 +21,6 @@ export default function Template({
         <div style={{height: 50}}></div>
         <p style={{opacity: 0.8}}>Using Assistive Cards, developers and designers can make assistive software and educational games for children, parents can make their own printed AAC boards etc.</p>
 
-        <Unicef/>
-        <div style={{height: 50}}></div>
 
         <div className="features">
           <div className="feature">
@@ -55,6 +53,8 @@ export default function Template({
           </div>
         </div>
 
+        <Unicef/>
+        <div style={{height: 50}}></div>
       </div>
     </Layout>
   )
