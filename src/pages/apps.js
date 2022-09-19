@@ -16,7 +16,7 @@ export default class Apps extends React.Component{
                 <div className="apps" style={{width: "100%", margin: "auto"}}>
 
                     <div className="app">
-                        <Link to={"/leeloo/"}>
+                        <Link to={"/leeloo/"} style={{textDecoration: "none"}}>
                         <img src={require("../images/leeloo/app.png")} style={{boxShadow: "0px 0px 5px 1px rgba(105, 137, 255, 0.4)", borderRadius: "50%"}}/>
                         <div className="appContent">
                             <h1>Leeloo AAC - Autism Speech App</h1>
@@ -27,7 +27,7 @@ export default class Apps extends React.Component{
                     </div>
 
                     <div className="app">
-                        <Link to={"/huni/"}>
+                        <Link to={"/huni/"} style={{textDecoration: "none"}}>
                         <img src={require("../images/huni/huni.png")} style={{boxShadow: "0px 0px 5px 1px rgba(99, 178, 181, 0.4)", borderRadius: "50%"}}/>
                         <div className="appContent">
                             <h1>Huni - Delayed Speech Therapy</h1>
