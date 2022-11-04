@@ -11,7 +11,7 @@ export default class Wingo extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="Chamur - Find in house items." description="Helps non-verbal kids to communicate with their parents, teachers and friends." />
+        <SEO title="Chamur" description="Helps non-verbal kids to communicate with their parents, teachers and friends." />
 
         <div className="section">
           <div className="sectionDescription right">

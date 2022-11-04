@@ -39,7 +39,7 @@ export default class Apps extends React.Component {
 
 						<div className="app">
 							<Link to={"/chamur/"} style={{ textDecoration: "none" }}>
-								<img src={require("../images/chamur/chamur.png")} style={{ boxShadow: "0px 0px 5px 1px rgba(99, 178, 181, 0.4)", borderRadius: "50%" }} />
+								<img src={require("../images/chamur/chamur.png")} style={{ boxShadow: "0px 0px 5px 1px rgb(99, 181, 128, 0.4)", borderRadius: "50%" }} />
 								<div className="appContent">
 									<h1>Chamur - Find In House Items</h1>
 									<p>An educational scavenger hunt game that uses object recognition via device camera.<br />
@@ -50,7 +50,7 @@ export default class Apps extends React.Component {
 
 						<div className="app">
 							<Link to={"/wingo/"} style={{ textDecoration: "none" }}>
-								<img src={require("../images/wingo/wingo.png")} style={{ boxShadow: "0px 0px 5px 1px rgba(99, 178, 181, 0.4)", borderRadius: "50%" }} />
+								<img src={require("../images/wingo/wingo.png")} style={{ boxShadow: "0px 0px 5px 1px rgb(99, 110, 181, 0.4)", borderRadius: "50%" }} />
 								<div className="appContent">
 									<h1>Wingo - Daily Planner for Kids</h1>
 									<p>Plan your children's day and communicate their tasks better and easier.<br />
