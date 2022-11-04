@@ -1,6 +1,6 @@
 # assistivecards
 
-**Node 16**
+*Node 16*
 
 This repo contains a gatsby project, that builds into assistivecards.com
 
