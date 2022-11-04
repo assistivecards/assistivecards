@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Screenshot1 from "../components/screenshot1"
-import Screenshot2 from "../components/screenshot2"
-import Screenshot3 from "../components/screenshot3"
+import Screenshot1 from "../components/chamur/screenshot1"
+import Screenshot2 from "../components/chamur/screenshot2"
+import Screenshot3 from "../components/chamur/screenshot3"
 
 export default class Chamur extends React.Component {
   render() {
