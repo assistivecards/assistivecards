@@ -12,20 +12,20 @@ class IndexPage extends React.Component {
 
   }
 
-  render(){
+  render() {
     return (
       <Layout>
         <SEO title="Leeloo AAC" description="Helps non-verbal kids to communicate with their parents, teachers and friends." image={require("../images/leeloo/app.png")} />
         <div className="section">
           <div className="sectionDescription right">
-            <img src={require("../images/leeloo/app.png")} style={{width: 100, height: 100, marginBottom: 25, boxShadow: "0px 0px 5px 1px rgba(105, 137, 255, 0.4)", borderRadius: "50%"}}/>
+            <img src={require("../images/leeloo/app.png")} style={{ width: 100, height: 100, marginBottom: 25, boxShadow: "0px 0px 5px 1px rgba(105, 137, 255, 0.4)", borderRadius: "50%" }} />
 
-            <h1 style={{fontSize: 38}}>Say hello to<br/>
-            Leeloo AAC App</h1>
+            <h1 style={{ fontSize: 38 }}>Say hello to<br />
+              Leeloo AAC App</h1>
 
-            <p style={{fontSize: 23}}>Helps non-verbal kids to communicate with their parents, teachers and friends.</p>
+            <p style={{ fontSize: 23 }}>Helps non-verbal kids to communicate with their parents, teachers and friends.</p>
 
-            <div className="download">
+            <div className="download" style={{ marginBottom: 0 }}>
               <a href="https://apps.apple.com/us/app/leeloo-aac-autism-speech-app/id1508952198" target="_blank">
                 <img src={require("../images/as.svg")} />
               </a>
@@ -33,23 +33,25 @@ class IndexPage extends React.Component {
                 <img src={require("../images/gp.svg")} />
               </a>
             </div>
+
+            <a href="https://apkpure.com/tr/leeloo-aac-autism-speech-app/org.dreamoriented.leeloo" style={{ textDecoration: "none", color: "gray" }} target="_blank">or download APK</a>
           </div>
 
           <div className="sectionImage right">
             <div className="sectionBackground right">
-              <img src={require("../images/blob.svg")} className="blob right"/>
-              <img src={require("../images/particals.svg")} className="particals right"/>
+              <img src={require("../images/blob.svg")} className="blob right" />
+              <img src={require("../images/particals.svg")} className="particals right" />
             </div>
             <Screenshot1 />
           </div>
         </div>
 
 
-        <div className="section" style={{flexDirection: "column"}}>
+        <div className="section" style={{ flexDirection: "column" }}>
           <Screenshot3 />
-          <div className="sectionDescription" style={{width: "100%"}}>
-            <h1 style={{textAlign: "center"}}>Designed with<br/>
-            accessibility in mind</h1>
+          <div className="sectionDescription" style={{ width: "100%" }}>
+            <h1 style={{ textAlign: "center" }}>Designed with<br />
+              accessibility in mind</h1>
 
             <div className="sectionList">
               <div>
@@ -75,16 +77,16 @@ class IndexPage extends React.Component {
         <div className="section">
           <div className="sectionImage">
             <div className="sectionBackground">
-              <img src={require("../images/blob.svg")} className="blob"/>
-              <img src={require("../images/particals.svg")} className="particals"/>
+              <img src={require("../images/blob.svg")} className="blob" />
+              <img src={require("../images/particals.svg")} className="particals" />
             </div>
             <Screenshot2 />
           </div>
 
           <div className="sectionDescription">
-            <h1>Control Leeloo AAC<br/>
-            the way you<br/>
-            want it</h1>
+            <h1>Control Leeloo AAC<br />
+              the way you<br />
+              want it</h1>
 
             <h3>Control app access</h3>
             <p>Option to set control app access within the settings of Leeloo app</p>
