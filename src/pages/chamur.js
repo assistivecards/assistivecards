@@ -44,8 +44,7 @@ export default class Chamur extends React.Component {
         </div>
 
 
-        <div className="section" style={{ flexDirection: "column" }}>
-          <Screenshot3 />
+        <div className="section" style={{ flexDirection: "column", marginTop: -50 }}>
           <div className="sectionDescription" style={{ width: "100%" }}>
             <h1 style={{ textAlign: "center" }}>Designed with<br />
               accessibility in mind</h1>
@@ -53,7 +52,7 @@ export default class Chamur extends React.Component {
             <div className="sectionList">
               <div>
                 <h3>Works in both Phones and Tablets</h3>
-                <p>Enjoy Leeloo App in both iOS and Android, helping your kid communicate with the use of a phone or a tablet.</p>
+                <p>Enjoy Chamur App in both iOS and Android, helping your kid communicate with the use of a phone or a tablet.</p>
               </div>
 
               <div>
@@ -63,7 +62,7 @@ export default class Chamur extends React.Component {
 
               <div>
                 <h3>Supports Text-to-Speech and Haptic Touch</h3>
-                <p>Leeloo app also has text-to-speech voice capability. Every card pressed will reveal options of phrases, and the chosen phrase will be read by a text-to-speech robot.</p>
+                <p>Chamur app also has text-to-speech voice capability. Every card pressed will be read by a text-to-speech robot.</p>
               </div>
             </div>
           </div>
@@ -81,18 +80,16 @@ export default class Chamur extends React.Component {
           </div>
 
           <div className="sectionDescription">
-            <h1>Control Leeloo AAC<br />
+            <h1>Control Chamur<br />
               the way you<br />
               want it</h1>
 
             <h3>Control app access</h3>
-            <p>Option to set control app access within the settings of Leeloo app</p>
+            <p>Option to set control app access within the settings of Chamur app</p>
 
-            <h3>Set-up different profiles in one App</h3>
-            <p>Add as many profiles, edit, manage profiles easily</p>
+            <h3>Educational scavenger hunt game</h3>
+            <p>Uses object recognition via device camera, and its powered by Assistive Cards assets</p>
 
-            <h3>Customize your AAC board</h3>
-            <p>Choose packs you want and re-order them</p>
           </div>
 
         </div>
