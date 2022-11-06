@@ -14,7 +14,7 @@ export default class Team extends React.Component {
 					<h2>Our Team</h2>
 					<div className="team">
 						<div className="teamMember">
-							<img src="https://avatars.githubusercontent.com/u/5216601" alt="Burak Tokak profile photo" className="memberImg" />
+							<img src={require("../images/team/burak.png")} alt="Burak Tokak profile photo" className="memberImg" />
 							<h4>Burak Tokak</h4>
 							<h4>Developer</h4>
 							<div className="socials">
@@ -23,7 +23,7 @@ export default class Team extends React.Component {
 						</div>
 
 						<div className="teamMember">
-							<img src="https://pbs.twimg.com/profile_images/1383690311268851716/Ykp3xzoK_400x400.jpg" alt="Hannah Milan profile photo" className="memberImg" />
+							<img src={require("../images/team/hannah.jpeg")} alt="Hannah Milan profile photo" className="memberImg" />
 							<h4>Hannah Milan</h4>
 							<h4>Designer</h4>
 							<div className="socials">
@@ -32,7 +32,7 @@ export default class Team extends React.Component {
 						</div>
 
 						<div className="teamMember">
-							<img src="https://mir-s3-cdn-cf.behance.net/user/230/6c9c9920198487.617439f119c09.png" width={"172px"} alt="Yaren Kurt profile photo" className="memberImg" />
+							<img src={require("../images/team/yaren.png")} width={"172px"} alt="Yaren Kurt profile photo" className="memberImg" />
 							<h4>Yaren Kurt</h4>
 							<h4>Illustrator</h4>
 							<div className="socials">
@@ -42,7 +42,7 @@ export default class Team extends React.Component {
 						</div>
 
 						<div className="teamMember">
-							<img src="https://avatars.githubusercontent.com/u/45464584" alt="Ebru Kaya profile photo" className="memberImg" />
+							<img src={require("../images/team/ebru.png")} alt="Ebru Kaya profile photo" className="memberImg" />
 							<h4>Ebru Kaya</h4>
 							<h4>Developer</h4>
 							<div className="socials">
@@ -52,7 +52,7 @@ export default class Team extends React.Component {
 						</div>
 
 						<div className="teamMember">
-							<img src="https://avatars.githubusercontent.com/u/15131858" alt="Arda Özkardeşler profile photo" className="memberImg" />
+							<img src={require("../images/team/arda.jpeg")} alt="Arda Özkardeşler profile photo" className="memberImg" />
 							<h4>Arda Özkardeşler</h4>
 							<h4>Developer</h4>
 							<div className="socials">
@@ -61,7 +61,7 @@ export default class Team extends React.Component {
 						</div>
 
 						<div className="teamMember">
-							<img src="https://avatars.githubusercontent.com/u/88405137" alt="Özlem Gücükbel profile photo" className="memberImg" />
+							<img src={require("../images/team/ozlem.png")} alt="Özlem Gücükbel profile photo" className="memberImg" />
 							<h4>Özlem Gücükbel</h4>
 							<h4>Developer</h4>
 							<div className="socials">
