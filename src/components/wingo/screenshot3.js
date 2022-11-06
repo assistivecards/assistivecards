@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 function Iphone() {
   const data = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "Screen3.png" }) {
+      image: file(relativePath: { eq: "wingo/Screen3.png" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid

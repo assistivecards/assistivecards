@@ -26,12 +26,12 @@ export default class Wingo extends React.Component {
               <a href="https://apps.apple.com/us/app/wingo-daily-planner-for-kids/id1541521898" target="_blank">
                 <img src={require("../images/as.svg")} />
               </a>
-              <a href="#">
+              <a onClick={() => alert('coming soon!')}>
                 <img src={require("../images/gp.svg")} />
               </a>
             </div>
 
-            <a href="#" style={{ textDecoration: "none", color: "gray" }}>or download APK</a>
+            <a onClick={() => alert('coming soon!')} style={{ textDecoration: "none", color: "gray" }}>or download APK</a>
           </div>
 
           <div className="sectionImage right">
@@ -53,7 +53,7 @@ export default class Wingo extends React.Component {
             <div className="sectionList">
               <div>
                 <h3>Works in both Phones and Tablets</h3>
-                <p>Enjoy Leeloo App in both iOS and Android, helping your kid communicate with the use of a phone or a tablet.</p>
+                <p>Enjoy Wingo App in both iOS and Android, helping your kid communicate with the use of a phone or a tablet.</p>
               </div>
 
               <div>
@@ -63,7 +63,7 @@ export default class Wingo extends React.Component {
 
               <div>
                 <h3>Supports Text-to-Speech and Haptic Touch</h3>
-                <p>Leeloo app also has text-to-speech voice capability. Every card pressed will reveal options of phrases, and the chosen phrase will be read by a text-to-speech robot.</p>
+                <p>Wingo app also has text-to-speech voice capability. Every card pressed will be read by a text-to-speech robot.</p>
               </div>
             </div>
           </div>
@@ -81,18 +81,18 @@ export default class Wingo extends React.Component {
           </div>
 
           <div className="sectionDescription">
-            <h1>Control Leeloo AAC<br />
+            <h1>Control Wingo<br />
               the way you<br />
               want it</h1>
 
             <h3>Control app access</h3>
-            <p>Option to set control app access within the settings of Leeloo app</p>
+            <p>Option to set control app access within the settings of Wingo app</p>
 
-            <h3>Set-up different profiles in one App</h3>
-            <p>Add as many profiles, edit, manage profiles easily</p>
+            <h3>Keep track of activities for the child</h3>
+            <p>The progress bar is also great for kids with ADHD, as it helps them stay on task and focus on the activities at hand</p>
 
-            <h3>Customize your AAC board</h3>
-            <p>Choose packs you want and re-order them</p>
+            <h3>Family activity section</h3>
+            <p>Parents can track their kids' progress and plan family activities</p>
           </div>
 
         </div>
