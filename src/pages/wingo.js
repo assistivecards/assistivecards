@@ -26,12 +26,12 @@ export default class Wingo extends React.Component {
               <a href="https://apps.apple.com/us/app/wingo-daily-planner-for-kids/id1541521898" target="_blank">
                 <img src={require("../images/as.svg")} />
               </a>
-              <a onClick={() => alert('coming soon!')}>
+              <a href="https://play.google.com/store/apps/details?id=org.dreamoriented.wingo" target="_blank">
                 <img src={require("../images/gp.svg")} />
               </a>
             </div>
 
-            <a onClick={() => alert('coming soon!')} style={{ textDecoration: "none", color: "gray" }}>or download APK</a>
+            <a href="https://apkpure.com/tr/wingo-daily-planner-for-kids/org.dreamoriented.wingo" target="_blank" style={{ textDecoration: "none", color: "gray" }}>or download APK</a>
           </div>
 
           <div className="sectionImage right">
