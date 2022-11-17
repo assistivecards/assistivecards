@@ -18,7 +18,7 @@ const Hero = ({ siteTitle, language, packs }) => {
       <div className="content">
         <div className="heroLeft">
           <h1 style={{color: "#3E455B", marginTop: 35, marginBottom: 15}}>Make Assistive Apps</h1>
-          <p style={{opacity: 0.8}}>Assistive Cards are multilingual AAC card and phrase groups designed for kids' special education.</p>
+          <p style={{opacity: 0.8}}>Assistive Cards are open source multilingual PECS card and phrase groups designed for kids' special education.</p>
 
           <Link to={"/en/packs/"} style={{textDecoration: "none"}}>
             <div className="btnBig" style={{backgroundColor: "#fff", color: "unset", width: 180}}>See More</div>
