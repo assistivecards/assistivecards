@@ -214,7 +214,8 @@ table tr td:nth-child(1) span {
 }
 
 .header {
-  background: rgba(212, 225, 244, 0.08);
+  background: rgb(212,225,244);
+  background: linear-gradient(180deg, rgba(212,225,244,0.2) 0%, rgba(212,225,244,0.2) 60%, rgba(212,225,244,0) 100%);
 }
 
 .headerCarrier {
