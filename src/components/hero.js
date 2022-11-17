@@ -1,10 +1,9 @@
 import React, { useState } from "react"
 import { graphql, Link } from "gatsby"
-
+import Menu from "./menu"
 import T from "../ui"
 
 const Hero = ({ siteTitle, language, packs }) => {
-  const [menu, setMenu] = useState(false);
   return (
     <div className="hero">
 
@@ -13,22 +12,7 @@ const Hero = ({ siteTitle, language, packs }) => {
         <Link to={`/`}>
           <img src={require("../images/logo.svg")} className="logo"/>
         </Link>
-        <div className="menuToggler" onClick={() => setMenu(!menu)} style={{backgroundColor: "#ff81a2"}}>
-          <svg version="1.1" width={34} height={34} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-             viewBox="0 0 460.713 460.713" fill="#fff">
-            <rect y="115.356" width="302" height="30"/>
-            <polygon points="335.786,202.231 398.25,264.694 460.713,202.232 	"/>
-            <rect y="315.356" width="302" height="30"/>
-            <rect y="215.356" width="302" height="30"/>
-          </svg>
-        </div>
-        <div className={menu ? "menu mobileMenuActive" : "menu mobileMenuPassive"}>
-          <Link to={`/${language}/packs/`}>{T(language, "allpacks")}</Link>
-          <Link to={`/licensing/`}>{T(language, "licensing")}</Link>
-          <Link to={`/apps/`}>{T(language, "apps")}</Link>
-          <Link to={`/blog/`}>{T(language, "blog")}</Link>
-          <Link to={`/search/`}>{T(language, "search")}</Link>
-        </div>
+        <Menu language={language} />
       </div>
     </div>
       <div className="content">
