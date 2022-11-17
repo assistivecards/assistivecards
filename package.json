@@ -40,6 +40,7 @@
     "build": "gatsby build",
     "ui": "cd scripts && set GOOGLE_APPLICATION_CREDENTIALS=note-1555109906591-0fdf76eae8e8.json&& node uidatamaker.js",
     "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "push": "gatsby build && aws s3 rm s3://assistivecards.com --recursive && aws s3 cp public s3://assistivecards.com --recursive",
     "start": "set NODE_OPTIONS=--max_old_space_size=8192 && gatsby develop",
