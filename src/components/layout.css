@@ -203,11 +203,12 @@ table tr td:nth-child(1) span {
 
 .hero {
   background: #E3F3FF;
-  height: 400px;
+  height: 480px;
   overflow: hidden;
 }
 
 .hero .content {
+  margin-top: 50px;
   padding-bottom: 30px;
   display: flex;
   flex-direction: row;
@@ -1072,7 +1073,7 @@ table tr td:nth-child(1) span {
   }
 
   .hero {
-    height: 500px;
+    height: 600px;
   }
 
   .heroRight {
@@ -1217,6 +1218,7 @@ table tr td:nth-child(1) span {
 
   .hero {
     height: auto;
+    height: 700px;
   }
 
   .hero .content {
