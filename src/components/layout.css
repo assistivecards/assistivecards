@@ -641,7 +641,7 @@ table tr td:nth-child(1) span {
 .categories {
   display: grid;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   grid-template-columns: repeat(auto-fill, 175px);
   grid-gap: 10px;
 }
@@ -677,7 +677,7 @@ table tr td:nth-child(1) span {
 .packs {
   display: grid;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   grid-template-columns: repeat(auto-fill, 175px);
   grid-gap: 10px;
 }
@@ -1135,7 +1135,6 @@ table tr td:nth-child(1) span {
   .packs {
     grid-template-columns: repeat(auto-fill, 160px);
     grid-gap: 10px;
-    justify-content: center;
   }
 
   .packItem {
