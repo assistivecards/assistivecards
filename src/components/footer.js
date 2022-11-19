@@ -17,10 +17,10 @@ const Footer = ({ siteTitle, language }) => (
           <Link to="/team/">{T(language, "awesome_people")}</Link>
         </div>
         <div>
-          <Link to={`/leeloo/`}><img src={require("../images/leeloo/app.png")} style={{ width: 80, height: 80, boxShadow: "0px 0px 5px 1px rgba(105, 137, 255, 0.4)", borderRadius: "50%" }} alt={"leeloo aac"} /></Link>
-          <Link to={`/huni/`}><img src={require("../images/huni/huni.png")} style={{ width: 80, height: 80, boxShadow: "0px 0px 5px 1px rgba(99, 178, 181, 0.4)", borderRadius: "50%" }} alt={"huni"} /></Link>
-          <Link to={`/chamur/`}><img src={require("../images/chamur/chamur.png")} style={{ width: 80, height: 80, boxShadow: "0px 0px 5px 1px rgb(99, 181, 128, 0.4)", borderRadius: "50%" }} alt={"chamur"} /></Link>
-          <Link to={`/wingo/`}><img src={require("../images/wingo/wingo.png")} style={{ width: 80, height: 80, boxShadow: "0px 0px 5px 1px rgba(99, 110, 181, 0.4)", borderRadius: "50%" }} alt={"wingo"} /></Link>
+          <Link to={`/leeloo/`}><img className="footerAppIcon" src={require("../images/leeloo/app.png")} style={{ boxShadow: "0px 0px 5px 1px rgba(105, 137, 255, 0.4)"}} alt={"leeloo aac"} /></Link>
+          <Link to={`/huni/`}><img className="footerAppIcon" src={require("../images/huni/huni.png")} style={{ boxShadow: "0px 0px 5px 1px rgba(99, 178, 181, 0.4)"}} alt={"huni"} /></Link>
+          <Link to={`/chamur/`}><img className="footerAppIcon" src={require("../images/chamur/chamur.png")} style={{ boxShadow: "0px 0px 5px 1px rgb(99, 181, 128, 0.4)" }} alt={"chamur"} /></Link>
+          <Link to={`/wingo/`}><img className="footerAppIcon" src={require("../images/wingo/wingo.png")} style={{ boxShadow: "0px 0px 5px 1px rgba(99, 110, 181, 0.4)" }} alt={"wingo"} /></Link>
         </div>
       </div>
       <div className="footerLinks">

@@ -295,6 +295,12 @@ table tr td:nth-child(1) span {
   animation: scaleAnim 5s infinite alternate;
 }
 
+.footerAppIcon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
 .footerLinks {
   padding: 50px 15px;
   margin-bottom: 10px;
@@ -1234,6 +1240,11 @@ table tr td:nth-child(1) span {
     position: relative;
     left: 0px;
     height: 210px;
+  }
+
+  .footerAppIcon {
+    width: 65px;
+    height: 65px;
   }
 }
 
