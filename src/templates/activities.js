@@ -7,23 +7,23 @@ import SEO from "../components/seo"
 export default function Packs({
   data, path // this prop will be injected by the GraphQL query below.
 }) {
-  const { packs } = data;
+  const { activities } = data;
   let language = path.split("/")[1];
 
   return (
     <Layout language={language}>
-      <SEO title={`All Packs`} description={`List of all packs. Choose a assistive card pack to list the cards from that category.`}/>
+      <SEO title={`Assitive Activities`} description={`List of all activities. Choose a assistive activitiy to see details and download.`}/>
       <div className="content">
-        <h1>All Packs</h1>
-        <p style={{opacity: 0.6}}>List of all packs. Choose a assistive card pack to list the cards from that category.</p>
-        <div className="categories">
-          {packs.edges.map(pack => {
-            if(pack.node.locale[language]){
+        <h1>Assistive Activities</h1>
+        <p style={{opacity: 0.6}}>List of all activities. Choose a assistive activitiy to see details and download.</p>
+        <div className="activities">
+          {activities.edges.map(pack => {
+            if(pack.node.title){
               return (
-                <Link to={`/${language}/pack/${pack.node.slug}/`} key={pack.node.slug}>
-                  <div className="categoryItem" style={{backgroundColor: pack.node.color}}>
-                    <img src={`https://api.assistivecards.com/cards/icon/${pack.node.slug}.png`} style={{width: 100, height: 100}} alt={`${pack.node.locale[language]} pack category`}/>
-                    <p>{pack.node.locale[language]}</p>
+                <Link to={`/${language}/activity/${pack.node.slug}/`} key={pack.node.slug}>
+                  <div className="activityItem" style={{backgroundColor: "#f8f8fc"}}>
+                    <img src={`https://api.assistivecards.com/activities/assets/${pack.node.slug}.png`} style={{width: 220, padding: 5}} alt={`${pack.node.title} assistive activity`}/>
+                    <p>{pack.node.title}</p>
                   </div>
                 </Link>
               );
@@ -36,16 +36,11 @@ export default function Packs({
 }
 export const pageQuery = graphql`
   query{
-    packs: allPack{
+    activities: allActivity{
       edges {
         node {
           slug
-          color
-          count
-          id
-          locale {
-            en
-          }
+          title
         }
       }
     }

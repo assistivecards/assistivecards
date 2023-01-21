@@ -674,6 +674,36 @@ table tr td:nth-child(1) span {
   margin-bottom: 10px;
 }
 
+
+.activities {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  grid-template-columns: repeat(auto-fill, 312px);
+  grid-gap: 10px;
+}
+
+.activityItem {
+  width: 315px;
+  height: 220px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.activityItem img {
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+.activityItem a {
+  text-decoration: none;
+}
+
 .categoryCardCount {
   background: #fff;
   width: 70px;
@@ -694,6 +724,7 @@ table tr td:nth-child(1) span {
 }
 
 .categories a,
+.activities a,
 .packs a {
   text-decoration: none;
 }

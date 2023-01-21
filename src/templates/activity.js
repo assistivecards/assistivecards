@@ -11,7 +11,7 @@ import BreadCrumbs from "../components/breadcrumb"
 export default function Template({
   data, path // this prop will be injected by the GraphQL query below.
 }) {
-  const { activity } = data;
+  const { activity, activities } = data;
 
   let [modal, setModal] = useState(false);
 
@@ -51,10 +51,6 @@ export default function Template({
               </div>
             </div>
             <div className="contentLeftTwo">
-            <h2>Other Activities</h2>
-              <div className="packs">
-              xxx
-              </div>
             </div>
           </div>
 
@@ -79,6 +75,24 @@ export default function Template({
           </div>
 
         </div>
+
+        <div>
+          <h2>Other Activities</h2>
+          <div className="activities">
+            {activities.edges.map(pack => {
+              if(pack.node.title){
+                return (
+                  <Link to={`/${language}/activity/${pack.node.slug}/`} key={pack.node.slug}>
+                    <div className="activityItem" style={{backgroundColor: "#f8f8fc"}}>
+                      <img src={`https://api.assistivecards.com/activities/assets/${pack.node.slug}.png`} style={{width: 220, padding: 5}} alt={`${pack.node.title} assistive activity`}/>
+                      <p>{pack.node.title}</p>
+                    </div>
+                  </Link>
+                );
+              }
+            })}
+          </div>
+        </div>
       </div>
     </Layout>
   )
@@ -89,6 +103,14 @@ export const pageQuery = graphql`
       slug
       title
       search
+    }
+    activities: allActivity{
+      edges {
+        node {
+          slug
+          title
+        }
+      }
     }
   }
 `
