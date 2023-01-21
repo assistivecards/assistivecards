@@ -225,11 +225,11 @@ async function sourceCards(slug, lang, createNode, cache){
   }
 
 
+
 exports.createPages = async ({ actions, graphql, reporter, cache }) => {
   const { createPage } = actions
 
 
-  const packsTemplate = require.resolve(`./src/templates/packs.js`)
 
   if(ONLY_RENDER_EN){
     lang = {languages: [{code: "en"}]};
@@ -237,13 +237,24 @@ exports.createPages = async ({ actions, graphql, reporter, cache }) => {
     lang = await pullCacheable(cache, `languages`)
   }
 
-
+  const packsTemplate = require.resolve(`./src/templates/packs.js`)
   for (var i = 0; i < lang.languages.length; i++) {
     let l = lang.languages[i];
 
     createPage({
       path: `/${l.code}/packs/`,
       component: packsTemplate
+    })
+  }
+
+  const activitiesTemplate = require.resolve(`./src/templates/activities.js`)
+
+  for (var i = 0; i < lang.languages.length; i++) {
+    let l = lang.languages[i];
+
+    createPage({
+      path: `/${l.code}/activities/`,
+      component: activitiesTemplate
     })
   }
 
