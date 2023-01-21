@@ -33,7 +33,6 @@ class IndexPage extends React.Component {
               <a href="https://play.google.com/store/apps/details?id=org.dreamoriented.huni" target="_blank">
                 <img src={require("../images/gp.svg")} />
               </a>
-              
             </div>
             <a href="https://apkpure.com/tr/huni-ai-speech-training-kids-with-delayed-speech/org.dreamoriented.huni" style={{textDecoration: "none", color: "gray"}} target="_blank">or download APK</a>
           </div>

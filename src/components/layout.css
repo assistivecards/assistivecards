@@ -1250,6 +1250,10 @@ table tr td:nth-child(1) span {
     text-align: center;
   }
 
+  .appContent p {
+    text-align: center;
+  }
+
   .notFound {
     width: 90%;
   }
@@ -1286,6 +1290,13 @@ table tr td:nth-child(1) span {
   .footerAppIcon {
     width: 65px;
     height: 65px;
+  }
+
+  .download {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 
