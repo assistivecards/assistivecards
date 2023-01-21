@@ -25,12 +25,12 @@ const Footer = ({ siteTitle, language }) => (
       </div>
       <div className="footerLinks">
         <div>
-          &copy; {titleCase(T(language, "copyright"))} <a href="http://dreamoriented.org/" target="_blank" style={{ textDecoration: "none" }}>Dream Oriented Limited</a>
+          &copy; {titleCase(T(language, "copyright"))} <a href="http://dreamoriented.org/" target="_blank" style={{ textDecoration: "none" }}>Assistive Cards</a>
         </div>
         <div>
-          <a href="https://dreamoriented.org/leeloo-feedback" target="_blank">{T(language, "suggest")}</a>
           <a href="https://dreamoriented.org/privacypolicy" target="_blank">{T(language, "privacy")}</a>
           <a href="https://dreamoriented.org/leeloo-feedback" target="_blank">{T(language, "feedback")}</a>
+          <Link to={`/licensing/`}>{T(language, "licensing")}</Link>
         </div>
       </div>
     </div>

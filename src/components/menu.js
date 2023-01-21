@@ -18,8 +18,8 @@ const Menu = ({ language }) => {
         </svg>
       </div>
       <div className={menu ? "menu mobileMenuActive" : "menu mobileMenuPassive"}>
-        <Link to={`/${language}/packs/`}>{T(language, "allpacks")}</Link>
-        <Link to={`/licensing/`}>{T(language, "licensing")}</Link>
+        <Link to={`/${language}/packs/`}>Packs</Link>
+        <Link to={`/${language}/activities/`}>Activities</Link>
         <Link to={`/apps/`}>{T(language, "apps")}</Link>
         <Link to={`/games/`}>{T(language, "games")}<span className="soon">SOON</span></Link>
         <Link to={`/blog/`}>{T(language, "blog")}</Link>

@@ -679,8 +679,8 @@ table tr td:nth-child(1) span {
   display: grid;
   flex-wrap: wrap;
   justify-content: space-around;
-  grid-template-columns: repeat(auto-fill, 312px);
-  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, 310px);
+  grid-gap: 15px;
 }
 
 .activityItem {
