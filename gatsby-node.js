@@ -39,7 +39,54 @@ exports.sourceNodes = async ({ actions, cache }) => {
 
   await sourceLang(lang, createNode);
   await sourcePacks(lang, createNode, cache);
+  await sourceActivities(lang, createNode, cache);
   //return;
+}
+
+
+
+async function sourceActivities(lang, createNode, cache){
+  let activities = {};
+
+  for (var i = 0; i < lang.languages.length; i++) {
+    let l = lang.languages[i];
+    activities[l.code] = await pullCacheable(cache, `activities/${l.code}/metadata`);
+  }
+  // map into these results and create nodes
+  activities.en.map((pack, i) => {
+    // Create your node object
+
+    let locale = {};
+    Object.values(lang.languages).forEach((lan, x) => {
+      locale[lan.code] = activities[lan.code].filter(p => p.slug == pack.slug)[0].locale;
+    });
+
+    const node = {
+      // Required fields
+      id: `Activity-${pack.slug}`,
+      parent: `__SOURCE__`,
+      internal: {
+        type: `Activity`, // This is an important indicator for your data node.
+      },
+      children: [],
+
+      // Other fields that you want to query with graphQl
+      slug: pack.slug,
+      title: pack.title,
+      search: pack.search
+    }
+
+    // Get content digest of node. (Required field)
+    const contentDigest = crypto
+      .createHash(`md5`)
+      .update(JSON.stringify(node))
+      .digest(`hex`);
+    // add it to userNode
+    node.internal.contentDigest = contentDigest;
+
+    // Create node with the gatsby createNode() API
+    createNode(node);
+  });
 }
 
 async function sourceLang(langs, createNode){
@@ -74,8 +121,6 @@ async function sourceLang(langs, createNode){
     createNode(node);
   });
 }
-
-
 
 async function sourcePacks(lang, createNode, cache){
   let packs = {};
@@ -180,7 +225,6 @@ async function sourceCards(slug, lang, createNode, cache){
   }
 
 
-
 exports.createPages = async ({ actions, graphql, reporter, cache }) => {
   const { createPage } = actions
 
@@ -275,6 +319,48 @@ exports.createPages = async ({ actions, graphql, reporter, cache }) => {
           // additional data can be passed via context
           pack: node.pack,
           slug: node.slug
+        },
+      })
+    }
+
+  })
+
+
+
+  const activityTemplate = require.resolve(`./src/templates/activity.js`)
+  const activityResult = await graphql(`
+    {
+      allActivity (
+        limit: 10000
+      ) {
+        edges {
+          node {
+            slug
+            title
+            search
+          }
+        }
+      }
+    }
+  `)
+  // Handle errors
+  if (activityResult.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
+  activityResult.data.allActivity.edges.forEach(({ node }) => {
+    for (var i = 0; i < lang.languages.length; i++) {
+      let l = lang.languages[i];
+
+      createPage({
+        path: `/${l.code}/activity/${node.slug}/`,
+        component: activityTemplate,
+        context: {
+          // additional data can be passed via context
+          slug: node.slug,
+          title: node.title,
+          search: node.search
         },
       })
     }
