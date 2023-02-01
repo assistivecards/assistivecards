@@ -16,7 +16,7 @@ export default class Apps extends React.Component {
 					<div className="apps" style={{ width: "100%", margin: "auto" }}>
 
 						<div className="app">
-								<img src={"https://raw.githubusercontent.com/assistivecards/unity-template/main/Assets/Sprites/AppIcons/silhouette.png"} style={{ boxShadow: "0px 0px 5px 1px rgba(105, 137, 255, 0.4)", borderRadius: "15%", marginBottom: 10 }} />
+								<img src={"https://api.assistivecards.com/games/icon/silhouette@0.5x.png"} style={{ boxShadow: "0px 0px 5px 1px rgba(105, 137, 255, 0.4)", borderRadius: "15%", marginBottom: 10 }} />
 								<div className="appContent" style={{paddingTop: 0}}>
 									<h1>Silhouette Matching Game</h1>
 									<p style={{marginBottom: 10}}>The goal of this game is to find the silhouette of the given cards.</p>
@@ -32,7 +32,7 @@ export default class Apps extends React.Component {
 						</div>
 
 						<div className="app">
-								<img src={"https://raw.githubusercontent.com/assistivecards/unity-template/main/Assets/Sprites/AppIcons/memory.png"} style={{ boxShadow: "0px 0px 5px 1px rgba(99, 178, 181, 0.4)", borderRadius: "15%", marginBottom: 10 }} />
+								<img src={"https://api.assistivecards.com/games/icon/memory@0.5x.png"} style={{ boxShadow: "0px 0px 5px 1px rgba(99, 178, 181, 0.4)", borderRadius: "15%", marginBottom: 10 }} />
 								<div className="appContent" style={{paddingTop: 0}}>
 									<h1>Card Memory Game</h1>
 									<p style={{marginBottom: 10}}>The goal is to find a pair by flipping face down cards and matching them.</p>
@@ -48,7 +48,7 @@ export default class Apps extends React.Component {
 						</div>
 
 						<div className="app">
-								<img src={"https://raw.githubusercontent.com/assistivecards/unity-template/main/Assets/Sprites/AppIcons/circle.png"} style={{ boxShadow: "0px 0px 5px 1px rgba(99, 178, 181, 0.4)", borderRadius: "15%", marginBottom: 10 }} />
+								<img src={"https://api.assistivecards.com/games/icon/circle@0.5x.png"} style={{ boxShadow: "0px 0px 5px 1px rgba(99, 178, 181, 0.4)", borderRadius: "15%", marginBottom: 10 }} />
 								<div className="appContent" style={{paddingTop: 0}}>
 									<h1>Circle Objects Game</h1>
 									<p style={{marginBottom: 10}}>Circle the right card by drawing on the device, improves kids' motor skills.</p>
@@ -64,7 +64,7 @@ export default class Apps extends React.Component {
 						</div>
 
 						<div className="app">
-								<img src={"https://raw.githubusercontent.com/assistivecards/unity-template/main/Assets/Sprites/AppIcons/card-crush.png"} style={{ boxShadow: "0px 0px 5px 1px rgba(99, 178, 181, 0.4)", borderRadius: "15%", marginBottom: 10 }} />
+								<img src={"https://api.assistivecards.com/games/icon/card_crash@0.5x.png"} style={{ boxShadow: "0px 0px 5px 1px rgba(99, 178, 181, 0.4)", borderRadius: "15%", marginBottom: 10 }} />
 								<div className="appContent" style={{paddingTop: 0}}>
 									<h1>Card Crash Game</h1>
 									<p style={{marginBottom: 10}}>Match 3 or more same cards to crash them, like candy crash.</p>
