@@ -10,7 +10,7 @@ const crypto = require('crypto');
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
- const ONLY_RENDER_EN = true;
+ const ONLY_RENDER_EN = true; 
 
 async function pullCacheable(cache, key){
   const cachedValue = await cache.get(key);
