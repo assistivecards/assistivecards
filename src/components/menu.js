@@ -21,7 +21,7 @@ const Menu = ({ language }) => {
         <Link to={`/${language}/packs/`}>Packs</Link>
         <Link to={`/${language}/activities/`}>Activities</Link>
         <Link to={`/apps/`}>{T(language, "apps")}</Link>
-        <Link to={`/games/`}>{T(language, "games")}<span className="soon">NEW</span></Link>
+        <Link to={`/${language}/games/`}>{T(language, "games")}<span className="soon">NEW</span></Link>
         <Link to={`/blog/`}>{T(language, "blog")}</Link>
         {false &&
           <Link to={`/search/`}>

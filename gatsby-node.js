@@ -70,7 +70,6 @@ async function sourceGames(lang, createNode, cache){
         type: `Game`, // This is an important indicator for your data node.
       },
       children: [],
-
       // Other fields that you want to query with graphQl
       slug: pack.slug,
       name: pack.name,
