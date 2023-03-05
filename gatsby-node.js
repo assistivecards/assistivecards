@@ -40,10 +40,60 @@ exports.sourceNodes = async ({ actions, cache }) => {
   await sourceLang(lang, createNode);
   await sourcePacks(lang, createNode, cache);
   await sourceActivities(lang, createNode, cache);
+  await sourceGames(lang, createNode, cache);
   //return;
 }
 
 
+
+async function sourceGames(lang, createNode, cache){
+  let games = {};
+
+  for (var i = 0; i < lang.languages.length; i++) {
+    let l = lang.languages[i];
+    games[l.code] = await pullCacheable(cache, `games/metadata_template`);
+  }
+  // map into these results and create nodes
+  games.en.apps.map((pack, i) => {
+    // Create your node object
+
+    let locale = {};
+    Object.values(lang.languages).forEach((lan, x) => {
+      locale[lan.code] = games[lan.code].apps.filter(p => p.slug == pack.slug)[0].locale;
+    });
+
+    const node = {
+      // Required fields
+      id: `Game-${pack.slug}`,
+      parent: `__SOURCE__`,
+      internal: {
+        type: `Game`, // This is an important indicator for your data node.
+      },
+      children: [],
+
+      // Other fields that you want to query with graphQl
+      slug: pack.slug,
+      name: pack.name,
+      tagline: pack.tagline,
+      description: pack.description,
+      playStoreId: pack.storeId.googlePlay,
+      appStoreId: pack.storeId.appStore,
+      released: pack.released,
+      premium: pack.premium
+    }
+
+    // Get content digest of node. (Required field)
+    const contentDigest = crypto
+      .createHash(`md5`)
+      .update(JSON.stringify(node))
+      .digest(`hex`);
+    // add it to userNode
+    node.internal.contentDigest = contentDigest;
+
+    // Create node with the gatsby createNode() API
+    createNode(node);
+  });
+}
 
 async function sourceActivities(lang, createNode, cache){
   let activities = {};
@@ -255,6 +305,17 @@ exports.createPages = async ({ actions, graphql, reporter, cache }) => {
     createPage({
       path: `/${l.code}/activities/`,
       component: activitiesTemplate
+    })
+  }
+
+  const gamesTemplate = require.resolve(`./src/templates/games.js`)
+
+  for (var i = 0; i < lang.languages.length; i++) {
+    let l = lang.languages[i];
+
+    createPage({
+      path: `/${l.code}/games/`,
+      component: gamesTemplate
     })
   }
 
