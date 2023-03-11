@@ -276,9 +276,17 @@ async function sourceCards(slug, lang, createNode, cache){
 
 
 exports.createPages = async ({ actions, graphql, reporter, cache }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
 
+	createRedirect({
+    fromPath: `/games`,
+    toPath: `/en/games`,
+  });
 
+	createRedirect({
+    fromPath: `/games/`,
+    toPath: `/en/games/`,
+  });
 
   if(ONLY_RENDER_EN){
     lang = {languages: [{code: "en"}]};
