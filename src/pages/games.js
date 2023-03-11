@@ -9,7 +9,9 @@ export default class Apps extends React.Component {
 
 	constructor(props){
 		super(props);
-		window.location = "https://assistivecards.com/en/games/";
+		if(typeof window != "undefined"){
+			window.location = "https://assistivecards.com/en/games/";
+		} 
 	}
 
 	render() {
