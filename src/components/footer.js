@@ -29,7 +29,7 @@ const Footer = ({ siteTitle, language }) => (
         </div>
         <div>
           <a href="https://dreamoriented.org/privacypolicy" target="_blank">{T(language, "privacy")}</a>
-          <a href="https://dreamoriented.org/leeloo-feedback" target="_blank">{T(language, "feedback")}</a>
+          <Link to={`/support/`}>{T(language, "feedback")}</Link>
           <Link to={`/licensing/`}>{T(language, "licensing")}</Link>
         </div>
       </div>
