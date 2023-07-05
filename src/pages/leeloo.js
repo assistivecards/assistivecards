@@ -12,6 +12,13 @@ class IndexPage extends React.Component {
 
   }
 
+  componentDidMount(){
+    if(typeof window != "undefined"){
+      gameRedirect("https://apps.apple.com/us/app/leeloo-aac-autism-speech-app/id1508952198", "https://play.google.com/store/apps/details?id=org.dreamoriented.leeloo");
+    }
+
+  }
+
   render() {
     return (
       <Layout>
@@ -101,6 +108,48 @@ class IndexPage extends React.Component {
         </div>
       </Layout>
     )
+  }
+}
+
+function gameRedirect(as,gp){
+  console.log(navigator.userAgent);
+  var isMobile = {
+      Android: function() {
+          return navigator.userAgent.match(/Android/i);
+      },
+      BlackBerry: function() {
+          return navigator.userAgent.match(/BlackBerry/i);
+      },
+      iOS: function() {
+          return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+      },
+      Opera: function() {
+          return navigator.userAgent.match(/Opera Mini/i);
+      },
+      Windows: function() {
+          return navigator.userAgent.match(/IEMobile/i);
+      },
+      any: function() {
+          return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+      }
+  };
+
+
+
+  if (isMobile.Android() && gp) {
+    setTimeout(() => {
+      document.location.href= gp;
+      setTimeout(() => {
+        window.location.replace(gp);
+      }, 100);
+    }, 100);
+  } else if(isMobile.iOS() && as) {
+    setTimeout(() => {
+      document.location.href= as;
+      setTimeout(() => {
+        window.location.replace(as);
+      }, 100);
+    }, 100);
   }
 }
 
