@@ -28,7 +28,7 @@ const Footer = ({ siteTitle, language }) => (
           &copy; {titleCase(T(language, "copyright"))} <a href="http://dreamoriented.org/" target="_blank" style={{ textDecoration: "none" }}>Assistive Cards</a>
         </div>
         <div>
-          <a href="https://dreamoriented.org/privacypolicy" target="_blank">{T(language, "privacy")}</a>
+          <Link to={`/privacy/`}>{T(language, "privacy")}</Link>
           <Link to={`/support/`}>{T(language, "feedback")}</Link>
           <Link to={`/licensing/`}>{T(language, "licensing")}</Link>
         </div>
