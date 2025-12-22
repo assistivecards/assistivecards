@@ -37,7 +37,7 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": "16.x"
+    "node": "24.x"
   },
   "scripts": {
     "build": "gatsby build",
