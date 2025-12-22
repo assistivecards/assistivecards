@@ -4,7 +4,6 @@
   "framework": "gatsby",
   "installCommand": "yarn install",
   "devCommand": "yarn dev",
-  "functions": {},
   "regions": ["iad1"]
 }
 
