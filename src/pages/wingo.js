@@ -11,7 +11,11 @@ export default class Wingo extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="Wingo" description="Plan your children's day and communicate their tasks better and easier." />
+        <SEO
+          title="Wingo"
+          description="Plan your children's day and communicate their tasks better and easier."
+          canonical="https://assistivecards.com/wingo/"
+        />
 
         <div className="section">
           <div className="sectionDescription right">
